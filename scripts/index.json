@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Clover RPG",
+		"file": "clover.luau",
+		"game": "Clover RPG",
+		"description": "Placeholder for the Clover RPG script."
+	},
+	{
+		"name": "Fullbright",
+		"file": "fullbright.luau",
+		"game": "Universal",
+		"description": "Removes darkness, fog and shadows, and keeps them off if the game resets lighting."
+	},
+	{
+		"name": "Player ESP",
+		"file": "esp.luau",
+		"game": "Universal",
+		"description": "Highlights other players through walls in their team colour."
+	},
+	{
+		"name": "Anti-AFK",
+		"file": "anti-afk.luau",
+		"game": "Universal",
+		"description": "Stops Roblox kicking you for being idle for 20 minutes."
+	},
+	{
+		"name": "Rejoin",
+		"file": "rejoin.luau",
+		"game": "Universal",
+		"description": "Rejoins this server, or a new one if you're the only player in it."
+	}
+]
