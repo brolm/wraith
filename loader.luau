@@ -1034,7 +1034,7 @@ local function layout(animate: boolean?)
 	end
 	holder.Position = clampPosition(holder.Position)
 
-	local columns = if width >= 700 then 3 elseif width >= 460 then 2 else 1
+	local columns = if width >= 520 then 3 elseif width >= 340 then 2 else 1
 	gridLayout.CellSize = UDim2.new(1 / columns, -8 * (columns - 1) / columns, 0, CARD_HEIGHT)
 
 	-- Toolbar: drop the script count, then the wordmark, and let the search field take what's left.

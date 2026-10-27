@@ -24142,7 +24142,7 @@ local function J()
   end
   S.mvsShouldHoldKillAllForZeroZero = function()
     local xR
-    local xR = z[6][z[5]] and z[6][z[5]]:FindFirstChildOfClass("PlayerGui")
+    local xR = game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer:FindFirstChildOfClass("PlayerGui")
     if not(xR) then
       return false
     end
@@ -48470,8 +48470,9 @@ if haxterDestroyExistingHubGuis() then
   task.wait()
 end
 local E
-O[6][O[5]], Haxter = pcall(Y.createRawHaxter)
-o = O[6][O[5]]
+local haxterCreated
+haxterCreated, Haxter = pcall(Y.createRawHaxter)
+o = haxterCreated
 if not o then
   return
 end
@@ -60647,7 +60648,7 @@ local function O()
     return
   end
   ChosenColor = "Green"
-  h[6][h[5]] = game:GetService("RunService")
+  local _ = game:GetService("RunService")
   MoveOptions = {"Green", "Blue"}
   MoveOption = "Green"
   TTTDelay = 0.6
@@ -95807,7 +95808,7 @@ do
     pitchShift.Parent = sound
   end
   SoundService = game:GetService("SoundService")
-  h[6][h[5]] = game:GetService("RunService")
+  local haxterRunService = game:GetService("RunService")
   ADI = SoundService:FindFirstChild("HaxterMicInput")
   if not(ADI and ADI:IsA("AudioDeviceInput")) then
     ADI = Instance.new("AudioDeviceInput")
@@ -95853,7 +95854,7 @@ do
     AudioReactiveActive = YR == true
     YR = AudioReactiveActive and not AudioReactiveEnvironment.HaxterAudioReactiveHeartbeat
     if YR then
-      AudioReactiveEnvironment.HaxterAudioReactiveHeartbeat = h[6][h[5]].Heartbeat:Connect(function()
+      AudioReactiveEnvironment.HaxterAudioReactiveHeartbeat = haxterRunService.Heartbeat:Connect(function()
         R157 = MIN_SPEED + (getMicReactivePercent() / 100) ^ VOLUME_CURVE * (MAX_SPEED - MIN_SPEED)
 -- SL | Luraph V15.1 Cracked & Released | Source Leak [ https://discord.gg/zNyHGU6eUK ]
       end)
@@ -102158,7 +102159,7 @@ do
     end
     loaded = nil
     local T
-    successLoad, p[6][p[5]] = pcall(function()
+    successLoad = pcall(function()
       loaded = loadstring(N)()
     end)
     if successLoad then
@@ -102187,7 +102188,7 @@ do
       return nil
     end
     loaded = nil
-    successLoad, p[6][p[5]] = pcall(function()
+    successLoad = pcall(function()
       loaded = loadstring(decoded)()
 -- [ SL x Luraph V15.1 ] Cracked & Open | discord.gg/zNyHGU6eUK
     end)
@@ -155873,7 +155874,7 @@ task.spawn(function()
   end
   p = game:GetService("Players")
   local Y = p.LocalPlayer
-  z[6][z[5]] = Y
+  local _ = Y
   haxterChatTagConnections = haxterChatTagConnections or {}
   for Y, Y in pairs(haxterChatTagConnections) do
     if type(Y) == "table" then
@@ -156028,7 +156029,7 @@ task.spawn(function()
     end
   end
   function onPlayerChatted(Y, O)
-    local h = z[6][z[5]]
+    local h = game:GetService("Players").LocalPlayer
     if Y == h then
 -- This Luraph V15.1 Cracked By SL | Source Leak [ https://discord.gg/zNyHGU6eUK ]
       return
