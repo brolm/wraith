@@ -946,17 +946,17 @@ repeat
                 local hc_1 = (vector.create((g2 * 7 + 8) % 11 + 1, (g2 * 7 + 9) % 13 + 1, (g2 * 5 + 12) % 17 + 1))
                 if vector.dot(vector.cross(g9, ha), (vector.cross(hb, hc_1))) == vector.dot(g9, hb) * vector.dot(ha, hc_1) - vector.dot(g9, hc_1) * vector.dot(ha, hb) then
                     g_()
-                    Fluent = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+                    Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
                 else
                     Fluent()
-                    g_ = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+                    g_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
                 end
                 g2 = (g2 + 53) % 112
             else
                 if g2 * 25269017 + 9 + 1 >= g2 * 25269017 + 9 + 1 + 6 then
                     g3 = loadstring(game:HttpGet(loadstring))()
                 else
-                    g6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau"))()
+                    g6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"))()
                 end
                 g2 = (g2 + 81) % 112
             end
@@ -979,7 +979,7 @@ repeat
             if g9[(g2 * 73 + 57) % 13 + 1] < g9[(g2 * 73 + 57) % 13 + 1] then
                 gi = loadstring(game:HttpGet(game))()
             else
-                g5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau"))()
+                g5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"))()
             end
             g2 = (g2 + 39) % 112
         end

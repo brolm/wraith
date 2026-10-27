@@ -958,9 +958,9 @@ for i, v in ipairs(vx_35) do
 end
 vx_6, oD, oo, Toggles, Options, vx_38, oV, oN, oE, ox, op, oh, oa, n4, oM, connection, nV, oQ, n2, nL, nA, ns, ny, nj, oO, nX, nN, nt, no, ng, oI, oc, nP, ni, oL, nS, nk, ov, nx, nq, ow, oF, oi, nf, nv, nQ, oK, n1, n8, og, oR = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 if (oi or nN) and (nL and Options) or (not vx_38 or nN) and (not Options and not Options) or not ((oi or nN) and (nL and Options) or (not vx_38 or nN) and (not Options and not Options)) then
-    vx_6 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    vx_6 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    nA = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    nA = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 oD = loadstring(game:HttpGet(vx_6 .. "Library.lua"))()
 local vx_33 = loadstring(game:HttpGet(vx_6 .. "addons/ThemeManager.lua"))()

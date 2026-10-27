@@ -261,9 +261,9 @@ local eX_1
 local eW_1
 local eT_1
 Library, eT_1, CollectionService, LocalPlayer, eI, eP, eJ, eG, eW_1, eD, eB, eC, eX_1, eQ, eH, eM, eK = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 if ((not eD or not CollectionService) and (not eD or ThemeManager) and (not ThemeManager and ThemeManager and (CollectionService and ThemeManager)) or (eD and ThemeManager and (eD and eD) or (not CollectionService or not eD or (not eD or not ThemeManager)))) and (not CollectionService or not CollectionService or eD and CollectionService or (not eD or ThemeManager) and (not ThemeManager or not ThemeManager) or (eD or ThemeManager or not ThemeManager and eD) and (CollectionService and not eD and (not CollectionService or not CollectionService))) or not (((not eD or not CollectionService) and (not eD or ThemeManager) and (not ThemeManager and ThemeManager and (CollectionService and ThemeManager)) or (eD and ThemeManager and (eD and eD) or (not CollectionService or not eD or (not eD or not ThemeManager)))) and (not CollectionService or not CollectionService or eD and CollectionService or (not eD or ThemeManager) and (not ThemeManager or not ThemeManager) or (eD or ThemeManager or not ThemeManager and eD) and (CollectionService and not eD and (not CollectionService or not CollectionService)))) then
     eT_1 = game:GetService("Players")
 else
@@ -280,7 +280,7 @@ eI = "https://discord.gg/ehKVq7pf7v"
 eP = fn203(eS.Shared.Utils.Network)
 eJ = fn203(eS.Shared.Constants.Remotes)
 eG = fn203(eS.Shared.Config.DiceConfig)
-if (eM and eI and (false or eK) and ("https://discord.gg/ehKVq7pf7v" and (eM or not eK)) or (eK and not eK or "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/") and (not eS and eK and (not eS or eI)) or (eM and not eK or eM and eI) and ((not eK or eS) and (eS and eM)) and (not eM or eS or (eM or eI) or "https://discord.gg/ehKVq7pf7v" and (eM and not eM))) and not (eM and eI and (false or eK) and ("https://discord.gg/ehKVq7pf7v" and (eM or not eK)) or (eK and not eK or "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/") and (not eS and eK and (not eS or eI)) or (eM and not eK or eM and eI) and ((not eK or eS) and (eS and eM)) and (not eM or eS or (eM or eI) or "https://discord.gg/ehKVq7pf7v" and (eM and not eM))) then
+if (eM and eI and (false or eK) and ("https://discord.gg/ehKVq7pf7v" and (eM or not eK)) or (eK and not eK or "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/") and (not eS and eK and (not eS or eI)) or (eM and not eK or eM and eI) and ((not eK or eS) and (eS and eM)) and (not eM or eS or (eM or eI) or "https://discord.gg/ehKVq7pf7v" and (eM and not eM))) and not (eM and eI and (false or eK) and ("https://discord.gg/ehKVq7pf7v" and (eM or not eK)) or (eK and not eK or "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/") and (not eS and eK and (not eS or eI)) or (eM and not eK or eM and eI) and ((not eK or eS) and (eS and eM)) and (not eM or eS or (eM or eI) or "https://discord.gg/ehKVq7pf7v" and (eM and not eM))) then
     eS = eW_1(fn203.Shared.Config.UpgradesConfig)
 else
     eW_1 = fn203(eS.Shared.Config.UpgradesConfig)

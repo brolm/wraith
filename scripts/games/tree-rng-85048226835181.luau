@@ -1377,9 +1377,9 @@ repeat
             "ghtcairwhvkr"
         }
         if ko[(ka * 89 + 46) % 11 + 1] <= ko[(ka * 89 + 46) % 11 + 1] then
-            jY = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+            jY = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/sirius/rayfield.lua"))()
         else
-            jA = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+            jA = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/sirius/rayfield.lua"))()
         end
         ka = (ka + 93) % 160
     else

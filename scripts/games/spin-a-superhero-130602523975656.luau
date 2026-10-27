@@ -988,9 +988,9 @@ repeat
                 if wS_16 <= 14 then
                     local x6 = bit32.rrotate(bit32.bxor(bit32.lrotate(wS_15, 31), string.byte(tostring(wS_29))), 21)
                     if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(x6, 3561565651), 2394694393), (bit32.bxor(bit32.band(x6, 733401644), 1933532870))), 2394694393), 1933532870) == x6 then
-                        wS_32 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                        wS_32 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
-                        wS_12 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                        wS_12 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     wS_15 = (wS_15 + 119) % 200
                 else

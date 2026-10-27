@@ -2118,9 +2118,9 @@ repeat
         else
             local ZY = bit32.rrotate(bit32.bxor(bit32.lrotate(Ux_116, 29), string.byte(tostring(Ux_60))), 5)
             if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(ZY, 78232349), 3086121774), (bit32.bxor(bit32.band(ZY, 4216734946), 1570855629))), 3086121774), 1570855629) ~= ZY then
-                Ux_65 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                Ux_65 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             else
-                Ux_78 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                Ux_78 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             end
             Ux_116 = (Ux_116 + 101) % 240
         end
@@ -4392,7 +4392,7 @@ Ux_60 = function()
         end
     end)
     local Tq = queue_on_teleport
-    Tf = "https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/games/rollanimetofight.lua"
+    Tf = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"
     if not Tq then
         Tq = syn and syn.queue_on_teleport
     end

@@ -1004,11 +1004,11 @@ repeat
     local GE = E8_40
     E8_12 = E8_24[GE % 12 + 1]
     if E8_12:len() <= E8_12:reverse():rep(GE % 3 + 2):len() then
-        sP = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
-        sK = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-        uu = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+        sP = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+        sK = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+        uu = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     else
-        sK = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+        sK = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
         loadstring(game:HttpGet(sK .. "Library.lua"))()
         uu = loadstring(game:HttpGet(sK .. "addons/ThemeManager.lua"))()
         sP = loadstring(game:HttpGet(sK .. "addons/SaveManager.lua"))()

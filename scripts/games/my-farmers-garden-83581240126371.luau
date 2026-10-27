@@ -873,7 +873,7 @@ qa = { ["Watering Can"] = true, ["Basic Sprinkler"] = true }
 p_ = { "Common", "Rare", "Epic", "Legendary", "Mythic", "Angelic", "Secret", "Money" }
 rj = { Common = true }
 q9 = {}
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if getgenv then
     getgenv().__OuroborosMyFarmersGardenLib = Library
 end
@@ -910,8 +910,8 @@ qQ = function()
 end
 qQ()
 task.spawn(worker)
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 rf = fn153

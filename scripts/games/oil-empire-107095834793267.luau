@@ -951,9 +951,9 @@ kc, qP_14, j7, Toggles, Options, ke, k8, kW, kM, kA, ka, jY, kR, kB, ko, j8, jZ,
 table.sort(kq, fn606)
 kc = 9
 if (((j_ or not j3) and (not j_ and not j_) or j3 and not kI and (not j3 and j_)) and ((j3 or not j_ or not j3 and not j_) and (kI and not j3 or (not j_ or j_))) or (kI and j_ and (j_ or kI) or not kI and j3 and (j3 or j3)) and ((kI and kI or not j3 and j3) and (kI and j3 and (j_ or not j_)))) and not (((j_ or not j3) and (not j_ and not j_) or j3 and not kI and (not j3 and j_)) and ((j3 or not j_ or not j3 and not j_) and (kI and not j3 or (not j_ or j_))) or (kI and j_ and (j_ or kI) or not kI and j3 and (j3 or j3)) and ((kI and kI or not j3 and j3) and (kI and j3 and (j_ or not j_)))) then
-    j_ = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    j_ = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    qP_14 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    qP_14 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 j7 = loadstring(game:HttpGet(qP_14 .. "Library.lua"))()
 local qP_16 = loadstring(game:HttpGet(qP_14 .. "addons/ThemeManager.lua"))()

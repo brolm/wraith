@@ -1165,7 +1165,7 @@ qN = 0
 qI = nil
 qF = 0
 qA = false
-qv = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+qv = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if getgenv then
     getgenv().__OuroborosMergeDigSimLib = qv
 end
@@ -1202,9 +1202,9 @@ qq = function()
 end
 qq()
 task.spawn(worker)
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
 if (false or (rA or qC) or false and (qY or re)) and ((qY and rF or (false or rA)) and (qC or qY or (qY or qY))) or (rA and re or (qC or false) or (rF and qC or false)) and (re or false or rA and qY or (not rA or not rA) and (not rA and re)) or not ((false or (rA or qC) or false and (qY or re)) and ((qY and rF or (false or rA)) and (qC or qY or (qY or qY))) or (rA and re or (qC or false) or (rF and qC or false)) and (re or false or rA and qY or (not rA or not rA) and (not rA and re))) then
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     Toggles = qv.Toggles
     qG = qv.Options
 else

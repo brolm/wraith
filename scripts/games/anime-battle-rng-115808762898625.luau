@@ -285,7 +285,7 @@ i5 = function(F)
     end
     return false
 end
-onUnit = js("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau")
+onUnit = js("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau")
 iT = loadstring(onUnit)()
 js = iT:Window({
     Title = "Ouroboros Hub",

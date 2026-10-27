@@ -2220,10 +2220,10 @@ if AL.MutationManager then
     end
 end
 z6, Toggles, Options, Qt_19, zv = nil, nil, nil, nil, nil
-Qt_49 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
-z6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua"))()
-fns.Qt_3 = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
+Qt_49 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+z6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+fns.Qt_3 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 if ((not Qt_19 or not z6) and (false or zv) or Qt_49 and Qt_19 and (z6 or Qt_49)) and ((not z6 or false or (Qt_19 or not zv)) and (z6 or Qt_19 or (Qt_49 or zv))) or (not zv and Qt_49 or (not zv or zv) or (not zv and Qt_49 or (zv or zv))) and (z6 and false and (z6 and Qt_49) and (z6 or false or Qt_19 and zv)) or not (((not Qt_19 or not z6) and (false or zv) or Qt_49 and Qt_19 and (z6 or Qt_49)) and ((not z6 or false or (Qt_19 or not zv)) and (z6 or Qt_19 or (Qt_49 or zv))) or (not zv and Qt_49 or (not zv or zv) or (not zv and Qt_49 or (zv or zv))) and (z6 and false and (z6 and Qt_49) and (z6 or false or Qt_19 and zv))) then
     Toggles = z6.Toggles
 else

@@ -914,12 +914,12 @@ repeat
                 else
                     if s0_8 * 82728897 + 2 + 5 >= s0_8 * 82728897 + 2 + 5 + 4 then
                         s0_36 = s0_39:WaitForChild("Assets"):WaitForChild("Gears")
-                        l9 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                        l9 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                         mi = loadstring(game:HttpGet(l9 .. "Library.lua"))()
                     else
                         mi = s0_36:WaitForChild("Assets"):WaitForChild("Gears")
-                        s0_39 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
-                        l9 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+                        s0_39 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        l9 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
                     end
                     s0_8 = (s0_8 + 22) % 36
                 end

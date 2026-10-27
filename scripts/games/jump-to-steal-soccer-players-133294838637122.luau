@@ -114,8 +114,8 @@ if type(iv.OuroborosHubUnload) == "function" then
     pcall(iv.OuroborosHubUnload)
 end
 i2, jf_1, ThemeManager, je_1, ja_3, jc_1 = nil, nil, nil, nil, nil, nil
-local i8_3 = "https://raw.githubusercontent.com/losthubv1/ffedfdfdf/main/"
-i2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/losthubv1/ffedfdfdf/main/Library.lua"))()
+local i8_3 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/losthubv1/ffedfdfdf/"
+i2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/losthubv1/ffedfdfdf/Library.lua"))()
 if (jc_1 and false or jc_1 and jc_1 or (jc_1 and not jc_1 or (not jc_1 or jc_1)) or ((not jc_1 or not jc_1) and (not jc_1) or (jc_1 or jc_1 or (jc_1 or not jc_1)))) and ((jc_1 or false) and (not jc_1) or jc_1 and not jc_1 and 41 or ((jc_1 and not jc_1) or (not jc_1 or not jc_1 and jc_1))) and not ((jc_1 and false or jc_1 and jc_1 or (jc_1 and not jc_1 or (not jc_1 or jc_1)) or ((not jc_1 or not jc_1) and (not jc_1) or (jc_1 or jc_1 or (jc_1 or not jc_1)))) and ((jc_1 or false) and (not jc_1) or jc_1 and not jc_1 and 41 or ((jc_1 and not jc_1) or (not jc_1 or not jc_1 and jc_1)))) then
     i2 = jf_1:CreateLoading({ WindowHeight = 270, Title = "OuroborosHub", WindowWidth = 470, TotalSteps = 4 })
 else
@@ -125,7 +125,7 @@ if (i2 or je_1 or not ja_3 and 10) and ((ja_3 or i8_3) and (false or jc_1)) or n
     jf_1:SetMessage("Starting OuroborosHub")
     jf_1:SetDescription("Loading interface addons...")
     jf_1:SetCurrentStep(1)
-    ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/losthubv1/ffedfdfdf/main/addons/ThemeManager.lua"))()
+    ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/losthubv1/ffedfdfdf/addons/ThemeManager.lua"))()
 else
     ThemeManager:SetMessage("Starting OuroborosHub")
     ThemeManager:SetDescription("Loading interface addons...")

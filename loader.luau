@@ -7,9 +7,15 @@
 -- To add a script, put it in scripts/ and add an entry to scripts/index.json:
 --   { "name": "...", "file": "my-script.luau", "game": "...", "description": "..." }
 --
--- Auto-routing: an entry with "placeId" (and optionally "universeId") is run automatically when you
--- execute the loader in that game. Matching is by place first, then universe, so sub-places work too.
--- Entries marked "alt": true are never auto-run. Set getgenv().WraithAutoRoute = false to turn it off.
+-- Hubs: a hub is ONE entry that serves a different script per game. Point it at a routes file:
+--   { "name": "Some Hub", "hub": "hubs/some-hub.json", "description": "..." }
+-- where hubs/some-hub.json is { "routes": [ { "name": "...", "file": "games/x.luau", "placeId": 1, "universeId": 2 } ] }.
+-- Running the hub (or auto-routing) picks the route for the game you are in. Route files are relative to scripts/.
+--
+-- Auto-routing: a plain entry with "placeId" (and optionally "universeId"), or any hub route, is run
+-- automatically when you execute the loader in that game. Matching is by place first, then universe,
+-- so sub-places work too. Routes marked "alt": true are never auto-run (the hub still uses them
+-- only if nothing else matches). Set getgenv().WraithAutoRoute = false to turn it off.
 
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
@@ -20,12 +26,12 @@ local REPO_URL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/
 local GUI_NAME = "WraithHub"
 local TOGGLE_KEY = Enum.KeyCode.RightControl
 
-local WINDOW_SIZE = Vector2.new(580, 480)
-local ZOOMED_SIZE = Vector2.new(760, 620)
+local WINDOW_SIZE = Vector2.new(820, 560)
+local ZOOMED_SIZE = Vector2.new(1000, 700)
 local RADIUS = 18
 local TOOLBAR_HEIGHT = 64
 local STATUS_HEIGHT = 34
-local CARD_HEIGHT = 52
+local CARD_HEIGHT = 60
 
 local THEME = {
 	text = Color3.fromRGB(244, 244, 248),
@@ -78,6 +84,14 @@ local QUICK = TweenInfo.new(0.16, Enum.EasingStyle.Quint, Enum.EasingDirection.O
 local SMOOTH = TweenInfo.new(0.4, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
 local FULL = UDim2.fromScale(1, 1)
 
+type Route = {
+	name: string?,
+	file: string,
+	placeId: number?,
+	universeId: number?,
+	alt: boolean?,
+}
+
 type Entry = {
 	name: string,
 	file: string,
@@ -86,6 +100,8 @@ type Entry = {
 	placeId: number?,
 	universeId: number?,
 	alt: boolean?,
+	hub: string?,
+	routes: { Route }?,
 }
 
 -- Data ----------------------------------------------------------------------
@@ -111,27 +127,67 @@ local function fetchIndex(): ({ Entry }?, string?)
 	end
 	local entries = {}
 	for _, entry in ipairs(result) do
-		if type(entry) == "table" and type(entry.name) == "string" and type(entry.file) == "string" then
-			table.insert(entries, entry)
+		if type(entry) == "table" and type(entry.name) == "string" then
+			if type(entry.hub) == "string" then
+				local hubOk, hub = pcall(function()
+					return HttpService:JSONDecode(fetch("scripts/" .. entry.hub))
+				end)
+				if hubOk and type(hub) == "table" and type(hub.routes) == "table" then
+					entry.routes = hub.routes
+					if entry.description == nil then
+						entry.description = #hub.routes .. " games, picked automatically"
+					end
+				else
+					warn("[Wraith] Couldn't load hub " .. entry.name .. ": " .. tostring(hub))
+					entry.routes = {}
+				end
+				table.insert(entries, entry)
+			elseif type(entry.file) == "string" then
+				table.insert(entries, entry)
+			end
 		end
 	end
 	return entries
 end
 
--- The entry for the game we're in: exact place, else same universe. Alternates are skipped.
-local function routeFor(entries: { Entry }): Entry?
+-- The script for the game we're in: exact place, else same universe. Alternates only as a last resort.
+local function pickRoute(routes: { Route }, allowAlt: boolean): Route?
 	local byUniverse
-	for _, entry in ipairs(entries) do
-		if not entry.alt then
-			if entry.placeId == game.PlaceId then
-				return entry
+	for _, route in ipairs(routes) do
+		if allowAlt or not route.alt then
+			if route.placeId == game.PlaceId then
+				return route
 			end
-			if byUniverse == nil and entry.universeId ~= nil and entry.universeId == game.GameId then
-				byUniverse = entry
+			if byUniverse == nil and route.universeId ~= nil and route.universeId == game.GameId then
+				byUniverse = route
 			end
 		end
 	end
 	return byUniverse
+end
+
+-- Which entry (and file) serves this game. A hub resolves through its routes, a plain entry through its own IDs.
+local function resolve(entry: Entry, allowAlt: boolean): (string?, string?)
+	if entry.routes then
+		local route = pickRoute(entry.routes, allowAlt) or pickRoute(entry.routes, true)
+		if route and (allowAlt or not route.alt) then
+			return route.file, route.name
+		end
+		return nil
+	end
+	if entry.file and not entry.alt and (entry.placeId == game.PlaceId or (entry.universeId ~= nil and entry.universeId == game.GameId)) then
+		return entry.file, entry.name
+	end
+	return nil
+end
+
+local function routeFor(entries: { Entry }): Entry?
+	for _, entry in ipairs(entries) do
+		if resolve(entry, false) then
+			return entry
+		end
+	end
+	return nil
 end
 
 local function gameOf(entry: Entry): string
@@ -293,6 +349,11 @@ local gui = create("ScreenGui", {
 	DisplayOrder = 100,
 })
 
+-- Stay clear of notches and rounded corners on phones.
+pcall(function()
+	gui.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+end)
+
 -- Holds the window so it can be dragged, zoomed and scaled down to fit small screens.
 local holder = create("Frame", {
 	AnchorPoint = Vector2.new(0.5, 0.5),
@@ -388,20 +449,24 @@ end)
 
 -- Wraith branding: icon, wordmark, and a live script count.
 local brandingWidth = 220
-create("Frame", {
+local wordmark
+local branding = create("Frame", {
 	Position = UDim2.fromOffset(92, 15),
 	Size = UDim2.fromOffset(brandingWidth, 34),
 	BackgroundTransparency = 1,
 	Parent = toolbar,
 }, {
 	appIcon("W", THEME.brand, 34),
-	text({
-		Position = UDim2.fromOffset(46, -2),
-		Size = UDim2.new(1, -46, 0, 20),
-		Text = "Wraith",
-		FontFace = FONTS.heavy,
-		TextSize = 19,
-	}),
+	(function()
+		wordmark = text({
+			Position = UDim2.fromOffset(46, -2),
+			Size = UDim2.new(1, -46, 0, 20),
+			Text = "Wraith",
+			FontFace = FONTS.heavy,
+			TextSize = 19,
+		})
+		return wordmark
+	end)(),
 })
 local subtitle = text({
 	Position = UDim2.fromOffset(138, 32),
@@ -503,7 +568,7 @@ local grid = create("Frame", {
 	Parent = list,
 }, {
 	create("UIGridLayout", {
-		CellSize = UDim2.new(0.5, -4, 0, CARD_HEIGHT),
+		CellSize = UDim2.new(1 / 3, -6, 0, CARD_HEIGHT),
 		CellPadding = UDim2.fromOffset(8, 8),
 		SortOrder = Enum.SortOrder.LayoutOrder,
 	}),
@@ -677,6 +742,7 @@ local loaded = false
 local refreshing = false
 local running = false
 local autoRouted = false
+local closeLoader: (() -> ())? -- set once the window exists
 
 local function setStatus(message: string, tone: string?)
 	status.Text = message
@@ -821,7 +887,20 @@ local function runScript(card: Card)
 	setRunState(card, "loading")
 	setStatus("Loading " .. entry.name .. "...", "busy")
 
-	local ok, source = pcall(fetch, "scripts/" .. entry.file)
+	local file = entry.file
+	if entry.routes then
+		file = resolve(entry, true)
+		if not file then
+			running = false
+			local reason = if #entry.routes == 0
+				then entry.name .. " couldn't load its game list - try Refresh"
+				else entry.name .. " doesn't support this game yet"
+			setStatus(reason, "error")
+			setRunState(card, "failed")
+			return
+		end
+	end
+	local ok, source = pcall(fetch, "scripts/" .. (file :: string))
 	local chunk, err
 	if ok then
 		chunk, err = loadstring(source, "=" .. entry.name)
@@ -844,6 +923,8 @@ local function runScript(card: Card)
 		warn("[Wraith] " .. entry.name .. " errored: " .. tostring(runErr))
 		setStatus(entry.name .. " errored: " .. tostring(runErr), "error")
 		setRunState(card, "failed")
+	elseif closeLoader then
+		task.delay(0.6, closeLoader)
 	end
 end
 
@@ -893,6 +974,16 @@ local function refresh()
 					break
 				end
 			end
+		else
+			local hubs = 0
+			for _, entry in ipairs(entries) do
+				if entry.routes then
+					hubs += 1
+				end
+			end
+			if hubs > 0 then
+				setStatus("No hub has a script for this game yet - pick one below")
+			end
 		end
 	end
 end
@@ -908,15 +999,50 @@ local function setShown(visible: boolean)
 	window:SetVisible(visible)
 end
 
--- Scales the window down when the screen is too small for it.
-local function fitToScreen(size: Vector2?)
+-- Sizes the window for the current screen: shrinks it to fit, picks 1-3 columns and compacts the toolbar.
+-- Only phones narrower than MIN_WIDTH get scaled down; everything else reflows instead.
+local MIN_WIDTH, MIN_HEIGHT = 340, 300
+
+local function viewportSize(): Vector2
 	local camera = workspace.CurrentCamera
-	if not camera then
-		return
+	return if camera then camera.ViewportSize else Vector2.new(1280, 720)
+end
+
+-- Keeps the window reachable: its centre can't be dragged off the screen.
+local function clampPosition(position: UDim2): UDim2
+	local viewport = viewportSize()
+	local x = math.clamp(position.X.Offset, -viewport.X / 2 + 60, viewport.X / 2 - 60)
+	local y = math.clamp(position.Y.Offset, -viewport.Y / 2 + 30, viewport.Y / 2 - 30)
+	return UDim2.new(position.X.Scale, x, position.Y.Scale, y)
+end
+
+local gridLayout = grid:FindFirstChildOfClass("UIGridLayout") :: UIGridLayout
+
+local function layout(animate: boolean?)
+	local viewport = viewportSize()
+	local base = if zoomed then ZOOMED_SIZE else WINDOW_SIZE
+	local scale = math.clamp(math.min((viewport.X - 16) / MIN_WIDTH, (viewport.Y - 16) / MIN_HEIGHT), 0.5, 1)
+	fit.Scale = scale
+	local width = math.max(math.min(base.X, (viewport.X - 24) / scale), MIN_WIDTH)
+	local height = math.max(math.min(base.Y, (viewport.Y - 60) / scale), MIN_HEIGHT)
+
+	local size = UDim2.fromOffset(width, height)
+	if animate then
+		tween(holder, { Size = size }, SMOOTH)
+	else
+		holder.Size = size
 	end
-	local target = size or (if zoomed then ZOOMED_SIZE else WINDOW_SIZE)
-	local viewport = camera.ViewportSize
-	fit.Scale = math.min(1, (viewport.X - 40) / target.X, (viewport.Y - 80) / target.Y)
+	holder.Position = clampPosition(holder.Position)
+
+	local columns = if width >= 700 then 3 elseif width >= 460 then 2 else 1
+	gridLayout.CellSize = UDim2.new(1 / columns, -8 * (columns - 1) / columns, 0, CARD_HEIGHT)
+
+	-- Toolbar: drop the script count, then the wordmark, and let the search field take what's left.
+	subtitle.Visible = width >= 560
+	wordmark.Visible = width >= 420
+	branding.Size = UDim2.fromOffset(if width >= 420 then brandingWidth else 34, 34)
+	local used = 92 + (if width >= 420 then 120 else 34) + 18 + 12
+	searchField.Size = UDim2.fromOffset(math.clamp(width - used, 110, 200), 30)
 end
 
 local dragStart: Vector3?
@@ -940,12 +1066,12 @@ table.insert(
 			or input.UserInputType == Enum.UserInputType.Touch
 		if dragStart and startPosition and moved then
 			local delta = input.Position - dragStart
-			holder.Position = UDim2.new(
+			holder.Position = clampPosition(UDim2.new(
 				startPosition.X.Scale,
-				startPosition.X.Offset + delta.X,
+				startPosition.X.Offset + delta.X / fit.Scale,
 				startPosition.Y.Scale,
-				startPosition.Y.Offset + delta.Y
-			)
+				startPosition.Y.Offset + delta.Y / fit.Scale
+			))
 		end
 	end)
 )
@@ -972,7 +1098,7 @@ if workspace.CurrentCamera then
 	table.insert(
 		connections,
 		workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
-			fitToScreen()
+			layout()
 		end)
 	)
 end
@@ -983,20 +1109,19 @@ gui.Destroying:Connect(function()
 	end
 end)
 
-closeButton.MouseButton1Click:Connect(function()
+function closeLoader()
 	setShown(false)
 	task.delay(0.35, function()
 		gui:Destroy()
 	end)
-end)
+end
+closeButton.MouseButton1Click:Connect(closeLoader)
 minimizeButton.MouseButton1Click:Connect(function()
 	setShown(false)
 end)
 zoomButton.MouseButton1Click:Connect(function()
 	zoomed = not zoomed
-	local size = if zoomed then ZOOMED_SIZE else WINDOW_SIZE
-	tween(holder, { Size = UDim2.fromOffset(size.X, size.Y) }, SMOOTH)
-	fitToScreen(size)
+	layout(true)
 end)
 
 search:GetPropertyChangedSignal("Text"):Connect(applyFilter)
@@ -1013,5 +1138,5 @@ refreshButton.MouseButton1Click:Connect(refresh)
 retryButton.MouseButton1Click:Connect(refresh)
 
 gui.Parent = parent
-fitToScreen()
+layout()
 refresh()

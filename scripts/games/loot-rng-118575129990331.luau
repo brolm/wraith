@@ -317,13 +317,13 @@ repeat
                 local gG_1 = (worker2:rep(lb))
                 if gD >= gG_1:len() then
                     gz = gm({
-                        "https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau",
-                        "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Fluent.luau"
+                        "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau",
+                        "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"
                     })
                 else
                     gm = gz({
-                        "https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau",
-                        "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Fluent.luau"
+                        "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau",
+                        "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"
                     })
                 end
                 gx = (gx + 11) % 48
@@ -1143,8 +1143,8 @@ repeat
     if gy <= 1 then
         if gv_3 * 74334271 + 4 + 2 <= gv_3 * 74334271 + 4 + 2 + 2 then
             gw = gz({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua"
+                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau",
+                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"
             })
         else
             gz = gw(gw)
@@ -1155,8 +1155,8 @@ repeat
             gz = gx(gx)
         else
             gx = gz({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua"
+                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
+                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"
             })
         end
         gv_3 = (gv_3 + 3) % 8

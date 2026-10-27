@@ -938,8 +938,8 @@ repeat
             workerStockAt = 0
         }
         oC = {}
-        pm_7 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
-        om = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+        pm_7 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+        om = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
     else
         om = {
             workerStockAt = 0,
@@ -958,7 +958,7 @@ repeat
             lastExpandAt = 0
         }
         pm_7 = {}
-        oK = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+        oK = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
         oC = loadstring(game:HttpGet(oK .. "Library.lua"))()
     end
     pk_7 = (pk_7 + 3) % 8

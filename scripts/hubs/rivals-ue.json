@@ -1,0 +1,10 @@
+{
+	"routes": [
+		{
+			"name": "Rivals",
+			"file": "games/rivals-17625359962.luau",
+			"placeId": 17625359962,
+			"universeId": 6035872082
+		}
+	]
+}

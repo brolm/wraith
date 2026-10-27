@@ -541,9 +541,9 @@ repeat
                     local iu_4 = (vector.create((ig * 6 + 7) % 11 + 1, (ig * 5 + 3) % 13 + 1, (ig * 9 + 13) % 17 + 1))
                     local mi = vector.dot(it_5, iu_4)
                     if mi * mi >= vector.dot(it_5, it_5) * vector.dot(iu_4, iu_4) + 1 then
-                        hx = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                        hx = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
-                        ii_1 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                        ii_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     ig = (ig + 37) % 116
                 else

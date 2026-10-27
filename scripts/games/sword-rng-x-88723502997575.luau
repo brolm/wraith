@@ -2834,9 +2834,9 @@ repeat
                     I1 = "https://discord.gg/synapsex"
                     IZ = "https://ouroboros-hub-rbx.web.app/"
                     I6 = "https://rscripts.net/@Ouroboros"
-                    Library = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))(), "Library load failed")
-                    ThemeManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))(), "ThemeManager load failed")
-                    SaveManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))(), "SaveManager load failed")
+                    Library = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))(), "Library load failed")
+                    ThemeManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))(), "ThemeManager load failed")
+                    SaveManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))(), "SaveManager load failed")
                     Toggles, Options = Library.Toggles, Library.Options
                     wO.UIToggles = Toggles
                     xd(wO, Library)
@@ -3936,9 +3936,9 @@ repeat
                     I1 = "https://discord.gg/synapsex"
                     IZ = "https://ouroboros-hub-rbx.web.app/"
                     I6 = "https://rscripts.net/@Ouroboros"
-                    Library = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))(), "Library load failed")
-                    ThemeManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))(), "ThemeManager load failed")
-                    SaveManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))(), "SaveManager load failed")
+                    Library = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))(), "Library load failed")
+                    ThemeManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))(), "ThemeManager load failed")
+                    SaveManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))(), "SaveManager load failed")
                     Toggles, Options = Library.Toggles, Library.Options
                     wO.UIToggles = Toggles
                     xd(wO, Library)

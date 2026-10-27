@@ -38,7 +38,7 @@ do
 			_G.__ChilliGithubFastManualDefaultsRun = chilliGithubFastManualDefaultsRu
 
 			local function func20()
-				local response = game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/refs/heads/main/Chilli%20Library")
+				local response = game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/tienkhanh1/spicy/Chilli%20Library")
 				local chunk, value2 = loadstring(response)
 				assert(chunk, value2)
 				local result1 = chunk()
@@ -18877,7 +18877,7 @@ pcall(function()
 end)
 if enabled then
     local ok, source = pcall(function()
-        return game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua")
+        return game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau")
     end)
     if ok and type(source) == "string" then
         local chunk = loadstring(source)

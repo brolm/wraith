@@ -1587,15 +1587,15 @@ repeat
         end
     else
         if Fg_21 * 70478067 + 12 + 2 >= Fg_21 * 70478067 + 12 + 2 + 3 then
-            tD = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+            tD = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             Fg_1 = loadstring(game:HttpGet(tD .. "Library.lua"))()
             tL = loadstring(game:HttpGet(tD .. "addons/ThemeManager.lua"))()
             Fg_3 = loadstring(game:HttpGet(tD .. "addons/SaveManager.lua"))()
         else
-            Fg_1 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
-            tL = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
-            Fg_3 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-            tD = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+            Fg_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+            tL = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+            Fg_3 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+            tD = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
         end
         Fg_21 = (Fg_21 + 13) % 24
     end

@@ -3400,9 +3400,9 @@ repeat
         if ahH_37 <= 22 then
             if ahH_37 <= 21 then
                 if ahH_28 * 42484861 + 2 + 1 >= ahH_28 * 42484861 + 2 + 1 + 2 then
-                    ahH_53 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+                    ahH_53 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
                 else
-                    ahH_44 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+                    ahH_44 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
                 end
                 ahH_28 = (ahH_28 + 95) % 208
             else

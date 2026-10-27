@@ -1000,9 +1000,9 @@ local Client = LocalPlayer:WaitForChild("PlayerScripts"):WaitForChild("Client")
 local k__1
 ClientRegistry = require(Client:WaitForChild("Lib"):WaitForChild("ClientRegistry"))
 if (kN and not kN and (not Net and not jT) and (not Net and jT or (not kN or jT)) or (Net or jT or (kN or jT)) and (not kN and false or (j4 or j4))) and ((not k4_1 and k4_1 or (not jT or jT)) and (kN and not jT and (k4_1 or false)) or (j6 or j4 or k4_1 and not Net or (j6 and not k4_1 or (false or not kN)))) and not ((kN and not kN and (not Net and not jT) and (not Net and jT or (not kN or jT)) or (Net or jT or (kN or jT)) and (not kN and false or (j4 or j4))) and ((not k4_1 and k4_1 or (not jT or jT)) and (kN and not jT and (k4_1 or false)) or (j6 or j4 or k4_1 and not Net or (j6 and not k4_1 or (false or not kN))))) then
-    kD = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    kD = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    kZ_1 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    kZ_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 if (RebirthConfig and k6_1 or (not k2_1 or false)) and (ClientRegistry or k2_1 or (not RebirthConfig or not k2_1)) or not ((RebirthConfig and k6_1 or (not k2_1 or false)) and (ClientRegistry or k2_1 or (not RebirthConfig or not k2_1))) then
     j4 = loadstring(game:HttpGet(kZ_1 .. "Library.lua"))()

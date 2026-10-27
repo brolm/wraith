@@ -74,15 +74,15 @@ local loader = (function(...)
         end
         return LO
     end
-    local Library = Pl_1("https://raw.githubusercontent.com/deividcomsono/Obsidian/refs/heads/main/Library.lua")
-    local SaveManager = Pl_1("https://raw.githubusercontent.com/deividcomsono/Obsidian/refs/heads/main/addons/SaveManager.lua")
-    local ThemeManager = Pl_1("https://raw.githubusercontent.com/deividcomsono/Obsidian/refs/heads/main/addons/ThemeManager.lua")
+    local Library = Pl_1("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua")
+    local SaveManager = Pl_1("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua")
+    local ThemeManager = Pl_1("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua")
     Pi.Library = Library
     Pi.SaveManager = SaveManager
     Pi.ThemeManager = ThemeManager
     Pi.Options = Library.Options
     Pi.Toggles = Library.Toggles
-    Pi.LoaderUrl = "https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua"
+    Pi.LoaderUrl = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"
     Pi.JoinDelay = 3
     Pi.BaseFolder = "OuroborosHub/Anime Squadron"
     pcall(function()

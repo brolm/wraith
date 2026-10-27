@@ -1965,7 +1965,7 @@ repeat
             jY = i3("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/src/main.luau")
         else
             i3 = jY({
-                "https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau",
+                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau",
                 "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/src/main.luau"
             })
         end
@@ -2215,9 +2215,9 @@ repeat
                 jU = j_.Combat
                 jU.AddToggle(jU, "KillAura", jT_20)
                 jQ = jY({
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/SaveManager.luau"
+                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
+                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
+                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"
                 })
             else
                 task.spawn(worker6)
@@ -2279,9 +2279,9 @@ repeat
             jU = (vector.create((jO * 3 + 3) % 5 + 1, (jO * 5 + 7) % 7 + 1, (jO * 1 + 4) % 9 + 1))
             if vector.dot(vector.cross(jR, (vector.cross(jS, jT_24))), jU) == vector.dot(jS * vector.dot(jR, jT_24) - jT_24 * vector.dot(jR, jS), jU) then
                 jP = jY({
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/InterfaceManager.luau"
+                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau",
+                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau",
+                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"
                 })
             else
                 jY = jP(jP)

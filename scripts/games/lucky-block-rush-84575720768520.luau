@@ -1494,7 +1494,7 @@ repeat
                         task.wait(3)
                     end
                 end)
-                sv_1 = "https://raw.githubusercontent.com/uhfork/Obsidian/main/"
+                sv_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/uhfork/Obsidian/"
             else
                 task.spawn(function()
                     while true do

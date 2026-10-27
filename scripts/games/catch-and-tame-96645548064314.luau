@@ -1950,9 +1950,9 @@ repeat
             if ME_62 <= 11 then
                 if ME_62 <= 10 then
                     if ME_52 * 120035993 + 2 + 3 >= ME_52 * 120035993 + 2 + 3 + 4 then
-                        ME_73 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                        ME_73 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
-                        ME_39 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                        ME_39 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     ME_52 = (ME_52 + 143) % 144
                 else

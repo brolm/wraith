@@ -846,9 +846,9 @@ lS = {
 }
 m9 = { "Speed", "Carry", "Attack Speed", "Attack Range" }
 if (not lZ or not lZ) and (not nb and not nb) and (not nb or lZ or not lZ and lZ) and ((not lZ or lZ or (not nb or lZ)) and (nb or nb or (not nb or nb))) or not ((not lZ or not lZ) and (not nb and not nb) and (not nb or lZ or not lZ and lZ) and ((not lZ or lZ or (not nb or lZ)) and (nb or nb or (not nb or nb)))) then
-    t2_2 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    t2_2 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    mu = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    mu = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 m_ = loadstring(game:HttpGet(t2_2 .. "Library.lua"))()
 local ng = loadstring(game:HttpGet(t2_2 .. "addons/ThemeManager.lua"))()

@@ -526,9 +526,9 @@ local g9_2 = "50 Player BINGO!"
 gv = "https://discord.gg/ehKVq7pf7v"
 gr = "https://rscripts.net/@Ouroboros"
 if (g7 and g7 or (ha_2 or not RunService)) and (RunService or not g7 and not RunService) and ((not gQ or false) and (not RunService and g7) or (not RunService)) and not ((g7 and g7 or (ha_2 or not RunService)) and (RunService or not g7 and not RunService) and ((not gQ or false) and (not RunService and g7) or (not RunService))) then
-    gr = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    gr = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    g4_1 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    g4_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 g2 = loadstring(game:HttpGet(g4_1 .. "Library.lua"))()
 local hd_2 = loadstring(game:HttpGet(g4_1 .. "addons/ThemeManager.lua"))()

@@ -684,9 +684,9 @@ repeat
                         local rA = vector.cross(l6, l7)
                         local rB = vector.dot(l6, l7)
                         if vector.dot(rA, rA) + rB * rB == vector.dot(l6, l6) * vector.dot(l7, l7) + 5 then
-                            lg = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                            lg = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                         else
-                            qX_15 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                            qX_15 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                         end
                         qX_5 = (qX_5 + 64) % 216
                     else

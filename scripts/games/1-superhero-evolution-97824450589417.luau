@@ -1299,9 +1299,9 @@ end
 wd_9, oU, ow, oq, Options, oi, ob, oJ, oB, ox, ot, oo, oj, od, n8, nw, o6, Id, nA, n7, nV, nK, o8, nE, oV, oC, n9, n3, nO, o5, op, nS, ny, oT, ol, n0, oI, n1, nN, o3, nY, o_, n2, oW, nZ, oG, og, nG, oZ, ov, nU, nB, oc, nJ, oK, oe = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 nA = fn514
 if (ob or oG or false and Options or (false and oG or (oG or not oU))) and (not Options and not oG or (Id or not Options) or (not oU or not oG or not Options and Options)) and ((ob and oU or oG and ob) and ((not oU or oU) and (Id and oi)) or (false or not Options or false or (oU or oG) and "https://rscripts.net/@Ouroboros")) or not ((ob or oG or false and Options or (false and oG or (oG or not oU))) and (not Options and not oG or (Id or not Options) or (not oU or not oG or not Options and Options)) and ((ob and oU or oG and ob) and ((not oU or oU) and (Id and oi)) or (false or not Options or false or (oU or oG) and "https://rscripts.net/@Ouroboros"))) then
-    wd_9 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    wd_9 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    n7 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    n7 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 oU = loadstring(game:HttpGet(wd_9 .. "Library.lua"))()
 pcall(fn529)

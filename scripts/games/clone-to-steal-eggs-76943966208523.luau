@@ -2810,9 +2810,9 @@ Qz_11 = function()
     Qe = "https://rscripts.net/@Ouroboros"
     Qb = "https://discord.gg/synapsex"
     P8 = "https://ouroboros-hub-rbx.web.app/"
-    Library = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))(), "Library load failed")
-    ThemeManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))(), "ThemeManager load failed")
-    SaveManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))(), "SaveManager load failed")
+    Library = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))(), "Library load failed")
+    ThemeManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))(), "ThemeManager load failed")
+    SaveManager = assert(loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))(), "SaveManager load failed")
     Toggles, Options = Library.Toggles, Library.Options
     Bd(AJ, Library)
     P9 = function(o5, o6)

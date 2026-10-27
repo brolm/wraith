@@ -2563,9 +2563,9 @@ repeat
             fns.Ur_10 = (vector.create((Ur_47 * 4 + 6) % 11 + 1, (Ur_47 * 1 + 1) % 13 + 1, (Ur_47 * 13 + 1) % 17 + 1))
             Ur_119 = (vector.create((Ur_47 * 3 + 1) % 11 + 1, (Ur_47 * 7 + 8) % 13 + 1, (Ur_47 * 5 + 16) % 17 + 1))
             if vector.dot(vector.cross(Ur_40, fns.Ur_30), (vector.cross(fns.Ur_10, Ur_119))) == vector.dot(Ur_40, fns.Ur_10) * vector.dot(fns.Ur_30, Ur_119) - vector.dot(Ur_40, Ur_119) * vector.dot(fns.Ur_30, fns.Ur_10) + 5 then
-                Ur_43 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                Ur_43 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             else
-                Ur_38 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                Ur_38 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             end
             Ur_47 = (Ur_47 + 105) % 272
         end

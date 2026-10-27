@@ -1047,7 +1047,7 @@ mL, UPGRADE_PRICES, UNLOCK_PRICES, Library, SaveManager, Toggles, Options, mC, m
 mL = u3_11
 UPGRADE_PRICES = nP.UPGRADE_PRICES
 UNLOCK_PRICES = ForgeConfig.UNLOCK_PRICES
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 mr = function()
     local function op(Z)
         local on = not Z or not Z:IsA("ScreenGui")
@@ -1080,8 +1080,8 @@ mr = function()
 end
 mr()
 task.spawn(worker)
-nO = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+nO = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 mC = "#7fd47f"

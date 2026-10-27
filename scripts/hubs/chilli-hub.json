@@ -1,0 +1,10 @@
+{
+	"routes": [
+		{
+			"name": "Steal a Brainrot",
+			"file": "games/chilli-hub-steal-a-brainrot-109983668079237.luau",
+			"placeId": 109983668079237,
+			"universeId": 7709344486
+		}
+	]
+}

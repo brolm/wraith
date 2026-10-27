@@ -1505,12 +1505,12 @@ repeat
     local Ey = Dw_17
     Dw_19 = Dw_31[Ey % 12 + 1]
     if Dw_19:len() <= Dw_19:gsub("(.)", "%1%1", Ey % 3 % 2 + 1):len() then
-        rz = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+        rz = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
         pcall(fns.fn243)
-        Dw_8 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-        s_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+        Dw_8 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+        s_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     else
-        s_ = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+        s_ = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
         Dw_8 = loadstring(game:HttpGet(s_ .. "Library.lua"))()
         pcall(fns.fn243)
         rz = loadstring(game:HttpGet(s_ .. "addons/ThemeManager.lua"))()

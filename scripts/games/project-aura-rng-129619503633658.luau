@@ -1708,11 +1708,11 @@ s1.PotionOptions = fn621
 s1.Unload = fn735
 getgenv()[sZ] = s1
 uj()
-ui = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+ui = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 if not t4 and not t4 and (not t4 or uf) and ((not t4 or t3) and (t3 and false)) and not (not t4 and not t4 and (not t4 or uf) and ((not t4 or t3) and (t3 and false))) then
     ui = loadstring(game:HttpGet(Library .. "Library.lua"))()
 else
-    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 end
 tx = loadstring(game:HttpGet(ui .. "addons/ThemeManager.lua"))()
 tp = loadstring(game:HttpGet(ui .. "addons/SaveManager.lua"))()

@@ -686,9 +686,9 @@ local ModuleLoader = require(ReplicatedStorage:FindFirstChild("ModuleLoader"))
 g5 = ModuleLoader.Import("DataHandler")
 gZ = ModuleLoader.Import("TycoonConfig")
 setthreadidentity(8)
-gR = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+gR = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 if (hy_1 or not hy_1 or not hy_1 and hz_1) and (not hz_1 or not hy_1 or "https://rscripts.net/@Ouroboros") and ((ho or not hy_1) and (hy_1 or false) or (false and hz_1 or hz_1 and ho)) or not ((hy_1 or not hy_1 or not hy_1 and hz_1) and (not hz_1 or not hy_1 or "https://rscripts.net/@Ouroboros") and ((ho or not hy_1) and (hy_1 or false) or (false and hz_1 or hz_1 and ho))) then
     gB = "https://discord.gg/ehKVq7pf7v"
 else

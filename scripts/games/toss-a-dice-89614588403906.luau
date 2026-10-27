@@ -922,9 +922,9 @@ repeat
                 k_ = (vector.create((qs_7 * 6 + 5) % 11 + 1, (qs_7 * 9 + 8) % 13 + 1, (qs_7 * 1 + 17) % 17 + 1))
                 local q1 = vector.dot(kZ, k_)
                 if q1 * q1 <= vector.dot(kZ, kZ) * vector.dot(k_, k_) then
-                    qs_4 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                    qs_4 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    kb = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                    kb = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 qs_7 = (qs_7 + 39) % 128
             else

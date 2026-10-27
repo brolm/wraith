@@ -965,8 +965,8 @@ BuyUpgrade = s__18:WaitForChild("BuyUpgrade")
 GetUpgradeStats = s__18:WaitForChild("GetUpgradeStats")
 GetPlayerUpgrades = s__18:WaitForChild("GetPlayerUpgrades")
 Gears = s__34:WaitForChild("Assets"):WaitForChild("Gears")
-local s__37 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
-mQ = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+local s__37 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+mQ = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 pcall(fn835)
 if setthreadidentity then
     setthreadidentity(8)

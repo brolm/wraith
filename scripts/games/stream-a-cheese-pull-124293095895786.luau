@@ -1091,7 +1091,7 @@ MysteryBoxLose = Remotes:WaitForChild("MysteryBoxLose")
 local StreamStarted = Remotes:WaitForChild("StreamStarted")
 local StreamEnded = Remotes:WaitForChild("StreamEnded")
 if ((StreamEnded or not StreamEnded) and (false or StreamEnded) or (not StreamEnded or false) and (StreamEnded and not StreamEnded)) and not ((StreamEnded or not StreamEnded) and (false or StreamEnded) or (not StreamEnded or false) and (StreamEnded and not StreamEnded)) then
-    mJ = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    mJ = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
     loadstring(game:HttpGet(mJ .. "Library.lua"))()
     mR = function()
         local function nY(aa)
@@ -1134,7 +1134,7 @@ if ((StreamEnded or not StreamEnded) and (false or StreamEnded) or (not StreamEn
     nm = loadstring(game:HttpGet(mJ .. "addons/ThemeManager.lua"))()
     nA_1 = loadstring(game:HttpGet(mJ .. "addons/SaveManager.lua"))()
 else
-    mR = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+    mR = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
     mJ = function()
         local function nY(aa)
             local nT = not aa
@@ -1173,8 +1173,8 @@ else
     end
     mJ()
     task.spawn(worker)
-    nA_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-    nm = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+    nA_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    nm = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 end
 if getgenv then
     getgenv().__OuroborosCheesePullLib = mR

@@ -3070,9 +3070,9 @@ repeat
         else
             local apC = bit32.rrotate(bit32.bxor(bit32.lrotate(akR_117, 2), string.byte(tostring(fns.akR_90))), 31)
             if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(apC, 64757359), 1632905398), (bit32.bxor(bit32.band(apC, 4230209936), 109621325))), 1632905398), 109621325) ~= apC then
-                fns.akR_108 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                fns.akR_108 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             else
-                akR_145 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                akR_145 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             end
             akR_117 = (akR_117 + 65) % 168
         end

@@ -5005,7 +5005,7 @@ while true do
                         am = fns.fn330
                         a3 = 100
                     else
-                        aV = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                        aV = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                         a3 = 244
                     end
                 elseif a3 < 9914 then
@@ -8531,7 +8531,7 @@ while true do
         elseif a3 < 10003 then
             if a3 < 10002 then
                 if a3 == 10001 then
-                    af = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                    af = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
                     a3 = 244
                 else
                     a3 = 10034

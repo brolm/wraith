@@ -575,9 +575,9 @@ l7 = 0
 l0 = 0
 lU = false
 if (not lV or not lV) and (not ly or not lL) and (not lL or lV or not lL and ma) and ((not lL or not ly) and (ly and not lV) or (lV or not lL or (not lV or ma))) and not ((not lV or not lV) and (not ly or not lL) and (not lL or lV or not lL and ma) and ((not lL or not ly) and (ly and not lV) or (lV or not lL or (not lV or ma)))) then
-    lX = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    lX = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    mu_1 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    mu_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 if (ma or ma or (not lK or l0) or (not ma and lK or lh and lK)) and (mg and not ma or not mg and lI or (not lK and lI or (lh or not mg))) and not ((ma or ma or (not lK or l0) or (not ma and lK or lh and lK)) and (mg and not ma or not mg and lI or (not lK and lI or (lh or not mg)))) then
     mu_1 = loadstring(game:HttpGet(lH .. "Library.lua"))()

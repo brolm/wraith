@@ -1794,10 +1794,10 @@ repeat
         else
             if sT_16 * 110015547 + 12 + 5 >= sT_16 * 110015547 + 12 + 5 + 5 then
                 gethui = sT_2
-                sT_17 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                sT_17 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             else
                 gethui = sT_17
-                sT_2 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                sT_2 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             end
             sT_16 = (sT_16 + 7) % 108
         end

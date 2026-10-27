@@ -535,9 +535,9 @@ repeat
                 hx = (hx + 53) % 104
             else
                 if (hx * 2 + 4) * 16 % 3 == ((hx * 2 + 4) * 16 + 1) % 3 then
-                    g0 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+                    g0 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
                 else
-                    hv_1 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+                    hv_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
                 end
                 hx = (hx + 1) % 104
             end

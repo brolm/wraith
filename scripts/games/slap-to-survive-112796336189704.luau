@@ -25,7 +25,7 @@ local GAME_NAME = "Slap to Survive"
 local DISCORD_INVITE = "https://discord.gg/ehKVq7pf7v"
 local RSCRIPTS_LINK = "https://rscripts.net/@Ouroboros"
 
-local repo = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+local repo = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 
 pcall(function()

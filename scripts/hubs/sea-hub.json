@@ -1,0 +1,10 @@
+{
+	"routes": [
+		{
+			"name": "Blox Fruits",
+			"file": "games/sea-hub-blox-fruits-2753915549.luau",
+			"placeId": 2753915549,
+			"universeId": 994732206
+		}
+	]
+}

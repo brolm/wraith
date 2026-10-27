@@ -2534,9 +2534,9 @@ repeat
             vd = (vector.create((va * 2 + 4) % 11 + 1, (va * 1 + 10) % 13 + 1, (va * 3 + 11) % 17 + 1))
             ve = (vector.create((va * 4 + 1) % 5 + 1, (va * 5 + 2) % 7 + 1, (va * 1 + 7) % 9 + 1))
             if vector.dot(vector.cross(u9, (vector.cross(vc, vd))), ve) == vector.dot(vc * vector.dot(u9, vd) - vd * vector.dot(u9, vc), ve) then
-                vb = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                vb = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             else
-                uS = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+                uS = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
             end
             va = (va + 1) % 32
         else
@@ -3338,7 +3338,7 @@ va = function()
         elseif Fh then
             return true
         else
-            Fh = pcall(Fq, 'if not game:IsLoaded() then game.Loaded:Wait() end local env = (getgenv and getgenv()) or _G if env.OuroborosAutoExecuted == game.JobId then return end env.OuroborosAutoExecuted = game.JobId task.wait(3) loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/Ouroboros/refs/heads/main/games/Merge%20an%20SCP.luau"))()')
+            Fh = pcall(Fq, 'if not game:IsLoaded() then game.Loaded:Wait() end local env = (getgenv and getgenv()) or _G if env.OuroborosAutoExecuted == game.JobId then return end env.OuroborosAutoExecuted = game.JobId task.wait(3) loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"))()')
             return Fh
         end
     end

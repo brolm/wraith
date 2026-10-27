@@ -595,13 +595,13 @@ iU = "https://rscripts.net/@Ouroboros"
 if ("Save Animals!" and (false or Library) or (not Library or false) and (UserInputService or 15)) and (UserInputService and not UserInputService or (UserInputService or jA_1) or ("Save Animals!" or jA_1 and UserInputService)) or not (("Save Animals!" and (false or Library) or (not Library or false) and (UserInputService or 15)) and (UserInputService and not UserInputService or (UserInputService or jA_1) or ("Save Animals!" or jA_1 and UserInputService))) then
     jA_1 = "Save Animals!"
 end
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if not Library then
     return
 end
 Toggles, RemoteBank, DataService, SharedFunctions, Entities, Bases, Rarities, Bases2, iQ, jk, jF_1, iH, js, i_, iL, jv, iA, jf, iu, iP = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 local Options = Library.Options
 Toggles = Library.Toggles
 RemoteBank = require(ReplicatedStorage.RemoteBank)

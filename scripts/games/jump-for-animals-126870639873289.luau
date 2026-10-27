@@ -1973,14 +1973,14 @@ acB_30 = 2
 repeat
     acB_10 = { "dksbfhuoks", "flmubcetje", "liiipqpc", "egicx", "jmhmwtinx", "qnsigue", "smf", "kufzlgtav" }
     if acB_10[(acB_30 * 93 + 19) % 8 + 1] < acB_10[(acB_30 * 93 + 19) % 8 + 1] then
-        HX = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+        HX = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
         loadstring(game:HttpGet(HX .. "Library.lua"))()
         HR = loadstring(game:HttpGet(HX .. "addons/ThemeManager.lua"))()
         H4 = loadstring(game:HttpGet(HX .. "addons/SaveManager.lua"))()
     else
-        H4 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
-        HX = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-        HR = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+        H4 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+        HX = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+        HR = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     end
     acB_30 = (acB_30 + 3) % 4
 until (acB_30 * 3 + 0) % 4 == 3
@@ -3913,7 +3913,7 @@ HC = function()
         end
     end)
 end
-local G_ = "https://raw.githubusercontent.com/joustingmatch/Ouroboros/refs/heads/main/games/e1.luau"
+local G_ = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"
 GP = function()
     local abi, abj, abk
     local abl = queue_on_teleport
@@ -3934,7 +3934,7 @@ GP = function()
         elseif abk then
             return true
         else
-            abk = pcall(abi, 'if not game:IsLoaded() then game.Loaded:Wait() end local env = (getgenv and getgenv()) or _G if env.OuroborosAutoExecuted == game.JobId then return end env.OuroborosAutoExecuted = game.JobId task.wait(3) loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/Ouroboros/refs/heads/main/games/e1.luau"))()')
+            abk = pcall(abi, 'if not game:IsLoaded() then game.Loaded:Wait() end local env = (getgenv and getgenv()) or _G if env.OuroborosAutoExecuted == game.JobId then return end env.OuroborosAutoExecuted = game.JobId task.wait(3) loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"))()')
             return abk
         end
     end

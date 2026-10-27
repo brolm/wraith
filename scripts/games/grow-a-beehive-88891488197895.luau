@@ -24,7 +24,7 @@ local ToolBuilderShared = require(Modules:WaitForChild("ToolBuilderShared"))
 local BeeConfig = require(Configs:WaitForChild("BeeConfig"))
 local MutationConfig = require(Configs:WaitForChild("MutationConfig"))
 
-local repo = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+local repo = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 
 pcall(function()

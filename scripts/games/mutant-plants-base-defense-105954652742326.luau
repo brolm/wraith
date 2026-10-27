@@ -46,7 +46,7 @@ local GAME_NAME = "Mutant Plants: Base Defense"
 local DISCORD_INVITE = "https://discord.gg/ehKVq7pf7v"
 local RSCRIPTS_LINK = "https://rscripts.net/@Ouroboros"
 
-local repo = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+local repo = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 
 pcall(function()

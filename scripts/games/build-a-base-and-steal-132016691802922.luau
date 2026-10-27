@@ -482,9 +482,9 @@ d5 = fn400
 d7 = fn274
 d2 = fn306
 dY = fn143
-local d9_3 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+local d9_3 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
 if (d_ or not d_ or (not ei_3 or d_) or not ei_3 and ei_3 and (d_ and not Options)) and (not d_ or d_ or (Toggles or ei_3) or (not Toggles and not d_ or not Options and not ei_3)) and (d_ and not ei_3 or (not Toggles or not Toggles) or (Toggles or Toggles) and (not Options or d_) or Toggles and not ei_3 and (not d_ or Toggles) and (not Toggles or ei_3 or (not Options or not Toggles))) or not ((d_ or not d_ or (not ei_3 or d_) or not ei_3 and ei_3 and (d_ and not Options)) and (not d_ or d_ or (Toggles or ei_3) or (not Toggles and not d_ or not Options and not ei_3)) and (d_ and not ei_3 or (not Toggles or not Toggles) or (Toggles or Toggles) and (not Options or d_) or Toggles and not ei_3 and (not d_ or Toggles) and (not Toggles or ei_3 or (not Options or not Toggles)))) then
-    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/Library.lua"))()
+    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
 else
     d9_3 = loadstring(game:HttpGet(Library .. "Library.lua"))()
 end

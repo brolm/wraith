@@ -868,14 +868,14 @@ if type(x4_17_6) == "table" then
 end
 table.sort(pa, fn43)
 Library, x4_11, op, Toggles, Options = nil, nil, nil, nil, nil
-local x4_17_9 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+local x4_17_9 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if (Library and op or (not Toggles or not Library) or (op or op or (not Toggles or not Toggles)) or (Library and false or not Toggles and op) and (x4_17_9 or Library or Toggles and false)) and not (Library and op or (not Toggles or not Library) or (op or op or (not Toggles or not Toggles)) or (Library and false or not Toggles and op) and (x4_17_9 or Library or Toggles and false)) then
     pcall(fn858)
     x4_17_9 = loadstring(game:HttpGet(x4_11 .. "addons/ThemeManager.lua"))()
 else
     pcall(fn858)
-    x4_11 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+    x4_11 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
 end
 op = loadstring(game:HttpGet(x4_17_9 .. "addons/SaveManager.lua"))()
 Toggles = Library.Toggles

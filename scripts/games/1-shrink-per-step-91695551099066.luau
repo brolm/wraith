@@ -1117,9 +1117,9 @@ mV = {
     { Name = "DiamondTrail", Cost = 1000000000000000, Speed = 65 }
 }
 if m9 and false and (uS_13 or m9) or (m9 or uS_8) and (false and not m9) or ((not m9 or not m9) and (uS_8 or m9) or (false or not m9) and (false and m9)) or (false and (m9 and uS_8) or (uS_8 and not m9 or false)) and (not m9 and false and false and ((false or m9) and "#f7931a")) or not (m9 and false and (uS_13 or m9) or (m9 or uS_8) and (false and not m9) or ((not m9 or not m9) and (uS_8 or m9) or (false or not m9) and (false and m9)) or (false and (m9 and uS_8) or (uS_8 and not m9 or false)) and (not m9 and false and false and ((false or m9) and "#f7931a"))) then
-    uS_14 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    uS_14 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    nG = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
+    nG = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 mM = loadstring(game:HttpGet(uS_14 .. "Library.lua"))()
 local uS_1 = loadstring(game:HttpGet(uS_14 .. "addons/ThemeManager.lua"))()

@@ -845,10 +845,10 @@ local r7_6 = LocalPlayer:WaitForChild("LevelHolder")
 Level = r7_6:WaitForChild("Level")
 TotalExp = r7_6:WaitForChild("TotalExp")
 if (false and Level or not Level and Level) and (Level or not mg or (mg or not mg)) or not ((false and Level or not Level and Level) and (Level or not mg or (mg or not mg))) then
-    mg = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/Library.lua"))()
+    mg = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
     pcall(fn311)
-    mN = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua"))()
-    mM = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
+    mN = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+    mM = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
     Toggles = mg.Toggles
     lY = mg.Options
 else

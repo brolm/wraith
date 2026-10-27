@@ -819,15 +819,15 @@ ja = fn279
 pcall(fn151)
 setthreadidentity(8)
 TycoonService = ReplicatedStorage.__remotes.TycoonService
-local je_1 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
-iw = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/Library.lua"))()
+local je_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+iw = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if (iw and (PlayerDataController and PlayerDataController) or false) and ((PlayerDataController or false) and (not PlayerDataController and not iw) or (ji_1 or false or (not iw or not iw))) and ((PlayerDataController and iw or (PlayerDataController or je_1) or (not ji_1 or not PlayerDataController) and (false and not iw)) and (not ji_1 and ji_1 and (not iw and iw) or 54)) and not ((iw and (PlayerDataController and PlayerDataController) or false) and ((PlayerDataController or false) and (not PlayerDataController and not iw) or (ji_1 or false or (not iw or not iw))) and ((PlayerDataController and iw or (PlayerDataController or je_1) or (not ji_1 or not PlayerDataController) and (false and not iw)) and (not ji_1 and ji_1 and (not iw and iw) or 54))) then
     iw = loadstring(game:HttpGet(Toggles .. "addons/ThemeManager.lua"))()
     jk = loadstring(game:HttpGet(Toggles .. "addons/SaveManager.lua"))()
     SaveManager = nil
 else
-    jk = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+    jk = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     Toggles = iw.Toggles
 end
 Options = iw.Options
