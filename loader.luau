@@ -1035,7 +1035,9 @@ local function layout(animate: boolean?)
 	holder.Position = clampPosition(holder.Position)
 
 	local columns = if width >= 520 then 3 elseif width >= 340 then 2 else 1
-	gridLayout.CellSize = UDim2.new(1 / columns, -8 * (columns - 1) / columns, 0, CARD_HEIGHT)
+	-- Exactly-fitting cells can overflow by a rounding error and wrap, so leave 1px spare and cap the row.
+	gridLayout.CellSize = UDim2.new(1 / columns, -8 * (columns - 1) / columns - 1, 0, CARD_HEIGHT)
+	gridLayout.FillDirectionMaxCells = columns
 
 	-- Toolbar: drop the script count, then the wordmark, and let the search field take what's left.
 	subtitle.Visible = width >= 560
