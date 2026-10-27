@@ -6,7 +6,10 @@
 --
 -- To add a script, put it in scripts/ and add an entry to scripts/index.json:
 --   { "name": "...", "file": "my-script.luau", "game": "...", "description": "..." }
--- Scripts with no "game" (or "Universal") are listed under Universal; the rest are grouped by game.
+--
+-- Auto-routing: an entry with "placeId" (and optionally "universeId") is run automatically when you
+-- execute the loader in that game. Matching is by place first, then universe, so sub-places work too.
+-- Entries marked "alt": true are never auto-run. Set getgenv().WraithAutoRoute = false to turn it off.
 
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
@@ -17,11 +20,10 @@ local REPO_URL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/
 local GUI_NAME = "WraithHub"
 local TOGGLE_KEY = Enum.KeyCode.RightControl
 
-local WINDOW_SIZE = Vector2.new(680, 440)
-local ZOOMED_SIZE = Vector2.new(860, 560)
+local WINDOW_SIZE = Vector2.new(580, 480)
+local ZOOMED_SIZE = Vector2.new(760, 620)
 local RADIUS = 18
-local SIDEBAR_WIDTH = 196
-local TOOLBAR_HEIGHT = 60
+local TOOLBAR_HEIGHT = 64
 local STATUS_HEIGHT = 34
 local CARD_HEIGHT = 52
 
@@ -56,7 +58,6 @@ local ALPHA = {
 	card = 0.965,
 	cardHover = 0.94,
 	line = 0.92,
-	selected = 0.78, -- of the accent, not white
 }
 
 local TRAFFIC_LIGHTS = {
@@ -82,6 +83,9 @@ type Entry = {
 	file: string,
 	game: string?,
 	description: string?,
+	placeId: number?,
+	universeId: number?,
+	alt: boolean?,
 }
 
 -- Data ----------------------------------------------------------------------
@@ -112,6 +116,22 @@ local function fetchIndex(): ({ Entry }?, string?)
 		end
 	end
 	return entries
+end
+
+-- The entry for the game we're in: exact place, else same universe. Alternates are skipped.
+local function routeFor(entries: { Entry }): Entry?
+	local byUniverse
+	for _, entry in ipairs(entries) do
+		if not entry.alt then
+			if entry.placeId == game.PlaceId then
+				return entry
+			end
+			if byUniverse == nil and entry.universeId ~= nil and entry.universeId == game.GameId then
+				byUniverse = entry
+			end
+		end
+	end
+	return byUniverse
 end
 
 local function gameOf(entry: Entry): string
@@ -228,54 +248,6 @@ local function appIcon(letter: string, colors: { Color3 }, size: number): Frame
 	})
 end
 
--- Sidebar glyphs: a grid for All, a globe for Universal, a diamond for each game.
-local function navIcon(kind: string): (Frame, (Color3) -> ())
-	local frame = create("Frame", { Size = UDim2.fromOffset(16, 16), BackgroundTransparency = 1 })
-	local fills: { Frame } = {}
-	local strokes: { UIStroke } = {}
-	local function ring(size: Vector2, radius: number?, rotation: number?)
-		local s = stroke(0, nil, 1.5)
-		create("Frame", {
-			AnchorPoint = Vector2.new(0.5, 0.5),
-			Position = UDim2.fromScale(0.5, 0.5),
-			Size = UDim2.fromOffset(size.X, size.Y),
-			Rotation = rotation or 0,
-			BackgroundTransparency = 1,
-			Parent = frame,
-		}, { corner(radius), s })
-		table.insert(strokes, s)
-	end
-	if kind == "all" then
-		for i = 0, 3 do
-			table.insert(
-				fills,
-				create("Frame", {
-					Position = UDim2.fromOffset(2 + i % 2 * 7, 2 + i // 2 * 7),
-					Size = UDim2.fromOffset(5, 5),
-					BorderSizePixel = 0,
-					Parent = frame,
-				}, { corner(1.5) })
-			)
-		end
-	elseif kind == "universal" then
-		ring(Vector2.new(13, 13))
-		ring(Vector2.new(6, 13))
-		local equator = bar(Vector2.new(13, 1.5), 0, THEME.white)
-		equator.Parent = frame
-		table.insert(fills, equator)
-	else
-		ring(Vector2.new(9, 9), 2, 45)
-	end
-	return frame, function(color: Color3)
-		for _, fill in ipairs(fills) do
-			fill.BackgroundColor3 = color
-		end
-		for _, s in ipairs(strokes) do
-			s.Color = color
-		end
-	end
-end
-
 local function pillButton(label: string, width: number): TextButton
 	return create("TextButton", {
 		Size = UDim2.fromOffset(width, 26),
@@ -358,22 +330,24 @@ local function makeWindow(): Window
 end
 
 local window = makeWindow()
-local content = window.Content
-
--- Sidebar ---------------------------------------------------------------------
-
-local sidebar = create("Frame", {
-	Size = UDim2.new(0, SIDEBAR_WIDTH, 1, 0),
+local content = create("Frame", {
+	Size = FULL,
 	BackgroundTransparency = 1,
-	Parent = content,
-})
-local sidebarDrag = create("Frame", { Size = UDim2.new(1, 0, 0, 96), BackgroundTransparency = 1, Parent = sidebar })
+	ClipsDescendants = true,
+	Parent = window.Content,
+}, { corner(RADIUS) })
+
+-- Toolbar ---------------------------------------------------------------------
+
+local toolbar = create("Frame", { Size = UDim2.new(1, 0, 0, TOOLBAR_HEIGHT), BackgroundTransparency = 1, Parent = content })
+-- The toolbar's empty area drags the window; traffic lights and search sit on top and absorb clicks.
+local toolbarDrag = create("Frame", { Size = FULL, BackgroundTransparency = 1, Parent = toolbar })
 
 local lights = create("Frame", {
-	Position = UDim2.fromOffset(20, 20),
+	Position = UDim2.fromOffset(20, 22),
 	Size = UDim2.fromOffset(52, 12),
 	BackgroundTransparency = 1,
-	Parent = sidebar,
+	Parent = toolbar,
 }, {
 	create("UIListLayout", {
 		FillDirection = Enum.FillDirection.Horizontal,
@@ -412,130 +386,38 @@ onHover(lights, function(hovering)
 	end
 end)
 
+-- Wraith branding: icon, wordmark, and a live script count.
+local brandingWidth = 220
 create("Frame", {
-	Position = UDim2.fromOffset(18, 50),
-	Size = UDim2.new(1, -36, 0, 34),
+	Position = UDim2.fromOffset(92, 15),
+	Size = UDim2.fromOffset(brandingWidth, 34),
 	BackgroundTransparency = 1,
-	Parent = sidebar,
+	Parent = toolbar,
 }, {
 	appIcon("W", THEME.brand, 34),
 	text({
-		Position = UDim2.fromOffset(46, -1),
+		Position = UDim2.fromOffset(46, -2),
 		Size = UDim2.new(1, -46, 0, 20),
 		Text = "Wraith",
 		FontFace = FONTS.heavy,
 		TextSize = 19,
 	}),
-	text({
-		Position = UDim2.fromOffset(46, 19),
-		Size = UDim2.new(1, -46, 0, 15),
-		Text = "Script Hub",
-		FontFace = FONTS.medium,
-		TextSize = 12,
-		TextColor3 = THEME.subText,
-	}),
-})
-
-local nav = create("ScrollingFrame", {
-	Position = UDim2.fromOffset(10, 96),
-	Size = UDim2.new(1, -20, 1, -96 - 50),
-	BackgroundTransparency = 1,
-	BorderSizePixel = 0,
-	CanvasSize = UDim2.new(),
-	AutomaticCanvasSize = Enum.AutomaticSize.Y,
-	ScrollingDirection = Enum.ScrollingDirection.Y,
-	ScrollBarThickness = 0,
-	Parent = sidebar,
-}, {
-	create("UIListLayout", { Padding = UDim.new(0, 2), SortOrder = Enum.SortOrder.LayoutOrder }),
-})
-
-local keyName = TOGGLE_KEY.Name:gsub("Control", "Ctrl"):gsub("(%l)(%u)", "%1 %2")
-create("Frame", {
-	AnchorPoint = Vector2.new(0, 1),
-	Position = UDim2.new(0, 20, 1, -16),
-	Size = UDim2.new(1, -40, 0, 20),
-	BackgroundTransparency = 1,
-	Parent = sidebar,
-}, {
-	create("UIListLayout", {
-		FillDirection = Enum.FillDirection.Horizontal,
-		VerticalAlignment = Enum.VerticalAlignment.Center,
-		Padding = UDim.new(0, 6),
-		SortOrder = Enum.SortOrder.LayoutOrder,
-	}),
-	text({
-		AutomaticSize = Enum.AutomaticSize.X,
-		Size = UDim2.fromOffset(0, 20),
-		BackgroundTransparency = ALPHA.control,
-		Text = keyName,
-		FontFace = FONTS.medium,
-		TextSize = 11,
-		TextColor3 = THEME.subText,
-		LayoutOrder = 1,
-	}, {
-		corner(5),
-		stroke(0.88),
-		create("UIPadding", { PaddingLeft = UDim.new(0, 6), PaddingRight = UDim.new(0, 6) }),
-	}),
-	text({
-		AutomaticSize = Enum.AutomaticSize.X,
-		Size = UDim2.fromOffset(0, 20),
-		Text = "to hide",
-		TextSize = 11,
-		TextColor3 = THEME.faint,
-		LayoutOrder = 2,
-	}),
-})
-
-line({ Position = UDim2.fromOffset(SIDEBAR_WIDTH, 0), Size = UDim2.new(0, 1, 1, 0), Parent = content })
-
--- Main area -------------------------------------------------------------------
-
-local main = create("Frame", {
-	Position = UDim2.fromOffset(SIDEBAR_WIDTH + 1, 0),
-	Size = UDim2.new(1, -SIDEBAR_WIDTH - 1, 1, 0),
-	BackgroundTransparency = 1,
-	ClipsDescendants = true,
-	Parent = content,
-})
-
--- The content side sits a shade darker than the sidebar. Only its right corners should be round,
--- so the shade starts past the left edge, where the clipping cuts its left corners off.
-create("Frame", {
-	Position = UDim2.fromOffset(-RADIUS, 0),
-	Size = UDim2.new(1, RADIUS, 1, 0),
-	BackgroundColor3 = THEME.black,
-	BackgroundTransparency = 0.8,
-	BorderSizePixel = 0,
-	Parent = main,
-}, { corner(RADIUS) })
-
-local toolbar = create("Frame", { Size = UDim2.new(1, 0, 0, TOOLBAR_HEIGHT), BackgroundTransparency = 1, Parent = main })
-local toolbarDrag = create("Frame", { Size = UDim2.new(1, -250, 1, 0), BackgroundTransparency = 1, Parent = toolbar })
-local title = text({
-	Position = UDim2.fromOffset(22, 12),
-	Size = UDim2.new(1, -22, 0, 22),
-	Text = "All Scripts",
-	FontFace = FONTS.bold,
-	TextSize = 18,
-	TextTruncate = Enum.TextTruncate.AtEnd,
-	Parent = toolbarDrag,
 })
 local subtitle = text({
-	Position = UDim2.fromOffset(22, 33),
-	Size = UDim2.new(1, -22, 0, 15),
+	Position = UDim2.fromOffset(138, 32),
+	Size = UDim2.fromOffset(brandingWidth, 15),
 	Text = "",
+	FontFace = FONTS.medium,
 	TextSize = 12,
 	TextColor3 = THEME.subText,
-	Parent = toolbarDrag,
+	Parent = toolbar,
 })
 
 local searchStroke = stroke(0.9)
 local searchField = create("Frame", {
 	AnchorPoint = Vector2.new(1, 0.5),
 	Position = UDim2.new(1, -18, 0.5, 0),
-	Size = UDim2.fromOffset(220, 30),
+	Size = UDim2.fromOffset(200, 30),
 	BackgroundColor3 = THEME.white,
 	BackgroundTransparency = ALPHA.control,
 	Parent = toolbar,
@@ -590,8 +472,10 @@ local clearButton = create("TextButton", {
 	bar(Vector2.new(7, 1.5), -45, glyphColor),
 })
 
-line({ Position = UDim2.fromOffset(0, TOOLBAR_HEIGHT), Size = UDim2.new(1, 0, 0, 1), Parent = main })
-line({ Position = UDim2.new(0, 0, 1, -STATUS_HEIGHT), Size = UDim2.new(1, 0, 0, 1), Parent = main })
+line({ Position = UDim2.fromOffset(0, TOOLBAR_HEIGHT), Size = UDim2.new(1, 0, 0, 1), Parent = content })
+line({ Position = UDim2.new(0, 0, 1, -STATUS_HEIGHT), Size = UDim2.new(1, 0, 0, 1), Parent = content })
+
+-- List -----------------------------------------------------------------------
 
 local list = create("ScrollingFrame", {
 	Position = UDim2.fromOffset(0, TOOLBAR_HEIGHT + 1),
@@ -604,7 +488,7 @@ local list = create("ScrollingFrame", {
 	ScrollBarThickness = 3,
 	ScrollBarImageColor3 = THEME.white,
 	ScrollBarImageTransparency = 0.75,
-	Parent = main,
+	Parent = content,
 }, {
 	-- Only vertical: a ScrollingFrame's children don't shrink for side padding, so the grid insets itself.
 	create("UIPadding", { PaddingTop = UDim.new(0, 14), PaddingBottom = UDim.new(0, 14) }),
@@ -631,7 +515,7 @@ local overlay = create("Frame", {
 	Size = list.Size,
 	BackgroundTransparency = 1,
 	Visible = false,
-	Parent = main,
+	Parent = content,
 }, {
 	create("UIListLayout", {
 		HorizontalAlignment = Enum.HorizontalAlignment.Center,
@@ -683,11 +567,13 @@ onHover(retryButton, function(hovering)
 	pillHover(retryButton, hovering)
 end)
 
+-- Status bar -----------------------------------------------------------------
+
 local statusBar = create("Frame", {
 	Position = UDim2.new(0, 0, 1, -STATUS_HEIGHT),
 	Size = UDim2.new(1, 0, 0, STATUS_HEIGHT),
 	BackgroundTransparency = 1,
-	Parent = main,
+	Parent = content,
 })
 local statusDot = create("Frame", {
 	AnchorPoint = Vector2.new(0, 0.5),
@@ -698,13 +584,54 @@ local statusDot = create("Frame", {
 }, { corner() })
 local status = text({
 	Position = UDim2.fromOffset(36, 0),
-	Size = UDim2.new(1, -120, 1, 0),
+	Size = UDim2.new(1, -260, 1, 0),
 	Text = "",
 	TextSize = 12,
 	TextColor3 = THEME.subText,
 	TextTruncate = Enum.TextTruncate.AtEnd,
 	Parent = statusBar,
 })
+
+-- "Right Ctrl to hide" hint, between status text and the refresh button.
+local keyName = TOGGLE_KEY.Name:gsub("Control", "Ctrl"):gsub("(%l)(%u)", "%1 %2")
+create("Frame", {
+	AnchorPoint = Vector2.new(1, 0.5),
+	Position = UDim2.new(1, -92, 0.5, 0),
+	Size = UDim2.fromOffset(130, 20),
+	BackgroundTransparency = 1,
+	Parent = statusBar,
+}, {
+	create("UIListLayout", {
+		FillDirection = Enum.FillDirection.Horizontal,
+		HorizontalAlignment = Enum.HorizontalAlignment.Right,
+		VerticalAlignment = Enum.VerticalAlignment.Center,
+		Padding = UDim.new(0, 6),
+		SortOrder = Enum.SortOrder.LayoutOrder,
+	}),
+	text({
+		AutomaticSize = Enum.AutomaticSize.X,
+		Size = UDim2.fromOffset(0, 20),
+		BackgroundTransparency = ALPHA.control,
+		Text = keyName,
+		FontFace = FONTS.medium,
+		TextSize = 11,
+		TextColor3 = THEME.subText,
+		LayoutOrder = 1,
+	}, {
+		corner(5),
+		stroke(0.88),
+		create("UIPadding", { PaddingLeft = UDim.new(0, 6), PaddingRight = UDim.new(0, 6) }),
+	}),
+	text({
+		AutomaticSize = Enum.AutomaticSize.X,
+		Size = UDim2.fromOffset(0, 20),
+		Text = "to hide",
+		TextSize = 11,
+		TextColor3 = THEME.faint,
+		LayoutOrder = 2,
+	}),
+})
+
 local refreshButton = create("TextButton", {
 	AnchorPoint = Vector2.new(1, 0.5),
 	Position = UDim2.new(1, -14, 0.5, 0),
@@ -727,13 +654,9 @@ end)
 
 -- State -----------------------------------------------------------------------
 
-type NavItem = { button: TextButton, label: TextLabel, count: TextLabel, paint: (Color3) -> (), hovered: boolean }
-
 type Card = {
 	entry: Entry,
 	frame: Frame,
-	name: TextLabel,
-	gameLabel: TextLabel,
 	run: TextButton,
 	state: string,
 	token: number,
@@ -749,12 +672,11 @@ local RUN_STATES = {
 	failed = { text = "Failed", color = THEME.error },
 }
 
-local navItems: { [string]: NavItem } = {}
 local cards: { Card } = {}
-local selected = "all" -- "all", "universal" or "game:<name>"
 local loaded = false
 local refreshing = false
 local running = false
+local autoRouted = false
 
 local function setStatus(message: string, tone: string?)
 	status.Text = message
@@ -777,49 +699,29 @@ local function showOverlay(kind: string?, heading: string?, detail: string?)
 	end
 end
 
-local function styleNav()
-	for key, item in pairs(navItems) do
-		local on = key == selected
-		tween(item.button, {
-			BackgroundColor3 = if on then THEME.accent else THEME.white,
-			BackgroundTransparency = if on then ALPHA.selected elseif item.hovered then ALPHA.hover else 1,
-		})
-		item.label.TextColor3 = if on then THEME.text else THEME.subText
-		item.count.TextColor3 = if on then THEME.accentText else THEME.faint
-		item.paint(if on then THEME.accentText else THEME.subText)
-	end
-end
-
-local function inSection(entry: Entry): boolean
-	if selected == "all" then
-		return true
-	end
-	local name = gameOf(entry)
-	if selected == "universal" then
-		return name == "Universal"
-	end
-	return selected == "game:" .. name
+local function pluralize(count: number): string
+	return count .. (if count == 1 then " script" else " scripts")
 end
 
 local function applyFilter()
 	local query = string.lower(search.Text):match("^%s*(.-)%s*$")
-	-- The game line only says something in the All view; elsewhere every card is from the same place.
-	local showGame = selected == "all"
 	local shown = 0
 	for _, card in ipairs(cards) do
-		local visible = inSection(card.entry) and matches(card.entry, query)
+		local visible = matches(card.entry, query)
 		card.frame.Visible = visible
 		if visible then
 			shown += 1
 		end
-		card.gameLabel.Visible = showGame
-		card.name.Position = UDim2.fromOffset(50, if showGame then 9 else 17)
 	end
 
 	clearButton.Visible = search.Text ~= ""
-	local item = navItems[selected]
-	title.Text = if item then item.label.Text else "All Scripts"
-	subtitle.Text = if loaded then shown .. (if shown == 1 then " script" else " scripts") else ""
+	if loaded then
+		-- The count in the toolbar always shows the total; the status bar reflects filtered.
+		if query ~= "" then
+			setStatus("Showing " .. pluralize(shown), if shown == 0 then "error" else "success")
+		end
+	end
+
 	if not loaded then
 		return
 	elseif shown > 0 then
@@ -829,102 +731,6 @@ local function applyFilter()
 	else
 		showOverlay("empty", "Nothing here yet")
 	end
-end
-
-local function navHeader(label: string, order: number)
-	text({
-		Size = UDim2.new(1, 0, 0, 30),
-		Text = label,
-		FontFace = FONTS.bold,
-		TextSize = 11,
-		TextColor3 = THEME.faint,
-		TextYAlignment = Enum.TextYAlignment.Bottom,
-		LayoutOrder = order,
-		Parent = nav,
-	}, { create("UIPadding", { PaddingLeft = UDim.new(0, 10), PaddingBottom = UDim.new(0, 6) }) })
-end
-
-local function navItem(key: string, label: string, kind: string, count: number, order: number)
-	local glyph, paint = navIcon(kind)
-	glyph.AnchorPoint = Vector2.new(0, 0.5)
-	glyph.Position = UDim2.new(0, 10, 0.5, 0)
-	local labelText = text({
-		Position = UDim2.fromOffset(34, 0),
-		Size = UDim2.new(1, -70, 1, 0),
-		Text = label,
-		FontFace = FONTS.medium,
-		TextSize = 14,
-		TextTruncate = Enum.TextTruncate.AtEnd,
-	})
-	local countText = text({
-		AnchorPoint = Vector2.new(1, 0),
-		Position = UDim2.new(1, -10, 0, 0),
-		Size = UDim2.new(0, 28, 1, 0),
-		Text = tostring(count),
-		FontFace = FONTS.medium,
-		TextSize = 12,
-		TextXAlignment = Enum.TextXAlignment.Right,
-	})
-	local button = create("TextButton", {
-		Size = UDim2.new(1, 0, 0, 32),
-		BackgroundColor3 = THEME.white,
-		BackgroundTransparency = 1,
-		AutoButtonColor = false,
-		Text = "",
-		LayoutOrder = order,
-		Parent = nav,
-	}, { corner(9), glyph, labelText, countText })
-
-	local item: NavItem = { button = button, label = labelText, count = countText, paint = paint, hovered = false }
-	navItems[key] = item
-	onHover(button, function(hovering)
-		item.hovered = hovering
-		styleNav()
-	end)
-	button.MouseButton1Click:Connect(function()
-		selected = key
-		styleNav()
-		applyFilter()
-		list.CanvasPosition = Vector2.zero
-	end)
-end
-
-local function buildNav(entries: { Entry })
-	for _, child in ipairs(nav:GetChildren()) do
-		if child:IsA("GuiObject") then
-			child:Destroy()
-		end
-	end
-	table.clear(navItems)
-
-	local universal, games, counts = 0, {}, {}
-	for _, entry in ipairs(entries) do
-		local name = gameOf(entry)
-		if name == "Universal" then
-			universal += 1
-		else
-			if not counts[name] then
-				counts[name] = 0
-				table.insert(games, name)
-			end
-			counts[name] += 1
-		end
-	end
-	table.sort(games)
-
-	navHeader("Library", 1)
-	navItem("all", "All Scripts", "all", #entries, 2)
-	navItem("universal", "Universal", "universal", universal, 3)
-	if #games > 0 then
-		navHeader("Games", 4)
-		for i, name in ipairs(games) do
-			navItem("game:" .. name, name, "game", counts[name], 4 + i)
-		end
-	end
-	if not navItems[selected] then
-		selected = "all"
-	end
-	styleNav()
 end
 
 local function setRunState(card: Card, state: string)
@@ -988,8 +794,6 @@ local function makeCard(entry: Entry, order: number): Card
 	local card: Card = {
 		entry = entry,
 		frame = frame,
-		name = name,
-		gameLabel = gameLabel,
 		run = run,
 		state = "idle",
 		token = 0,
@@ -1066,7 +870,7 @@ local function refresh()
 	end
 
 	loaded = true
-	buildNav(entries)
+	subtitle.Text = pluralize(#entries)
 	for i, entry in ipairs(entries) do
 		local card = makeCard(entry, i)
 		card.run.MouseButton1Click:Connect(function()
@@ -1076,7 +880,21 @@ local function refresh()
 		table.insert(cards, card)
 	end
 	applyFilter()
-	setStatus("Up to date · " .. #entries .. (if #entries == 1 then " script" else " scripts"), "success")
+	setStatus("Up to date · " .. pluralize(#entries), "success")
+
+	local env = if type(getgenv) == "function" then getgenv() else _G
+	if not autoRouted and env.WraithAutoRoute ~= false then
+		local target = routeFor(entries)
+		if target then
+			autoRouted = true
+			for _, card in ipairs(cards) do
+				if card.entry == target then
+					runScript(card)
+					break
+				end
+			end
+		end
+	end
 end
 
 -- Behaviour -------------------------------------------------------------------
@@ -1108,14 +926,12 @@ local function isPress(input: InputObject): boolean
 	return input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch
 end
 
-local function beginDrag(input: InputObject)
+toolbarDrag.InputBegan:Connect(function(input)
 	if isPress(input) then
 		dragStart = input.Position
 		startPosition = holder.Position
 	end
-end
-sidebarDrag.InputBegan:Connect(beginDrag)
-toolbarDrag.InputBegan:Connect(beginDrag)
+end)
 
 table.insert(
 	connections,

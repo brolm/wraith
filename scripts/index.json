@@ -6,27 +6,2995 @@
 		"description": "Placeholder for the Clover RPG script."
 	},
 	{
-		"name": "Fullbright",
-		"file": "fullbright.luau",
+		"name": "Haxter Felix",
+		"file": "haxter-hub.luau",
 		"game": "Universal",
-		"description": "Removes darkness, fog and shadows, and keeps them off if the game resets lighting."
+		"description": "Haxter Hub with its webhook logging and cookie/token handling removed."
 	},
 	{
-		"name": "Player ESP",
-		"file": "esp.luau",
-		"game": "Universal",
-		"description": "Highlights other players through walls in their team colour."
+		"name": "+1 Anime Loot Upgrade",
+		"file": "games/1-anime-loot-upgrade-92484997704115.luau",
+		"game": "+1 Anime Loot Upgrade",
+		"description": "Auto-loads in +1 Anime Loot Upgrade.",
+		"placeId": 92484997704115,
+		"universeId": 10591288665
 	},
 	{
-		"name": "Anti-AFK",
-		"file": "anti-afk.luau",
-		"game": "Universal",
-		"description": "Stops Roblox kicking you for being idle for 20 minutes."
+		"name": "+1 Aura Per Click",
+		"file": "games/1-aura-per-click-109509029034984.luau",
+		"game": "+1 Aura Per Click",
+		"description": "Auto-loads in +1 Aura Per Click.",
+		"placeId": 109509029034984,
+		"universeId": 10067258922
 	},
 	{
-		"name": "Rejoin",
-		"file": "rejoin.luau",
-		"game": "Universal",
-		"description": "Rejoins this server, or a new one if you're the only player in it."
+		"name": "+1 Backflip Keyboard Escape",
+		"file": "games/1-backflip-keyboard-escape-102553576537621.luau",
+		"game": "+1 Backflip Keyboard Escape",
+		"description": "Auto-loads in +1 Backflip Keyboard Escape.",
+		"placeId": 102553576537621,
+		"universeId": 10409732219
+	},
+	{
+		"name": "+1 Banana Monkey Destruction",
+		"file": "games/1-banana-monkey-destruction-83256791430098.luau",
+		"game": "+1 Banana Monkey Destruction",
+		"description": "Auto-loads in +1 Banana Monkey Destruction.",
+		"placeId": 83256791430098,
+		"universeId": 10399712766
+	},
+	{
+		"name": "+1 Chop Trees for Treasure",
+		"file": "games/1-chop-trees-for-treasure-110730550789828.luau",
+		"game": "+1 Chop Trees for Treasure",
+		"description": "Auto-loads in +1 Chop Trees for Treasure.",
+		"placeId": 110730550789828,
+		"universeId": 10759430423
+	},
+	{
+		"name": "+1 Clone Evolution",
+		"file": "games/1-clone-evolution-120297898552393.luau",
+		"game": "+1 Clone Evolution",
+		"description": "Auto-loads in +1 Clone Evolution.",
+		"placeId": 120297898552393,
+		"universeId": 10760163096
+	},
+	{
+		"name": "+1 Cut and Ride Pet",
+		"file": "games/1-cut-and-ride-pet-78793646042773.luau",
+		"game": "+1 Cut and Ride Pet",
+		"description": "Auto-loads in +1 Cut and Ride Pet.",
+		"placeId": 78793646042773,
+		"universeId": 10424071923
+	},
+	{
+		"name": "+1 Cut Grass Adventure",
+		"file": "games/1-cut-grass-adventure-90086669327265.luau",
+		"game": "+1 Cut Grass Adventure",
+		"description": "Auto-loads in +1 Cut Grass Adventure.",
+		"placeId": 90086669327265,
+		"universeId": 10410945205
+	},
+	{
+		"name": "+1 Dino Evolution",
+		"file": "games/1-dino-evolution-103138601755519.luau",
+		"game": "+1 Dino Evolution",
+		"description": "Auto-loads in +1 Dino Evolution.",
+		"placeId": 103138601755519,
+		"universeId": 10664667515
+	},
+	{
+		"name": "+1 DMG FPS",
+		"file": "games/1-dmg-fps-100753254401525.luau",
+		"game": "+1 DMG FPS",
+		"description": "Auto-loads in +1 DMG FPS.",
+		"placeId": 100753254401525,
+		"universeId": 10717002748
+	},
+	{
+		"name": "+1 DMG Per Revive",
+		"file": "games/1-dmg-per-revive-110806816173057.luau",
+		"game": "+1 DMG Per Revive",
+		"description": "Auto-loads in +1 DMG Per Revive.",
+		"placeId": 110806816173057,
+		"universeId": 10171934713
+	},
+	{
+		"name": "+1 Double Jump Bike Escape!",
+		"file": "games/1-double-jump-bike-escape-74218191398494.luau",
+		"game": "+1 Double Jump Bike Escape!",
+		"description": "Auto-loads in +1 Double Jump Bike Escape!.",
+		"placeId": 74218191398494,
+		"universeId": 10437809977
+	},
+	{
+		"name": "+1 Drain Water Per Click",
+		"file": "games/1-drain-water-per-click-103883942725157.luau",
+		"game": "+1 Drain Water Per Click",
+		"description": "Auto-loads in +1 Drain Water Per Click.",
+		"placeId": 103883942725157,
+		"universeId": 10561352230
+	},
+	{
+		"name": "+1 Drill Blocks for animals",
+		"file": "games/1-drill-blocks-for-animals-136327778829765.luau",
+		"game": "+1 Drill Blocks for animals",
+		"description": "Auto-loads in +1 Drill Blocks for animals.",
+		"placeId": 136327778829765,
+		"universeId": 10734982355
+	},
+	{
+		"name": "+1 Fart to Break Doors",
+		"file": "games/1-fart-to-break-doors-120285538222067.luau",
+		"game": "+1 Fart to Break Doors",
+		"description": "Auto-loads in +1 Fart to Break Doors.",
+		"placeId": 120285538222067,
+		"universeId": 10473810300
+	},
+	{
+		"name": "+1 Fat Per Click",
+		"file": "games/1-fat-per-click-128329680321338.luau",
+		"game": "+1 Fat Per Click",
+		"description": "Auto-loads in +1 Fat Per Click.",
+		"placeId": 128329680321338,
+		"universeId": 10329213173
+	},
+	{
+		"name": "+1 Fish Per Click",
+		"file": "games/1-fish-per-click-138831961498372.luau",
+		"game": "+1 Fish Per Click",
+		"description": "Auto-loads in +1 Fish Per Click.",
+		"placeId": 138831961498372,
+		"universeId": 10479833648
+	},
+	{
+		"name": "+1 Followers Per Click",
+		"file": "games/1-followers-per-click-98695134949589.luau",
+		"game": "+1 Followers Per Click",
+		"description": "Auto-loads in +1 Followers Per Click.",
+		"placeId": 98695134949589,
+		"universeId": 10299695016
+	},
+	{
+		"name": "+1 Football for Brainrots",
+		"file": "games/1-football-for-brainrots-115564147666832.luau",
+		"game": "+1 Football for Brainrots",
+		"description": "Auto-loads in +1 Football for Brainrots.",
+		"placeId": 115564147666832,
+		"universeId": 10421982501
+	},
+	{
+		"name": "+1 Fruit Samurai",
+		"file": "games/1-fruit-samurai-121143259662420.luau",
+		"game": "+1 Fruit Samurai",
+		"description": "Auto-loads in +1 Fruit Samurai.",
+		"placeId": 121143259662420,
+		"universeId": 10424311938
+	},
+	{
+		"name": "+1 Hack Per Click",
+		"file": "games/1-hack-per-click-88968590411663.luau",
+		"game": "+1 Hack Per Click",
+		"description": "Auto-loads in +1 Hack Per Click.",
+		"placeId": 88968590411663,
+		"universeId": 10343148160
+	},
+	{
+		"name": "+1 Heat Per Click",
+		"file": "games/1-heat-per-click-95570822232841.luau",
+		"game": "+1 Heat Per Click",
+		"description": "Auto-loads in +1 Heat Per Click.",
+		"placeId": 95570822232841,
+		"universeId": 10575115780
+	},
+	{
+		"name": "+1 Horse Evolution",
+		"file": "games/1-horse-evolution-107765897665486.luau",
+		"game": "+1 Horse Evolution",
+		"description": "Auto-loads in +1 Horse Evolution.",
+		"placeId": 107765897665486,
+		"universeId": 10724437966
+	},
+	{
+		"name": "+1 Jump Crunchy ASMR Escape!",
+		"file": "games/1-jump-crunchy-asmr-escape-83264774625004.luau",
+		"game": "+1 Jump Crunchy ASMR Escape!",
+		"description": "Auto-loads in +1 Jump Crunchy ASMR Escape!.",
+		"placeId": 83264774625004,
+		"universeId": 10547918402
+	},
+	{
+		"name": "+1 Kitten Keyboard Escape",
+		"file": "games/1-kitten-keyboard-escape-94860588848140.luau",
+		"game": "+1 Kitten Keyboard Escape",
+		"description": "Auto-loads in +1 Kitten Keyboard Escape.",
+		"placeId": 94860588848140,
+		"universeId": 10528250136
+	},
+	{
+		"name": "+1 Lava Escape",
+		"file": "games/1-lava-escape-82460561886298.luau",
+		"game": "+1 Lava Escape",
+		"description": "Auto-loads in +1 Lava Escape.",
+		"placeId": 82460561886298,
+		"universeId": 10604562172
+	},
+	{
+		"name": "+1 Long Arm Toy Escape!",
+		"file": "games/1-long-arm-toy-escape-74341114342499.luau",
+		"game": "+1 Long Arm Toy Escape!",
+		"description": "Auto-loads in +1 Long Arm Toy Escape!.",
+		"placeId": 74341114342499,
+		"universeId": 10700505394
+	},
+	{
+		"name": "+1 Loot To Forge",
+		"file": "games/1-loot-to-forge-118805555015549.luau",
+		"game": "+1 Loot To Forge",
+		"description": "Auto-loads in +1 Loot To Forge.",
+		"placeId": 118805555015549,
+		"universeId": 10684750879
+	},
+	{
+		"name": "+1 Mog Evolution",
+		"file": "games/1-mog-evolution-92648272637932.luau",
+		"game": "+1 Mog Evolution",
+		"description": "Auto-loads in +1 Mog Evolution.",
+		"placeId": 92648272637932,
+		"universeId": 10764479526
+	},
+	{
+		"name": "+1 Muscle Evolution",
+		"file": "games/1-muscle-evolution-133007106457547.luau",
+		"game": "+1 Muscle Evolution",
+		"description": "Auto-loads in +1 Muscle Evolution.",
+		"placeId": 133007106457547,
+		"universeId": 10246386961
+	},
+	{
+		"name": "+1 Muscles for Prison Escape",
+		"file": "games/1-muscles-for-prison-escape-99468092262114.luau",
+		"game": "+1 Muscles for Prison Escape",
+		"description": "Auto-loads in +1 Muscles for Prison Escape.",
+		"placeId": 99468092262114,
+		"universeId": 10472396102
+	},
+	{
+		"name": "+1 Pickaxe Swing Escape",
+		"file": "games/1-pickaxe-swing-escape-82554996468034.luau",
+		"game": "+1 Pickaxe Swing Escape",
+		"description": "Auto-loads in +1 Pickaxe Swing Escape.",
+		"placeId": 82554996468034,
+		"universeId": 10456832990
+	},
+	{
+		"name": "+1 Poop Per Click",
+		"file": "games/1-poop-per-click-81875183293545.luau",
+		"game": "+1 Poop Per Click",
+		"description": "Auto-loads in +1 Poop Per Click.",
+		"placeId": 81875183293545,
+		"universeId": 10568188126
+	},
+	{
+		"name": "+1 Poor To Rich",
+		"file": "games/1-poor-to-rich-96003649748017.luau",
+		"game": "+1 Poor To Rich",
+		"description": "Auto-loads in +1 Poor To Rich.",
+		"placeId": 96003649748017,
+		"universeId": 10024558677
+	},
+	{
+		"name": "+1 Power Jujutsu Kaisen Evolution",
+		"file": "games/1-power-jujutsu-kaisen-evolution-73768088906246.luau",
+		"game": "+1 Power Jujutsu Kaisen Evolution",
+		"description": "Auto-loads in +1 Power Jujutsu Kaisen Evolution.",
+		"placeId": 73768088906246,
+		"universeId": 10590260635
+	},
+	{
+		"name": "+1 Power Per Click",
+		"file": "games/1-power-per-click-74889851913797.luau",
+		"game": "+1 Power Per Click",
+		"description": "Auto-loads in +1 Power Per Click.",
+		"placeId": 74889851913797,
+		"universeId": 10485201326
+	},
+	{
+		"name": "+1 Shrink per Step",
+		"file": "games/1-shrink-per-step-91695551099066.luau",
+		"game": "+1 Shrink per Step",
+		"description": "Auto-loads in +1 Shrink per Step.",
+		"placeId": 91695551099066,
+		"universeId": 10011808151
+	},
+	{
+		"name": "+1 Skinny Per Step",
+		"file": "games/1-skinny-per-step-128448883585036.luau",
+		"game": "+1 Skinny Per Step",
+		"description": "Auto-loads in +1 Skinny Per Step.",
+		"placeId": 128448883585036,
+		"universeId": 10516066038
+	},
+	{
+		"name": "+1 Slash Per Click!",
+		"file": "games/1-slash-per-click-101558013317432.luau",
+		"game": "+1 Slash Per Click!",
+		"description": "Auto-loads in +1 Slash Per Click!.",
+		"placeId": 101558013317432,
+		"universeId": 7502363080
+	},
+	{
+		"name": "+1 SMASH Walls For Anime Characters!",
+		"file": "games/1-smash-walls-for-anime-characters-76196195821497.luau",
+		"game": "+1 SMASH Walls For Anime Characters!",
+		"description": "Auto-loads in +1 SMASH Walls For Anime Characters!.",
+		"placeId": 76196195821497,
+		"universeId": 10297159264
+	},
+	{
+		"name": "+1 Speed Evolve",
+		"file": "games/1-speed-evolve-83569851223739.luau",
+		"game": "+1 Speed Evolve",
+		"description": "Auto-loads in +1 Speed Evolve.",
+		"placeId": 83569851223739,
+		"universeId": 10057343903
+	},
+	{
+		"name": "+1 Speed Monkey Escape",
+		"file": "games/1-speed-monkey-escape-114697347887839.luau",
+		"game": "+1 Speed Monkey Escape",
+		"description": "Auto-loads in +1 Speed Monkey Escape.",
+		"placeId": 114697347887839,
+		"universeId": 10144280947
+	},
+	{
+		"name": "+1 Speed Ninja Keyboard Escape",
+		"file": "games/1-speed-ninja-keyboard-escape-90740816183375.luau",
+		"game": "+1 Speed Ninja Keyboard Escape",
+		"description": "Auto-loads in +1 Speed Ninja Keyboard Escape.",
+		"placeId": 90740816183375,
+		"universeId": 10351850295
+	},
+	{
+		"name": "+1 Speed Plane Escape",
+		"file": "games/1-speed-plane-escape-114688126725619.luau",
+		"game": "+1 Speed Plane Escape",
+		"description": "Auto-loads in +1 Speed Plane Escape.",
+		"placeId": 114688126725619,
+		"universeId": 10592364263
+	},
+	{
+		"name": "+1 Speed Squirrel Escape",
+		"file": "games/1-speed-squirrel-escape-73613510857111.luau",
+		"game": "+1 Speed Squirrel Escape",
+		"description": "Auto-loads in +1 Speed Squirrel Escape.",
+		"placeId": 73613510857111,
+		"universeId": 10637513477
+	},
+	{
+		"name": "+1 Speedster Escape",
+		"file": "games/1-speedster-escape-85065221510105.luau",
+		"game": "+1 Speedster Escape",
+		"description": "Auto-loads in +1 Speedster Escape.",
+		"placeId": 85065221510105,
+		"universeId": 10447471170
+	},
+	{
+		"name": "+1 Spider Evolution",
+		"file": "games/1-spider-evolution-135830878717711.luau",
+		"game": "+1 Spider Evolution",
+		"description": "Auto-loads in +1 Spider Evolution.",
+		"placeId": 135830878717711,
+		"universeId": 10675029591
+	},
+	{
+		"name": "+1 Spinjitsu Escape",
+		"file": "games/1-spinjitsu-escape-131910189515331.luau",
+		"game": "+1 Spinjitsu Escape",
+		"description": "Auto-loads in +1 Spinjitsu Escape.",
+		"placeId": 131910189515331,
+		"universeId": 10554316588
+	},
+	{
+		"name": "+1 Stand Power Evolution",
+		"file": "games/1-stand-power-evolution-82598548574073.luau",
+		"game": "+1 Stand Power Evolution",
+		"description": "Auto-loads in +1 Stand Power Evolution.",
+		"placeId": 82598548574073,
+		"universeId": 10552899290
+	},
+	{
+		"name": "+1 Strength for Eggs",
+		"file": "games/1-strength-for-eggs-98610101874791.luau",
+		"game": "+1 Strength for Eggs",
+		"description": "Auto-loads in +1 Strength for Eggs.",
+		"placeId": 98610101874791,
+		"universeId": 10766138478
+	},
+	{
+		"name": "+1 Strength to Grow Your Arm",
+		"file": "games/1-strength-to-grow-your-arm-86259628805375.luau",
+		"game": "+1 Strength to Grow Your Arm",
+		"description": "Auto-loads in +1 Strength to Grow Your Arm.",
+		"placeId": 86259628805375,
+		"universeId": 10310999762
+	},
+	{
+		"name": "+1 Superhero Evolution",
+		"file": "games/1-superhero-evolution-97824450589417.luau",
+		"game": "+1 Superhero Evolution",
+		"description": "Auto-loads in +1 Superhero Evolution.",
+		"placeId": 97824450589417,
+		"universeId": 10577588270
+	},
+	{
+		"name": "+1 Sword Fighting Escape",
+		"file": "games/1-sword-fighting-escape-71132391335247.luau",
+		"game": "+1 Sword Fighting Escape",
+		"description": "Auto-loads in +1 Sword Fighting Escape.",
+		"placeId": 71132391335247,
+		"universeId": 10411628404
+	},
+	{
+		"name": "+1 Sword vs Anime",
+		"file": "games/1-sword-vs-anime-72600023868608.luau",
+		"game": "+1 Sword vs Anime",
+		"description": "Auto-loads in +1 Sword vs Anime.",
+		"placeId": 72600023868608,
+		"universeId": 10683022630
+	},
+	{
+		"name": "+1 Tall to Escape",
+		"file": "games/1-tall-to-escape-140334945309841.luau",
+		"game": "+1 Tall to Escape",
+		"description": "Auto-loads in +1 Tall to Escape.",
+		"placeId": 140334945309841,
+		"universeId": 10592860091
+	},
+	{
+		"name": "+1 TNT Mining",
+		"file": "games/1-tnt-mining-101304595834078.luau",
+		"game": "+1 TNT Mining",
+		"description": "Auto-loads in +1 TNT Mining.",
+		"placeId": 101304595834078,
+		"universeId": 10418224975
+	},
+	{
+		"name": "+1 Tongue Escape",
+		"file": "games/1-tongue-escape-122245938604556.luau",
+		"game": "+1 Tongue Escape",
+		"description": "Auto-loads in +1 Tongue Escape.",
+		"placeId": 122245938604556,
+		"universeId": 10681914462
+	},
+	{
+		"name": "+1 Weight Escape",
+		"file": "games/1-weight-escape-134129939916744.luau",
+		"game": "+1 Weight Escape",
+		"description": "Auto-loads in +1 Weight Escape.",
+		"placeId": 134129939916744,
+		"universeId": 10531797250
+	},
+	{
+		"name": "+1 Wings for Brainrots",
+		"file": "games/1-wings-for-brainrots-84332574190497.luau",
+		"game": "+1 Wings for Brainrots",
+		"description": "Auto-loads in +1 Wings for Brainrots.",
+		"placeId": 84332574190497,
+		"universeId": 9998576154
+	},
+	{
+		"name": "+1 Wings For Eggs",
+		"file": "games/1-wings-for-eggs-80242821185181.luau",
+		"game": "+1 Wings For Eggs",
+		"description": "Auto-loads in +1 Wings For Eggs.",
+		"placeId": 80242821185181,
+		"universeId": 10764897725
+	},
+	{
+		"name": "2omething evil will happen",
+		"file": "games/2omething-evil-will-happen-16991287194.luau",
+		"game": "2omething evil will happen",
+		"description": "Auto-loads in 2omething evil will happen.",
+		"placeId": 16991287194,
+		"universeId": 5829613337
+	},
+	{
+		"name": "50 Player BINGO!",
+		"file": "games/50-player-bingo-131479356121251.luau",
+		"game": "50 Player BINGO!",
+		"description": "Auto-loads in 50 Player BINGO!.",
+		"placeId": 131479356121251,
+		"universeId": 10521797740
+	},
+	{
+		"name": "Age Evolution Tycoon",
+		"file": "games/age-evolution-tycoon-96469185605358.luau",
+		"game": "Age Evolution Tycoon",
+		"description": "Auto-loads in Age Evolution Tycoon.",
+		"placeId": 96469185605358,
+		"universeId": 7391615616
+	},
+	{
+		"name": "Airport Tycoon",
+		"file": "games/airport-tycoon-138486812747835.luau",
+		"game": "Airport Tycoon",
+		"description": "Auto-loads in Airport Tycoon.",
+		"placeId": 138486812747835,
+		"universeId": 10241000620
+	},
+	{
+		"name": "Anime Astral Simulator",
+		"file": "games/anime-astral-simulator-102072869879193.luau",
+		"game": "Anime Astral Simulator",
+		"description": "Auto-loads in Anime Astral Simulator.",
+		"placeId": 102072869879193,
+		"universeId": 10502841145
+	},
+	{
+		"name": "Anime Astral Simulator (alt)",
+		"file": "games/anime-astral-simulator-102072869879193-anime-world-fighters.luau",
+		"game": "Anime Astral Simulator",
+		"description": "Auto-loads in Anime Astral Simulator. Alternate version; the default is used for auto-routing.",
+		"placeId": 102072869879193,
+		"universeId": 10502841145,
+		"alt": true
+	},
+	{
+		"name": "Anime Battle RNG",
+		"file": "games/anime-battle-rng-115808762898625.luau",
+		"game": "Anime Battle RNG",
+		"description": "Auto-loads in Anime Battle RNG.",
+		"placeId": 115808762898625,
+		"universeId": 10140039361
+	},
+	{
+		"name": "Anime Card Farm",
+		"file": "games/anime-card-farm-125039473548047.luau",
+		"game": "Anime Card Farm",
+		"description": "Auto-loads in Anime Card Farm.",
+		"placeId": 125039473548047,
+		"universeId": 10144587520
+	},
+	{
+		"name": "Anime Dice",
+		"file": "games/anime-dice-113290951185459.luau",
+		"game": "Anime Dice",
+		"description": "Auto-loads in Anime Dice.",
+		"placeId": 113290951185459,
+		"universeId": 10708913337
+	},
+	{
+		"name": "Anime Expeditions",
+		"file": "games/anime-expeditions-84515722934860.luau",
+		"game": "Anime Expeditions",
+		"description": "Auto-loads in Anime Expeditions.",
+		"placeId": 84515722934860,
+		"universeId": 7613921865
+	},
+	{
+		"name": "Anime Girl Paint by Numbers",
+		"file": "games/anime-girl-paint-by-numbers-129300814231343.luau",
+		"game": "Anime Girl Paint by Numbers",
+		"description": "Auto-loads in Anime Girl Paint by Numbers.",
+		"placeId": 129300814231343,
+		"universeId": 10097648664
+	},
+	{
+		"name": "Anime Jackpot",
+		"file": "games/anime-jackpot-117616339044619.luau",
+		"game": "Anime Jackpot",
+		"description": "Auto-loads in Anime Jackpot.",
+		"placeId": 117616339044619,
+		"universeId": 10078477016
+	},
+	{
+		"name": "Anime RNG",
+		"file": "games/anime-rng-126358239678451.luau",
+		"game": "Anime RNG",
+		"description": "Auto-loads in Anime RNG.",
+		"placeId": 126358239678451,
+		"universeId": 10062593318
+	},
+	{
+		"name": "Anime RNG Defense",
+		"file": "games/anime-rng-defense-104693964860826.luau",
+		"game": "Anime RNG Defense",
+		"description": "Auto-loads in Anime RNG Defense.",
+		"placeId": 104693964860826,
+		"universeId": 9940812243
+	},
+	{
+		"name": "Anime Souls",
+		"file": "games/anime-souls-118884500321949.luau",
+		"game": "Anime Souls",
+		"description": "Auto-loads in Anime Souls.",
+		"placeId": 118884500321949,
+		"universeId": 10385510755
+	},
+	{
+		"name": "Anime Squadron",
+		"file": "games/anime-squadron-71132543521245.luau",
+		"game": "Anime Squadron",
+		"description": "Auto-loads in Anime Squadron.",
+		"placeId": 71132543521245,
+		"universeId": 8356066619
+	},
+	{
+		"name": "Anime Story 2 The Final Novel",
+		"file": "games/anime-story-2-the-final-novel-116766451305209.luau",
+		"game": "Anime Story 2 The Final Novel",
+		"description": "Auto-loads in Anime Story 2 The Final Novel.",
+		"placeId": 116766451305209,
+		"universeId": 7585079192
+	},
+	{
+		"name": "Anime Ultron Simulator",
+		"file": "games/anime-ultron-simulator-111409347044446.luau",
+		"game": "Anime Ultron Simulator",
+		"description": "Auto-loads in Anime Ultron Simulator.",
+		"placeId": 111409347044446,
+		"universeId": 9848850974
+	},
+	{
+		"name": "Anime War RNG",
+		"file": "games/anime-war-rng-79908803570376.luau",
+		"game": "Anime War RNG",
+		"description": "Auto-loads in Anime War RNG.",
+		"placeId": 79908803570376,
+		"universeId": 10494501626
+	},
+	{
+		"name": "Anomaly Garden",
+		"file": "games/anomaly-garden-114302935980927.luau",
+		"game": "Anomaly Garden",
+		"description": "Auto-loads in Anomaly Garden.",
+		"placeId": 114302935980927,
+		"universeId": 10138925567
+	},
+	{
+		"name": "Aura For Brainrots",
+		"file": "games/aura-for-brainrots-122526789002601.luau",
+		"game": "Aura For Brainrots",
+		"description": "Auto-loads in Aura For Brainrots.",
+		"placeId": 122526789002601,
+		"universeId": 10522965485
+	},
+	{
+		"name": "Automate a Restaurant",
+		"file": "games/automate-a-restaurant-101670277171204.luau",
+		"game": "Automate a Restaurant",
+		"description": "Auto-loads in Automate a Restaurant.",
+		"placeId": 101670277171204,
+		"universeId": 10219827882
+	},
+	{
+		"name": "Axe RNG",
+		"file": "games/axe-rng-121863161094252.luau",
+		"game": "Axe RNG",
+		"description": "Auto-loads in Axe RNG.",
+		"placeId": 121863161094252,
+		"universeId": 10241922839
+	},
+	{
+		"name": "Backflip for Animals!",
+		"file": "games/backflip-for-animals-88611017452341.luau",
+		"game": "Backflip for Animals!",
+		"description": "Auto-loads in Backflip for Animals!.",
+		"placeId": 88611017452341,
+		"universeId": 10764839604
+	},
+	{
+		"name": "Backrooms Simulator",
+		"file": "games/backrooms-simulator-126061186342944.luau",
+		"game": "Backrooms Simulator",
+		"description": "Auto-loads in Backrooms Simulator.",
+		"placeId": 126061186342944,
+		"universeId": 10150551368
+	},
+	{
+		"name": "Basketball Dynasty",
+		"file": "games/basketball-dynasty-91696807303847.luau",
+		"game": "Basketball Dynasty",
+		"description": "Auto-loads in Basketball Dynasty.",
+		"placeId": 91696807303847,
+		"universeId": 10766036258
+	},
+	{
+		"name": "BE A FISH BAIT! SCI-FI UPD",
+		"file": "games/be-a-fish-bait-sci-fi-upd-99702578544768.luau",
+		"game": "BE A FISH BAIT! SCI-FI UPD",
+		"description": "Auto-loads in BE A FISH BAIT! SCI-FI UPD.",
+		"placeId": 99702578544768,
+		"universeId": 9330616906
+	},
+	{
+		"name": "Be Monkey For Brainrots!",
+		"file": "games/be-monkey-for-brainrots-76984077812388.luau",
+		"game": "Be Monkey For Brainrots!",
+		"description": "Auto-loads in Be Monkey For Brainrots!.",
+		"placeId": 76984077812388,
+		"universeId": 10377967965
+	},
+	{
+		"name": "Be The Final Boss",
+		"file": "games/be-the-final-boss-140302982046391.luau",
+		"game": "Be The Final Boss",
+		"description": "Auto-loads in Be The Final Boss.",
+		"placeId": 140302982046391,
+		"universeId": 10421154706
+	},
+	{
+		"name": "Beat the Anime Boss!",
+		"file": "games/beat-the-anime-boss-129216769649527.luau",
+		"game": "Beat the Anime Boss!",
+		"description": "Auto-loads in Beat the Anime Boss!.",
+		"placeId": 129216769649527,
+		"universeId": 10501944811
+	},
+	{
+		"name": "Become a Billionaire",
+		"file": "games/become-a-billionaire-90704250333473.luau",
+		"game": "Become a Billionaire",
+		"description": "Auto-loads in Become a Billionaire.",
+		"placeId": 90704250333473,
+		"universeId": 10138977250
+	},
+	{
+		"name": "Bid for Anime!",
+		"file": "games/bid-for-anime-87274635966213.luau",
+		"game": "Bid for Anime!",
+		"description": "Auto-loads in Bid for Anime!.",
+		"placeId": 87274635966213,
+		"universeId": 10448083800
+	},
+	{
+		"name": "Bid For Soccer Cards!",
+		"file": "games/bid-for-soccer-cards-73578698401320.luau",
+		"game": "Bid For Soccer Cards!",
+		"description": "Auto-loads in Bid For Soccer Cards!.",
+		"placeId": 73578698401320,
+		"universeId": 10399413858
+	},
+	{
+		"name": "Blow up Lucky Blocks For Cars",
+		"file": "games/blow-up-lucky-blocks-for-cars-77084002576266.luau",
+		"game": "Blow up Lucky Blocks For Cars",
+		"description": "Auto-loads in Blow up Lucky Blocks For Cars.",
+		"placeId": 77084002576266,
+		"universeId": 10290463156
+	},
+	{
+		"name": "Blue Lock Farm",
+		"file": "games/blue-lock-farm-132767904294856.luau",
+		"game": "Blue Lock Farm",
+		"description": "Auto-loads in Blue Lock Farm.",
+		"placeId": 132767904294856,
+		"universeId": 10700618962
+	},
+	{
+		"name": "Bomb Fishing!",
+		"file": "games/bomb-fishing-118677256126351.luau",
+		"game": "Bomb Fishing!",
+		"description": "Auto-loads in Bomb Fishing!.",
+		"placeId": 118677256126351,
+		"universeId": 10081292501
+	},
+	{
+		"name": "Brainrot Card Battles",
+		"file": "games/brainrot-card-battles-124124395449044.luau",
+		"game": "Brainrot Card Battles",
+		"description": "Auto-loads in Brainrot Card Battles.",
+		"placeId": 124124395449044,
+		"universeId": 9702081004
+	},
+	{
+		"name": "Brainrot Sniper",
+		"file": "games/brainrot-sniper-95223801959482.luau",
+		"game": "Brainrot Sniper",
+		"description": "Auto-loads in Brainrot Sniper.",
+		"placeId": 95223801959482,
+		"universeId": 10067868611
+	},
+	{
+		"name": "Break an Egg!",
+		"file": "games/break-an-egg-128683790553857.luau",
+		"game": "Break an Egg!",
+		"description": "Auto-loads in Break an Egg!.",
+		"placeId": 128683790553857,
+		"universeId": 10487281190
+	},
+	{
+		"name": "Break and Steal an Egg",
+		"file": "games/break-and-steal-an-egg-114326934417838.luau",
+		"game": "Break and Steal an Egg",
+		"description": "Auto-loads in Break and Steal an Egg.",
+		"placeId": 114326934417838,
+		"universeId": 10765288803
+	},
+	{
+		"name": "Break For Anime!",
+		"file": "games/break-for-anime-83337738588990.luau",
+		"game": "Break For Anime!",
+		"description": "Auto-loads in Break For Anime!.",
+		"placeId": 83337738588990,
+		"universeId": 10545879268
+	},
+	{
+		"name": "Break Tape For Brainrots",
+		"file": "games/break-tape-for-brainrots-104339804279870.luau",
+		"game": "Break Tape For Brainrots",
+		"description": "Auto-loads in Break Tape For Brainrots.",
+		"placeId": 104339804279870,
+		"universeId": 10406853972
+	},
+	{
+		"name": "Break Walls for Brainrots!",
+		"file": "games/break-walls-for-brainrots-123708462523153.luau",
+		"game": "Break Walls for Brainrots!",
+		"description": "Auto-loads in Break Walls for Brainrots!.",
+		"placeId": 123708462523153,
+		"universeId": 10204169479
+	},
+	{
+		"name": "BreakDoor",
+		"file": "games/breakdoor-119004860768199.luau",
+		"game": "BreakDoor",
+		"description": "Auto-loads in BreakDoor.",
+		"placeId": 119004860768199,
+		"universeId": 9788139379
+	},
+	{
+		"name": "Build a Base and Steal",
+		"file": "games/build-a-base-and-steal-132016691802922.luau",
+		"game": "Build a Base and Steal",
+		"description": "Auto-loads in Build a Base and Steal.",
+		"placeId": 132016691802922,
+		"universeId": 10356701370
+	},
+	{
+		"name": "Build a Bee Swarm",
+		"file": "games/build-a-bee-swarm-113398232239418.luau",
+		"game": "Build a Bee Swarm",
+		"description": "Auto-loads in Build a Bee Swarm.",
+		"placeId": 113398232239418,
+		"universeId": 10692672197
+	},
+	{
+		"name": "Build A Cart",
+		"file": "games/build-a-cart-127590941940388.luau",
+		"game": "Build A Cart",
+		"description": "Auto-loads in Build A Cart.",
+		"placeId": 127590941940388,
+		"universeId": 8284003604
+	},
+	{
+		"name": "Build A Clone Obby",
+		"file": "games/build-a-clone-obby-136871790892566.luau",
+		"game": "Build A Clone Obby",
+		"description": "Auto-loads in Build A Clone Obby.",
+		"placeId": 136871790892566,
+		"universeId": 10375210966
+	},
+	{
+		"name": "Build a Garden Tower",
+		"file": "games/build-a-garden-tower-115035699922620.luau",
+		"game": "Build a Garden Tower",
+		"description": "Auto-loads in Build a Garden Tower.",
+		"placeId": 115035699922620,
+		"universeId": 10405785379
+	},
+	{
+		"name": "Build A Golem!",
+		"file": "games/build-a-golem-78091651370612.luau",
+		"game": "Build A Golem!",
+		"description": "Auto-loads in Build A Golem!.",
+		"placeId": 78091651370612,
+		"universeId": 10399524075
+	},
+	{
+		"name": "Build a Gun Army",
+		"file": "games/build-a-gun-army-134162299584012.luau",
+		"game": "Build a Gun Army",
+		"description": "Auto-loads in Build a Gun Army.",
+		"placeId": 134162299584012,
+		"universeId": 10452740285
+	},
+	{
+		"name": "Build a Keyboard",
+		"file": "games/build-a-keyboard-91679585668032.luau",
+		"game": "Build a Keyboard",
+		"description": "Auto-loads in Build a Keyboard.",
+		"placeId": 91679585668032,
+		"universeId": 10306366253
+	},
+	{
+		"name": "Build A Pet Factory",
+		"file": "games/build-a-pet-factory-135729108619936.luau",
+		"game": "Build A Pet Factory",
+		"description": "Auto-loads in Build A Pet Factory.",
+		"placeId": 135729108619936,
+		"universeId": 8881105040
+	},
+	{
+		"name": "Build A Solar Farm",
+		"file": "games/build-a-solar-farm-89790257708758.luau",
+		"game": "Build A Solar Farm",
+		"description": "Auto-loads in Build A Solar Farm.",
+		"placeId": 89790257708758,
+		"universeId": 10752560622
+	},
+	{
+		"name": "Build a Zoo",
+		"file": "games/build-a-zoo-105555311806207.luau",
+		"game": "Build a Zoo",
+		"description": "Auto-loads in Build a Zoo.",
+		"placeId": 105555311806207,
+		"universeId": 8066283370
+	},
+	{
+		"name": "Build an AI",
+		"file": "games/build-an-ai-84637477108843.luau",
+		"game": "Build an AI",
+		"description": "Auto-loads in Build an AI.",
+		"placeId": 84637477108843,
+		"universeId": 10515143755
+	},
+	{
+		"name": "Build An Ant Empire",
+		"file": "games/build-an-ant-empire-78490532994307.luau",
+		"game": "Build An Ant Empire",
+		"description": "Auto-loads in Build An Ant Empire.",
+		"placeId": 78490532994307,
+		"universeId": 10436530264
+	},
+	{
+		"name": "Build An Ore Farm",
+		"file": "games/build-an-ore-farm-103923778951081.luau",
+		"game": "Build An Ore Farm",
+		"description": "Auto-loads in Build An Ore Farm.",
+		"placeId": 103923778951081,
+		"universeId": 10566926840
+	},
+	{
+		"name": "Build An Ore Farm",
+		"file": "games/build-an-ore-farm-80742451189972.luau",
+		"game": "Build An Ore Farm",
+		"description": "Auto-loads in Build An Ore Farm.",
+		"placeId": 80742451189972,
+		"universeId": 10139464788
+	},
+	{
+		"name": "Build Base to Survive VERITY",
+		"file": "games/build-base-to-survive-verity-116070952245255.luau",
+		"game": "Build Base to Survive VERITY",
+		"description": "Auto-loads in Build Base to Survive VERITY.",
+		"placeId": 116070952245255,
+		"universeId": 10604772590
+	},
+	{
+		"name": "Build Golems and Fight",
+		"file": "games/build-golems-and-fight-101145494627874.luau",
+		"game": "Build Golems and Fight",
+		"description": "Auto-loads in Build Golems and Fight.",
+		"placeId": 101145494627874,
+		"universeId": 10667023147
+	},
+	{
+		"name": "Build the Pyramid!",
+		"file": "games/build-the-pyramid-123720558354386.luau",
+		"game": "Build the Pyramid!",
+		"description": "Auto-loads in Build the Pyramid!.",
+		"placeId": 123720558354386,
+		"universeId": 10765012427
+	},
+	{
+		"name": "BUILD your Butterfly Garden",
+		"file": "games/build-your-butterfly-garden-126003539836478.luau",
+		"game": "BUILD your Butterfly Garden",
+		"description": "Auto-loads in BUILD your Butterfly Garden.",
+		"placeId": 126003539836478,
+		"universeId": 9039538811
+	},
+	{
+		"name": "Burgir Incremental",
+		"file": "games/burgir-incremental-77807408969161.luau",
+		"game": "Burgir Incremental",
+		"description": "Auto-loads in Burgir Incremental.",
+		"placeId": 77807408969161,
+		"universeId": 9144712089
+	},
+	{
+		"name": "Cake Mountain",
+		"file": "games/cake-mountain-83733952151811.luau",
+		"game": "Cake Mountain",
+		"description": "Auto-loads in Cake Mountain.",
+		"placeId": 83733952151811,
+		"universeId": 10533638982
+	},
+	{
+		"name": "Capybaras VS Plants",
+		"file": "games/capybaras-vs-plants-104973076655377.luau",
+		"game": "Capybaras VS Plants",
+		"description": "Auto-loads in Capybaras VS Plants.",
+		"placeId": 104973076655377,
+		"universeId": 8841437826
+	},
+	{
+		"name": "Cars VS Tape",
+		"file": "games/cars-vs-tape-98393605725180.luau",
+		"game": "Cars VS Tape",
+		"description": "Auto-loads in Cars VS Tape.",
+		"placeId": 98393605725180,
+		"universeId": 10372351735
+	},
+	{
+		"name": "Carve Wood!",
+		"file": "games/carve-wood-82712304391069.luau",
+		"game": "Carve Wood!",
+		"description": "Auto-loads in Carve Wood!.",
+		"placeId": 82712304391069,
+		"universeId": 10404519332
+	},
+	{
+		"name": "Case Paradise",
+		"file": "games/case-paradise-118637423917462.luau",
+		"game": "Case Paradise",
+		"description": "Auto-loads in Case Paradise.",
+		"placeId": 118637423917462,
+		"universeId": 7658304545
+	},
+	{
+		"name": "Catch 1 Billion Ducks",
+		"file": "games/catch-1-billion-ducks-100293509865504.luau",
+		"game": "Catch 1 Billion Ducks",
+		"description": "Auto-loads in Catch 1 Billion Ducks.",
+		"placeId": 100293509865504,
+		"universeId": 10516888336
+	},
+	{
+		"name": "Catch a Monster",
+		"file": "games/catch-a-monster-98664161516921.luau",
+		"game": "Catch a Monster",
+		"description": "Auto-loads in Catch a Monster.",
+		"placeId": 98664161516921,
+		"universeId": 9141743926
+	},
+	{
+		"name": "Catch And Tame!",
+		"file": "games/catch-and-tame-96645548064314.luau",
+		"game": "Catch And Tame!",
+		"description": "Auto-loads in Catch And Tame!.",
+		"placeId": 96645548064314,
+		"universeId": 9091133975
+	},
+	{
+		"name": "Catch Dragons To Defend",
+		"file": "games/catch-dragons-to-defend-102392235728099.luau",
+		"game": "Catch Dragons To Defend",
+		"description": "Auto-loads in Catch Dragons To Defend.",
+		"placeId": 102392235728099,
+		"universeId": 10602198030
+	},
+	{
+		"name": "Chicken Farm",
+		"file": "games/chicken-farm-137233438285284.luau",
+		"game": "Chicken Farm",
+		"description": "Auto-loads in Chicken Farm.",
+		"placeId": 137233438285284,
+		"universeId": 10209534490
+	},
+	{
+		"name": "Choose the Stronger Anime!",
+		"file": "games/choose-the-stronger-anime-111801263516291.luau",
+		"game": "Choose the Stronger Anime!",
+		"description": "Auto-loads in Choose the Stronger Anime!.",
+		"placeId": 111801263516291,
+		"universeId": 10759594563
+	},
+	{
+		"name": "Claw Fishing",
+		"file": "games/claw-fishing-128931272139211.luau",
+		"game": "Claw Fishing",
+		"description": "Auto-loads in Claw Fishing.",
+		"placeId": 128931272139211,
+		"universeId": 10008606756
+	},
+	{
+		"name": "Clean all the Leaves",
+		"file": "games/clean-all-the-leaves-92637789841354.luau",
+		"game": "Clean all the Leaves",
+		"description": "Auto-loads in Clean all the Leaves.",
+		"placeId": 92637789841354,
+		"universeId": 10539411000
+	},
+	{
+		"name": "Clean the WORLD!",
+		"file": "games/clean-the-world-105767799784652.luau",
+		"game": "Clean the WORLD!",
+		"description": "Auto-loads in Clean the WORLD!.",
+		"placeId": 105767799784652,
+		"universeId": 10494847029
+	},
+	{
+		"name": "Clean Your Keycaps",
+		"file": "games/clean-your-keycaps-82745432464897.luau",
+		"game": "Clean Your Keycaps",
+		"description": "Auto-loads in Clean Your Keycaps.",
+		"placeId": 82745432464897,
+		"universeId": 10420582875
+	},
+	{
+		"name": "Clicker Simulator!",
+		"file": "games/clicker-simulator-134719268825886.luau",
+		"game": "Clicker Simulator!",
+		"description": "Auto-loads in Clicker Simulator!.",
+		"placeId": 134719268825886,
+		"universeId": 10415845204
+	},
+	{
+		"name": "Clicker Simulator!",
+		"file": "games/clicker-simulator-138408007583179.luau",
+		"game": "Clicker Simulator!",
+		"description": "Auto-loads in Clicker Simulator!.",
+		"placeId": 138408007583179,
+		"universeId": 9907432116
+	},
+	{
+		"name": "Cliff Mansion Tycoon",
+		"file": "games/cliff-mansion-tycoon-88015023779741.luau",
+		"game": "Cliff Mansion Tycoon",
+		"description": "Auto-loads in Cliff Mansion Tycoon.",
+		"placeId": 88015023779741,
+		"universeId": 9913288302
+	},
+	{
+		"name": "Climb and Drop a Lucky Block",
+		"file": "games/climb-and-drop-a-lucky-block-96401370703274.luau",
+		"game": "Climb and Drop a Lucky Block",
+		"description": "Auto-loads in Climb and Drop a Lucky Block.",
+		"placeId": 96401370703274,
+		"universeId": 10189601764
+	},
+	{
+		"name": "Climb Waterslide and Slide",
+		"file": "games/climb-waterslide-and-slide-139617346573330.luau",
+		"game": "Climb Waterslide and Slide",
+		"description": "Auto-loads in Climb Waterslide and Slide.",
+		"placeId": 139617346573330,
+		"universeId": 10030829154
+	},
+	{
+		"name": "Clone to Steal Eggs",
+		"file": "games/clone-to-steal-eggs-76943966208523.luau",
+		"game": "Clone to Steal Eggs",
+		"description": "Auto-loads in Clone to Steal Eggs.",
+		"placeId": 76943966208523,
+		"universeId": 10766008884
+	},
+	{
+		"name": "Coach a Fighter!",
+		"file": "games/coach-a-fighter-111517697993641.luau",
+		"game": "Coach a Fighter!",
+		"description": "Auto-loads in Coach a Fighter!.",
+		"placeId": 111517697993641,
+		"universeId": 10429426791
+	},
+	{
+		"name": "Coin Flip",
+		"file": "games/coin-flip-99416896791343.luau",
+		"game": "Coin Flip",
+		"description": "Auto-loads in Coin Flip.",
+		"placeId": 99416896791343,
+		"universeId": 10251837812
+	},
+	{
+		"name": "Collect 1 Million Items",
+		"file": "games/collect-1-million-items-133363783004873.luau",
+		"game": "Collect 1 Million Items",
+		"description": "Auto-loads in Collect 1 Million Items.",
+		"placeId": 133363783004873,
+		"universeId": 10741302505
+	},
+	{
+		"name": "Collect Cars and Race",
+		"file": "games/collect-cars-and-race-120579221585812.luau",
+		"game": "Collect Cars and Race",
+		"description": "Auto-loads in Collect Cars and Race.",
+		"placeId": 120579221585812,
+		"universeId": 10613457026
+	},
+	{
+		"name": "Collect The Alphabet",
+		"file": "games/collect-the-alphabet-127103413498148.luau",
+		"game": "Collect The Alphabet",
+		"description": "Auto-loads in Collect The Alphabet.",
+		"placeId": 127103413498148,
+		"universeId": 10583634958
+	},
+	{
+		"name": "Cook & Sell!",
+		"file": "games/cook-sell-106131416903029.luau",
+		"game": "Cook & Sell!",
+		"description": "Auto-loads in Cook & Sell!.",
+		"placeId": 106131416903029,
+		"universeId": 9156711629
+	},
+	{
+		"name": "Cowboy DUELS",
+		"file": "games/cowboy-duels-131103239963274.luau",
+		"game": "Cowboy DUELS",
+		"description": "Auto-loads in Cowboy DUELS.",
+		"placeId": 131103239963274,
+		"universeId": 10255788071
+	},
+	{
+		"name": "Cows RNG",
+		"file": "games/cows-rng-130190834497309.luau",
+		"game": "Cows RNG",
+		"description": "Auto-loads in Cows RNG.",
+		"placeId": 130190834497309,
+		"universeId": 10149489828
+	},
+	{
+		"name": "Cultivation Evermortal",
+		"file": "games/cultivation-evermortal-96179204081384.luau",
+		"game": "Cultivation Evermortal",
+		"description": "Auto-loads in Cultivation Evermortal.",
+		"placeId": 96179204081384,
+		"universeId": 10667860714
+	},
+	{
+		"name": "Cut a Gem",
+		"file": "games/cut-a-gem-111773649152177.luau",
+		"game": "Cut a Gem",
+		"description": "Auto-loads in Cut a Gem.",
+		"placeId": 111773649152177,
+		"universeId": 10210301177
+	},
+	{
+		"name": "Death Order Simon Says",
+		"file": "games/death-order-simon-says-18666738837.luau",
+		"game": "Death Order Simon Says",
+		"description": "Auto-loads in Death Order Simon Says.",
+		"placeId": 18666738837,
+		"universeId": 6324644175
+	},
+	{
+		"name": "Deep Fishing",
+		"file": "games/deep-fishing-132239307080610.luau",
+		"game": "Deep Fishing",
+		"description": "Auto-loads in Deep Fishing.",
+		"placeId": 132239307080610,
+		"universeId": 10526853622
+	},
+	{
+		"name": "Defeat Anime RNG",
+		"file": "games/defeat-anime-rng-92606991708989.luau",
+		"game": "Defeat Anime RNG",
+		"description": "Auto-loads in Defeat Anime RNG.",
+		"placeId": 92606991708989,
+		"universeId": 10552240401
+	},
+	{
+		"name": "Defend my Ring Farm",
+		"file": "games/defend-my-ring-farm-71245877600560.luau",
+		"game": "Defend my Ring Farm",
+		"description": "Auto-loads in Defend my Ring Farm.",
+		"placeId": 71245877600560,
+		"universeId": 10252127126
+	},
+	{
+		"name": "Defend ur base with anime",
+		"file": "games/defend-ur-base-with-anime-105031185134358.luau",
+		"game": "Defend ur base with anime",
+		"description": "Auto-loads in Defend ur base with anime.",
+		"placeId": 105031185134358,
+		"universeId": 10111742174
+	},
+	{
+		"name": "Defend Your Animals!",
+		"file": "games/defend-your-animals-84210392569061.luau",
+		"game": "Defend Your Animals!",
+		"description": "Auto-loads in Defend Your Animals!.",
+		"placeId": 84210392569061,
+		"universeId": 10624308076
+	},
+	{
+		"name": "Defend Your Plushie! TD",
+		"file": "games/defend-your-plushie-td-116501341774429.luau",
+		"game": "Defend Your Plushie! TD",
+		"description": "Auto-loads in Defend Your Plushie! TD.",
+		"placeId": 116501341774429,
+		"universeId": 9722598100
+	},
+	{
+		"name": "Defend Your Treehouse!",
+		"file": "games/defend-your-treehouse-100641654440407.luau",
+		"game": "Defend Your Treehouse!",
+		"description": "Auto-loads in Defend Your Treehouse!.",
+		"placeId": 100641654440407,
+		"universeId": 10761375938
+	},
+	{
+		"name": "Destroy a House",
+		"file": "games/destroy-a-house-125495618008505.luau",
+		"game": "Destroy a House",
+		"description": "Auto-loads in Destroy a House.",
+		"placeId": 125495618008505,
+		"universeId": 10657726869
+	},
+	{
+		"name": "Dig & Clean",
+		"file": "games/dig-clean-83038462357724.luau",
+		"game": "Dig & Clean",
+		"description": "Auto-loads in Dig & Clean.",
+		"placeId": 83038462357724,
+		"universeId": 10475794799
+	},
+	{
+		"name": "Dig Into Secrets",
+		"file": "games/dig-into-secrets-119409763193569.luau",
+		"game": "Dig Into Secrets",
+		"description": "Auto-loads in Dig Into Secrets.",
+		"placeId": 119409763193569,
+		"universeId": 10685312778
+	},
+	{
+		"name": "Dino Hunters",
+		"file": "games/dino-hunters-119031147890918.luau",
+		"game": "Dino Hunters",
+		"description": "Auto-loads in Dino Hunters.",
+		"placeId": 119031147890918,
+		"universeId": 10272975313
+	},
+	{
+		"name": "Don t Steal the Bobo",
+		"file": "games/don-t-steal-the-bobo-120135584963579.luau",
+		"game": "Don t Steal the Bobo",
+		"description": "Auto-loads in Don t Steal the Bobo.",
+		"placeId": 120135584963579,
+		"universeId": 8791358380
+	},
+	{
+		"name": "Dragon Adventures",
+		"file": "games/dragon-adventures-3475397644.luau",
+		"game": "Dragon Adventures",
+		"description": "Auto-loads in Dragon Adventures.",
+		"placeId": 3475397644,
+		"universeId": 1235188606
+	},
+	{
+		"name": "Dream Keyboard Escape",
+		"file": "games/dream-keyboard-escape-129350834403009.luau",
+		"game": "Dream Keyboard Escape",
+		"description": "Auto-loads in Dream Keyboard Escape.",
+		"placeId": 129350834403009,
+		"universeId": 10490115057
+	},
+	{
+		"name": "Drill Blocks for Brainrots",
+		"file": "games/drill-blocks-for-brainrots-78177131121429.luau",
+		"game": "Drill Blocks for Brainrots",
+		"description": "Auto-loads in Drill Blocks for Brainrots.",
+		"placeId": 78177131121429,
+		"universeId": 10156435104
+	},
+	{
+		"name": "Drill for Anime",
+		"file": "games/drill-for-anime-117459530347460.luau",
+		"game": "Drill for Anime",
+		"description": "Auto-loads in Drill for Anime.",
+		"placeId": 117459530347460,
+		"universeId": 10397531066
+	},
+	{
+		"name": "Drive-Thru Empire",
+		"file": "games/drive-thru-empire-88271351034688.luau",
+		"game": "Drive-Thru Empire",
+		"description": "Auto-loads in Drive-Thru Empire.",
+		"placeId": 88271351034688,
+		"universeId": 10733572105
+	},
+	{
+		"name": "Dungeon Lootr",
+		"file": "games/dungeon-lootr-106484206883664.luau",
+		"game": "Dungeon Lootr",
+		"description": "Auto-loads in Dungeon Lootr.",
+		"placeId": 106484206883664,
+		"universeId": 9656201728
+	},
+	{
+		"name": "Dungeon Quest Reborn",
+		"file": "games/dungeon-quest-reborn-77649408247578.luau",
+		"game": "Dungeon Quest Reborn",
+		"description": "Auto-loads in Dungeon Quest Reborn.",
+		"placeId": 77649408247578,
+		"universeId": 9931749389
+	},
+	{
+		"name": "Endless Tower Defense",
+		"file": "games/endless-tower-defense-109792243252518.luau",
+		"game": "Endless Tower Defense",
+		"description": "Auto-loads in Endless Tower Defense.",
+		"placeId": 109792243252518,
+		"universeId": 10118611383
+	},
+	{
+		"name": "Evomon",
+		"file": "games/evomon-134381727982611.luau",
+		"game": "Evomon",
+		"description": "Auto-loads in Evomon.",
+		"placeId": 134381727982611,
+		"universeId": 9826885587
+	},
+	{
+		"name": "Farm a Fish",
+		"file": "games/farm-a-fish-91296119701853.luau",
+		"game": "Farm a Fish",
+		"description": "Auto-loads in Farm a Fish.",
+		"placeId": 91296119701853,
+		"universeId": 8243724761
+	},
+	{
+		"name": "Farm an Island",
+		"file": "games/farm-an-island-78769336859161.luau",
+		"game": "Farm an Island",
+		"description": "Auto-loads in Farm an Island.",
+		"placeId": 78769336859161,
+		"universeId": 10349044906
+	},
+	{
+		"name": "Farm RNG",
+		"file": "games/farm-rng-124017387606323.luau",
+		"game": "Farm RNG",
+		"description": "Auto-loads in Farm RNG.",
+		"placeId": 124017387606323,
+		"universeId": 10231362314
+	},
+	{
+		"name": "Fill Water Tanks",
+		"file": "games/fill-water-tanks-113461233137974.luau",
+		"game": "Fill Water Tanks",
+		"description": "Auto-loads in Fill Water Tanks.",
+		"placeId": 113461233137974,
+		"universeId": 10589963489
+	},
+	{
+		"name": "Final Swarm",
+		"file": "games/final-swarm-99521272836282.luau",
+		"game": "Final Swarm",
+		"description": "Auto-loads in Final Swarm.",
+		"placeId": 99521272836282,
+		"universeId": 9551044479
+	},
+	{
+		"name": "Find the Needle!",
+		"file": "games/find-the-needle-83238501165241.luau",
+		"game": "Find the Needle!",
+		"description": "Auto-loads in Find the Needle!.",
+		"placeId": 83238501165241,
+		"universeId": 10754208508
+	},
+	{
+		"name": "Fish an Anime RNG",
+		"file": "games/fish-an-anime-rng-74729868188364.luau",
+		"game": "Fish an Anime RNG",
+		"description": "Auto-loads in Fish an Anime RNG.",
+		"placeId": 74729868188364,
+		"universeId": 9582986239
+	},
+	{
+		"name": "Fish an EGG from Rivers",
+		"file": "games/fish-an-egg-from-rivers-101672855717389.luau",
+		"game": "Fish an EGG from Rivers",
+		"description": "Auto-loads in Fish an EGG from Rivers.",
+		"placeId": 101672855717389,
+		"universeId": 10033692849
+	},
+	{
+		"name": "Fish For Junk",
+		"file": "games/fish-for-junk-132010220154773.luau",
+		"game": "Fish For Junk",
+		"description": "Auto-loads in Fish For Junk.",
+		"placeId": 132010220154773,
+		"universeId": 10539208169
+	},
+	{
+		"name": "Fishing Chef",
+		"file": "games/fishing-chef-88599461076137.luau",
+		"game": "Fishing Chef",
+		"description": "Auto-loads in Fishing Chef.",
+		"placeId": 88599461076137,
+		"universeId": 8955905923
+	},
+	{
+		"name": "Fishing Wars",
+		"file": "games/fishing-wars-106605020123719.luau",
+		"game": "Fishing Wars",
+		"description": "Auto-loads in Fishing Wars.",
+		"placeId": 106605020123719,
+		"universeId": 10761586925
+	},
+	{
+		"name": "Forge and Sell",
+		"file": "games/forge-and-sell-95942361689346.luau",
+		"game": "Forge and Sell",
+		"description": "Auto-loads in Forge and Sell.",
+		"placeId": 95942361689346,
+		"universeId": 10476052420
+	},
+	{
+		"name": "Fruit Zombie Survival",
+		"file": "games/fruit-zombie-survival-75290583112878.luau",
+		"game": "Fruit Zombie Survival",
+		"description": "Auto-loads in Fruit Zombie Survival.",
+		"placeId": 75290583112878,
+		"universeId": 10654199482
+	},
+	{
+		"name": "Garden Cleaner Evolution",
+		"file": "games/garden-cleaner-evolution-89907728898683.luau",
+		"game": "Garden Cleaner Evolution",
+		"description": "Auto-loads in Garden Cleaner Evolution.",
+		"placeId": 89907728898683,
+		"universeId": 10518836988
+	},
+	{
+		"name": "Garden Horizons",
+		"file": "games/garden-horizons-130594398886540.luau",
+		"game": "Garden Horizons",
+		"description": "Auto-loads in Garden Horizons.",
+		"placeId": 130594398886540,
+		"universeId": 9509842868
+	},
+	{
+		"name": "Get Fat to Break Tape",
+		"file": "games/get-fat-to-break-tape-75568173037446.luau",
+		"game": "Get Fat to Break Tape",
+		"description": "Auto-loads in Get Fat to Break Tape.",
+		"placeId": 75568173037446,
+		"universeId": 10136067263
+	},
+	{
+		"name": "Greedy Brainrots",
+		"file": "games/greedy-brainrots-83220467866714.luau",
+		"game": "Greedy Brainrots",
+		"description": "Auto-loads in Greedy Brainrots.",
+		"placeId": 83220467866714,
+		"universeId": 10540617132
+	},
+	{
+		"name": "Greedy Growers",
+		"file": "games/greedy-growers-74102906764176.luau",
+		"game": "Greedy Growers",
+		"description": "Auto-loads in Greedy Growers.",
+		"placeId": 74102906764176,
+		"universeId": 10440833423
+	},
+	{
+		"name": "Grow a Beehive",
+		"file": "games/grow-a-beehive-88891488197895.luau",
+		"game": "Grow a Beehive",
+		"description": "Auto-loads in Grow a Beehive.",
+		"placeId": 88891488197895,
+		"universeId": 10253841135
+	},
+	{
+		"name": "Grow a Chicken Fighter",
+		"file": "games/grow-a-chicken-fighter-94640181989498.luau",
+		"game": "Grow a Chicken Fighter",
+		"description": "Auto-loads in Grow a Chicken Fighter.",
+		"placeId": 94640181989498,
+		"universeId": 10338952197
+	},
+	{
+		"name": "Grow It RNG",
+		"file": "games/grow-it-rng-78292727217500.luau",
+		"game": "Grow It RNG",
+		"description": "Auto-loads in Grow It RNG.",
+		"placeId": 78292727217500,
+		"universeId": 10232653162
+	},
+	{
+		"name": "Hack A Business",
+		"file": "games/hack-a-business-118055952211055.luau",
+		"game": "Hack A Business",
+		"description": "Auto-loads in Hack A Business.",
+		"placeId": 118055952211055,
+		"universeId": 10066929248
+	},
+	{
+		"name": "Hatch And Fry!",
+		"file": "games/hatch-and-fry-124472567087489.luau",
+		"game": "Hatch And Fry!",
+		"description": "Auto-loads in Hatch And Fry!.",
+		"placeId": 124472567087489,
+		"universeId": 10474692907
+	},
+	{
+		"name": "Heavyweight Fishing",
+		"file": "games/heavyweight-fishing-98502499119821.luau",
+		"game": "Heavyweight Fishing",
+		"description": "Auto-loads in Heavyweight Fishing.",
+		"placeId": 98502499119821,
+		"universeId": 8342498724
+	},
+	{
+		"name": "Heroes RNG",
+		"file": "games/heroes-rng-108307565942574.luau",
+		"game": "Heroes RNG",
+		"description": "Auto-loads in Heroes RNG.",
+		"placeId": 108307565942574,
+		"universeId": 10153098880
+	},
+	{
+		"name": "Hit a Golf Ball",
+		"file": "games/hit-a-golf-ball-138363592957250.luau",
+		"game": "Hit a Golf Ball",
+		"description": "Auto-loads in Hit a Golf Ball.",
+		"placeId": 138363592957250,
+		"universeId": 10529067596
+	},
+	{
+		"name": "Hole Fishing",
+		"file": "games/hole-fishing-80158232099900.luau",
+		"game": "Hole Fishing",
+		"description": "Auto-loads in Hole Fishing.",
+		"placeId": 80158232099900,
+		"universeId": 9906378607
+	},
+	{
+		"name": "Hotel Tycoon",
+		"file": "games/hotel-tycoon-16345149114.luau",
+		"game": "Hotel Tycoon",
+		"description": "Auto-loads in Hotel Tycoon.",
+		"placeId": 16345149114,
+		"universeId": 5637544740
+	},
+	{
+		"name": "Hunting Season",
+		"file": "games/hunting-season-5286116071.luau",
+		"game": "Hunting Season",
+		"description": "Auto-loads in Hunting Season.",
+		"placeId": 5286116071,
+		"universeId": 1851087906
+	},
+	{
+		"name": "Idle Mafia Game",
+		"file": "games/idle-mafia-game-73897506680154.luau",
+		"game": "Idle Mafia Game",
+		"description": "Auto-loads in Idle Mafia Game.",
+		"placeId": 73897506680154,
+		"universeId": 10643795368
+	},
+	{
+		"name": "Jump Beanstalk for Brainrots!",
+		"file": "games/jump-beanstalk-for-brainrots-82890021382517.luau",
+		"game": "Jump Beanstalk for Brainrots!",
+		"description": "Auto-loads in Jump Beanstalk for Brainrots!.",
+		"placeId": 82890021382517,
+		"universeId": 9901986872
+	},
+	{
+		"name": "Jump for Animals!",
+		"file": "games/jump-for-animals-126870639873289.luau",
+		"game": "Jump for Animals!",
+		"description": "Auto-loads in Jump for Animals!.",
+		"placeId": 126870639873289,
+		"universeId": 10690360998
+	},
+	{
+		"name": "Jump To Steal An Egg",
+		"file": "games/jump-to-steal-an-egg-106383201135975.luau",
+		"game": "Jump To Steal An Egg",
+		"description": "Auto-loads in Jump To Steal An Egg.",
+		"placeId": 106383201135975,
+		"universeId": 10737231383
+	},
+	{
+		"name": "Jump To Steal SCP Monsters!",
+		"file": "games/jump-to-steal-scp-monsters-123724279728430.luau",
+		"game": "Jump To Steal SCP Monsters!",
+		"description": "Auto-loads in Jump To Steal SCP Monsters!.",
+		"placeId": 123724279728430,
+		"universeId": 10683945170
+	},
+	{
+		"name": "Jump To Steal Slime",
+		"file": "games/jump-to-steal-slime-131776241538171.luau",
+		"game": "Jump To Steal Slime",
+		"description": "Auto-loads in Jump To Steal Slime.",
+		"placeId": 131776241538171,
+		"universeId": 10283025251
+	},
+	{
+		"name": "Jump To Steal Soccer Players",
+		"file": "games/jump-to-steal-soccer-players-133294838637122.luau",
+		"game": "Jump To Steal Soccer Players",
+		"description": "Auto-loads in Jump To Steal Soccer Players.",
+		"placeId": 133294838637122,
+		"universeId": 10551595617
+	},
+	{
+		"name": "Karinderya!",
+		"file": "games/karinderya-116497287371701.luau",
+		"game": "Karinderya!",
+		"description": "Auto-loads in Karinderya!.",
+		"placeId": 116497287371701,
+		"universeId": 10648820673
+	},
+	{
+		"name": "Kawaii Anime RNG",
+		"file": "games/kawaii-anime-rng-104263864475588.luau",
+		"game": "Kawaii Anime RNG",
+		"description": "Auto-loads in Kawaii Anime RNG.",
+		"placeId": 104263864475588,
+		"universeId": 9803028475
+	},
+	{
+		"name": "Kick an Uma",
+		"file": "games/kick-an-uma-74968636725538.luau",
+		"game": "Kick an Uma",
+		"description": "Auto-loads in Kick an Uma.",
+		"placeId": 74968636725538,
+		"universeId": 10759415852
+	},
+	{
+		"name": "Kick Ball to Space",
+		"file": "games/kick-ball-to-space-127634932179327.luau",
+		"game": "Kick Ball to Space",
+		"description": "Auto-loads in Kick Ball to Space.",
+		"placeId": 127634932179327,
+		"universeId": 10383973024
+	},
+	{
+		"name": "Lake Sipping",
+		"file": "games/lake-sipping-119715129239364.luau",
+		"game": "Lake Sipping",
+		"description": "Auto-loads in Lake Sipping.",
+		"placeId": 119715129239364,
+		"universeId": 10166853312
+	},
+	{
+		"name": "Last Stop",
+		"file": "games/last-stop-85967844112283.luau",
+		"game": "Last Stop",
+		"description": "Auto-loads in Last Stop.",
+		"placeId": 85967844112283,
+		"universeId": 10759337137
+	},
+	{
+		"name": "Launch A Nuke!",
+		"file": "games/launch-a-nuke-132906917070002.luau",
+		"game": "Launch A Nuke!",
+		"description": "Auto-loads in Launch A Nuke!.",
+		"placeId": 132906917070002,
+		"universeId": 10422260180
+	},
+	{
+		"name": "Launch a Wheel!",
+		"file": "games/launch-a-wheel-18916922845.luau",
+		"game": "Launch a Wheel!",
+		"description": "Auto-loads in Launch a Wheel!.",
+		"placeId": 18916922845,
+		"universeId": 6407388008
+	},
+	{
+		"name": "Lift a Cube",
+		"file": "games/lift-a-cube-109530157755211.luau",
+		"game": "Lift a Cube",
+		"description": "Auto-loads in Lift a Cube.",
+		"placeId": 109530157755211,
+		"universeId": 10759860151
+	},
+	{
+		"name": "Load The Truck!",
+		"file": "games/load-the-truck-120491560796071.luau",
+		"game": "Load The Truck!",
+		"description": "Auto-loads in Load The Truck!.",
+		"placeId": 120491560796071,
+		"universeId": 10417812127
+	},
+	{
+		"name": "Loot RNG",
+		"file": "games/loot-rng-118575129990331.luau",
+		"game": "Loot RNG",
+		"description": "Auto-loads in Loot RNG.",
+		"placeId": 118575129990331,
+		"universeId": 10168880097
+	},
+	{
+		"name": "Lowball",
+		"file": "games/lowball-135512068353850.luau",
+		"game": "Lowball",
+		"description": "Auto-loads in Lowball.",
+		"placeId": 135512068353850,
+		"universeId": 9827056352
+	},
+	{
+		"name": "Lucky Block Rush",
+		"file": "games/lucky-block-rush-84575720768520.luau",
+		"game": "Lucky Block Rush",
+		"description": "Auto-loads in Lucky Block Rush.",
+		"placeId": 84575720768520,
+		"universeId": 10148434559
+	},
+	{
+		"name": "Magnet Fishing",
+		"file": "games/magnet-fishing-83717725495693.luau",
+		"game": "Magnet Fishing",
+		"description": "Auto-loads in Magnet Fishing.",
+		"placeId": 83717725495693,
+		"universeId": 10679441410
+	},
+	{
+		"name": "Make a Drill Farm",
+		"file": "games/make-a-drill-farm-79315121100812.luau",
+		"game": "Make a Drill Farm",
+		"description": "Auto-loads in Make a Drill Farm.",
+		"placeId": 79315121100812,
+		"universeId": 10231871497
+	},
+	{
+		"name": "Make Hotsauce",
+		"file": "games/make-hotsauce-122391683154858.luau",
+		"game": "Make Hotsauce",
+		"description": "Auto-loads in Make Hotsauce.",
+		"placeId": 122391683154858,
+		"universeId": 10186342197
+	},
+	{
+		"name": "Make Soccer Players",
+		"file": "games/make-soccer-players-78053126230950.luau",
+		"game": "Make Soccer Players",
+		"description": "Auto-loads in Make Soccer Players.",
+		"placeId": 78053126230950,
+		"universeId": 10451899523
+	},
+	{
+		"name": "Mansion Tycoon",
+		"file": "games/mansion-tycoon-12912731475.luau",
+		"game": "Mansion Tycoon",
+		"description": "Auto-loads in Mansion Tycoon.",
+		"placeId": 12912731475,
+		"universeId": 4518160318
+	},
+	{
+		"name": "Merge & Dig Simulator!",
+		"file": "games/merge-dig-simulator-74569490529875.luau",
+		"game": "Merge & Dig Simulator!",
+		"description": "Auto-loads in Merge & Dig Simulator!.",
+		"placeId": 74569490529875,
+		"universeId": 10632524471
+	},
+	{
+		"name": "Merge a Black Hole",
+		"file": "games/merge-a-black-hole-118605709428489.luau",
+		"game": "Merge a Black Hole",
+		"description": "Auto-loads in Merge a Black Hole.",
+		"placeId": 118605709428489,
+		"universeId": 10308916299
+	},
+	{
+		"name": "Merge a Dino",
+		"file": "games/merge-a-dino-84546345526935.luau",
+		"game": "Merge a Dino",
+		"description": "Auto-loads in Merge a Dino.",
+		"placeId": 84546345526935,
+		"universeId": 10470774864
+	},
+	{
+		"name": "Merge a Mob!",
+		"file": "games/merge-a-mob-132097599643482.luau",
+		"game": "Merge a Mob!",
+		"description": "Auto-loads in Merge a Mob!.",
+		"placeId": 132097599643482,
+		"universeId": 10432930643
+	},
+	{
+		"name": "Merge a Nuke!",
+		"file": "games/merge-a-nuke-128784467030899.luau",
+		"game": "Merge a Nuke!",
+		"description": "Auto-loads in Merge a Nuke!.",
+		"placeId": 128784467030899,
+		"universeId": 10199301628
+	},
+	{
+		"name": "Merge a Spinner!",
+		"file": "games/merge-a-spinner-101396571928321.luau",
+		"game": "Merge a Spinner!",
+		"description": "Auto-loads in Merge a Spinner!.",
+		"placeId": 101396571928321,
+		"universeId": 10526166728
+	},
+	{
+		"name": "Merge a Squishy",
+		"file": "games/merge-a-squishy-117740102453431.luau",
+		"game": "Merge a Squishy",
+		"description": "Auto-loads in Merge a Squishy.",
+		"placeId": 117740102453431,
+		"universeId": 10501312173
+	},
+	{
+		"name": "Merge a Tank",
+		"file": "games/merge-a-tank-121582128546193.luau",
+		"game": "Merge a Tank",
+		"description": "Auto-loads in Merge a Tank.",
+		"placeId": 121582128546193,
+		"universeId": 10236058331
+	},
+	{
+		"name": "Merge an SCP",
+		"file": "games/merge-an-scp-70904050766278.luau",
+		"game": "Merge an SCP",
+		"description": "Auto-loads in Merge an SCP.",
+		"placeId": 70904050766278,
+		"universeId": 10634585968
+	},
+	{
+		"name": "Merge Anime Defender",
+		"file": "games/merge-anime-defender-98168250096750.luau",
+		"game": "Merge Anime Defender",
+		"description": "Auto-loads in Merge Anime Defender.",
+		"placeId": 98168250096750,
+		"universeId": 10232862393
+	},
+	{
+		"name": "Merge Hackers",
+		"file": "games/merge-hackers-135169917851408.luau",
+		"game": "Merge Hackers",
+		"description": "Auto-loads in Merge Hackers.",
+		"placeId": 135169917851408,
+		"universeId": 10450629188
+	},
+	{
+		"name": "Merge Plants vs Mobs",
+		"file": "games/merge-plants-vs-mobs-111996161342573.luau",
+		"game": "Merge Plants vs Mobs",
+		"description": "Auto-loads in Merge Plants vs Mobs.",
+		"placeId": 111996161342573,
+		"universeId": 10188443172
+	},
+	{
+		"name": "Merge Swords And Kill Zombies!",
+		"file": "games/merge-swords-and-kill-zombies-122004026354492.luau",
+		"game": "Merge Swords And Kill Zombies!",
+		"description": "Auto-loads in Merge Swords And Kill Zombies!.",
+		"placeId": 122004026354492,
+		"universeId": 10295664261
+	},
+	{
+		"name": "Merge Vs Mobs",
+		"file": "games/merge-vs-mobs-109509628648368.luau",
+		"game": "Merge Vs Mobs",
+		"description": "Auto-loads in Merge Vs Mobs.",
+		"placeId": 109509628648368,
+		"universeId": 9711972386
+	},
+	{
+		"name": "Mine a Mountain",
+		"file": "games/mine-a-mountain-125927821145949.luau",
+		"game": "Mine a Mountain",
+		"description": "Auto-loads in Mine a Mountain.",
+		"placeId": 125927821145949,
+		"universeId": 10187294555
+	},
+	{
+		"name": "Mine RNG",
+		"file": "games/mine-rng-84745252930301.luau",
+		"game": "Mine RNG",
+		"description": "Auto-loads in Mine RNG.",
+		"placeId": 84745252930301,
+		"universeId": 10432410993
+	},
+	{
+		"name": "Mini War",
+		"file": "games/mini-war-131346454575416.luau",
+		"game": "Mini War",
+		"description": "Auto-loads in Mini War.",
+		"placeId": 131346454575416,
+		"universeId": 9837612476
+	},
+	{
+		"name": "Missiles vs Cities",
+		"file": "games/missiles-vs-cities-112641748896693.luau",
+		"game": "Missiles vs Cities",
+		"description": "Auto-loads in Missiles vs Cities.",
+		"placeId": 112641748896693,
+		"universeId": 10249209189
+	},
+	{
+		"name": "Motorcycle for Animals",
+		"file": "games/motorcycle-for-animals-84403204002907.luau",
+		"game": "Motorcycle for Animals",
+		"description": "Auto-loads in Motorcycle for Animals.",
+		"placeId": 84403204002907,
+		"universeId": 10765032875
+	},
+	{
+		"name": "Mutant Plants Base Defense",
+		"file": "games/mutant-plants-base-defense-105954652742326.luau",
+		"game": "Mutant Plants Base Defense",
+		"description": "Auto-loads in Mutant Plants Base Defense.",
+		"placeId": 105954652742326,
+		"universeId": 10531477636
+	},
+	{
+		"name": "My Anime Mine",
+		"file": "games/my-anime-mine-79389059854988.luau",
+		"game": "My Anime Mine",
+		"description": "Auto-loads in My Anime Mine.",
+		"placeId": 79389059854988,
+		"universeId": 10740316645
+	},
+	{
+		"name": "My Billionaire Zoo",
+		"file": "games/my-billionaire-zoo-129441589031863.luau",
+		"game": "My Billionaire Zoo",
+		"description": "Auto-loads in My Billionaire Zoo.",
+		"placeId": 129441589031863,
+		"universeId": 10500307061
+	},
+	{
+		"name": "My Dancing Animals!",
+		"file": "games/my-dancing-animals-102602309625870.luau",
+		"game": "My Dancing Animals!",
+		"description": "Auto-loads in My Dancing Animals!.",
+		"placeId": 102602309625870,
+		"universeId": 9462540544
+	},
+	{
+		"name": "My Dealership",
+		"file": "games/my-dealership-115155881139305.luau",
+		"game": "My Dealership",
+		"description": "Auto-loads in My Dealership.",
+		"placeId": 115155881139305,
+		"universeId": 10340602041
+	},
+	{
+		"name": "My Dino Park!",
+		"file": "games/my-dino-park-80701570784699.luau",
+		"game": "My Dino Park!",
+		"description": "Auto-loads in My Dino Park!.",
+		"placeId": 80701570784699,
+		"universeId": 10059591740
+	},
+	{
+		"name": "My Farmers Garden",
+		"file": "games/my-farmers-garden-83581240126371.luau",
+		"game": "My Farmers Garden",
+		"description": "Auto-loads in My Farmers Garden.",
+		"placeId": 83581240126371,
+		"universeId": 10748294905
+	},
+	{
+		"name": "My Flower Shop",
+		"file": "games/my-flower-shop-93028168925975.luau",
+		"game": "My Flower Shop",
+		"description": "Auto-loads in My Flower Shop.",
+		"placeId": 93028168925975,
+		"universeId": 10324001605
+	},
+	{
+		"name": "My Fruit Blender",
+		"file": "games/my-fruit-blender-90716098954183.luau",
+		"game": "My Fruit Blender",
+		"description": "Auto-loads in My Fruit Blender.",
+		"placeId": 90716098954183,
+		"universeId": 10670168159
+	},
+	{
+		"name": "My Giant Farm",
+		"file": "games/my-giant-farm-98906051062892.luau",
+		"game": "My Giant Farm",
+		"description": "Auto-loads in My Giant Farm.",
+		"placeId": 98906051062892,
+		"universeId": 10550751900
+	},
+	{
+		"name": "My Grass Farm",
+		"file": "games/my-grass-farm-98073123711869.luau",
+		"game": "My Grass Farm",
+		"description": "Auto-loads in My Grass Farm.",
+		"placeId": 98073123711869,
+		"universeId": 10553807383
+	},
+	{
+		"name": "My Lucky Train",
+		"file": "games/my-lucky-train-122245209010944.luau",
+		"game": "My Lucky Train",
+		"description": "Auto-loads in My Lucky Train.",
+		"placeId": 122245209010944,
+		"universeId": 10560553307
+	},
+	{
+		"name": "My Moo Farm",
+		"file": "games/my-moo-farm-134807373415131.luau",
+		"game": "My Moo Farm",
+		"description": "Auto-loads in My Moo Farm.",
+		"placeId": 134807373415131,
+		"universeId": 10108046010
+	},
+	{
+		"name": "My Pet Farm",
+		"file": "games/my-pet-farm-83847197909679.luau",
+		"game": "My Pet Farm",
+		"description": "Auto-loads in My Pet Farm.",
+		"placeId": 83847197909679,
+		"universeId": 10053091404
+	},
+	{
+		"name": "My Seafood Stand",
+		"file": "games/my-seafood-stand-72896199592423.luau",
+		"game": "My Seafood Stand",
+		"description": "Auto-loads in My Seafood Stand.",
+		"placeId": 72896199592423,
+		"universeId": 10479625352
+	},
+	{
+		"name": "My Sword Empire",
+		"file": "games/my-sword-empire-108364799245223.luau",
+		"game": "My Sword Empire",
+		"description": "Auto-loads in My Sword Empire.",
+		"placeId": 108364799245223,
+		"universeId": 10507087418
+	},
+	{
+		"name": "My Timber Pets!",
+		"file": "games/my-timber-pets-111035930019117.luau",
+		"game": "My Timber Pets!",
+		"description": "Auto-loads in My Timber Pets!.",
+		"placeId": 111035930019117,
+		"universeId": 10548784271
+	},
+	{
+		"name": "My Toll Farm!",
+		"file": "games/my-toll-farm-96425088123775.luau",
+		"game": "My Toll Farm!",
+		"description": "Auto-loads in My Toll Farm!.",
+		"placeId": 96425088123775,
+		"universeId": 10552540426
+	},
+	{
+		"name": "Oil Empire",
+		"file": "games/oil-empire-107095834793267.luau",
+		"game": "Oil Empire",
+		"description": "Auto-loads in Oil Empire.",
+		"placeId": 107095834793267,
+		"universeId": 8786713187
+	},
+	{
+		"name": "Pan The River",
+		"file": "games/pan-the-river-102484409263550.luau",
+		"game": "Pan The River",
+		"description": "Auto-loads in Pan The River.",
+		"placeId": 102484409263550,
+		"universeId": 10554409674
+	},
+	{
+		"name": "Parkour Pandemic",
+		"file": "games/parkour-pandemic-128718867767713.luau",
+		"game": "Parkour Pandemic",
+		"description": "Auto-loads in Parkour Pandemic.",
+		"placeId": 128718867767713,
+		"universeId": 9994252977
+	},
+	{
+		"name": "Penthouse Tycoon",
+		"file": "games/penthouse-tycoon-124943244212764.luau",
+		"game": "Penthouse Tycoon",
+		"description": "Auto-loads in Penthouse Tycoon.",
+		"placeId": 124943244212764,
+		"universeId": 6961334611
+	},
+	{
+		"name": "Pet Forest",
+		"file": "games/pet-forest-83863726584027.luau",
+		"game": "Pet Forest",
+		"description": "Auto-loads in Pet Forest.",
+		"placeId": 83863726584027,
+		"universeId": 9873199153
+	},
+	{
+		"name": "Pets Universe!",
+		"file": "games/pets-universe-74629631798007.luau",
+		"game": "Pets Universe!",
+		"description": "Auto-loads in Pets Universe!.",
+		"placeId": 74629631798007,
+		"universeId": 10759638075
+	},
+	{
+		"name": "Pickaxe Tycoon",
+		"file": "games/pickaxe-tycoon-73814003954154.luau",
+		"game": "Pickaxe Tycoon",
+		"description": "Auto-loads in Pickaxe Tycoon.",
+		"placeId": 73814003954154,
+		"universeId": 10081194651
+	},
+	{
+		"name": "Pop a Balloon RNG",
+		"file": "games/pop-a-balloon-rng-108098130071760.luau",
+		"game": "Pop a Balloon RNG",
+		"description": "Auto-loads in Pop a Balloon RNG.",
+		"placeId": 108098130071760,
+		"universeId": 10517164954
+	},
+	{
+		"name": "Pop Bubbles!",
+		"file": "games/pop-bubbles-72390882197205.luau",
+		"game": "Pop Bubbles!",
+		"description": "Auto-loads in Pop Bubbles!.",
+		"placeId": 72390882197205,
+		"universeId": 10503838245
+	},
+	{
+		"name": "Power a City",
+		"file": "games/power-a-city-127475054933484.luau",
+		"game": "Power a City",
+		"description": "Auto-loads in Power a City.",
+		"placeId": 127475054933484,
+		"universeId": 10340721921
+	},
+	{
+		"name": "Power Your City",
+		"file": "games/power-your-city-81549698024226.luau",
+		"game": "Power Your City",
+		"description": "Auto-loads in Power Your City.",
+		"placeId": 81549698024226,
+		"universeId": 10297836599
+	},
+	{
+		"name": "Press a Keycap!",
+		"file": "games/press-a-keycap-128363460800653.luau",
+		"game": "Press a Keycap!",
+		"description": "Auto-loads in Press a Keycap!.",
+		"placeId": 128363460800653,
+		"universeId": 10523020124
+	},
+	{
+		"name": "Project Aura RNG",
+		"file": "games/project-aura-rng-129619503633658.luau",
+		"game": "Project Aura RNG",
+		"description": "Auto-loads in Project Aura RNG.",
+		"placeId": 129619503633658,
+		"universeId": 9971332199
+	},
+	{
+		"name": "Prospecting!",
+		"file": "games/prospecting-129827112113663.luau",
+		"game": "Prospecting!",
+		"description": "Auto-loads in Prospecting!.",
+		"placeId": 129827112113663,
+		"universeId": 7629331599
+	},
+	{
+		"name": "Pull a Lucky Fish",
+		"file": "games/pull-a-lucky-fish-112781315318195.luau",
+		"game": "Pull a Lucky Fish",
+		"description": "Auto-loads in Pull a Lucky Fish.",
+		"placeId": 112781315318195,
+		"universeId": 10195997258
+	},
+	{
+		"name": "Race for Eggs",
+		"file": "games/race-for-eggs-122278212262864.luau",
+		"game": "Race for Eggs",
+		"description": "Auto-loads in Race for Eggs.",
+		"placeId": 122278212262864,
+		"universeId": 10371406677
+	},
+	{
+		"name": "Race Horses",
+		"file": "games/race-horses-79475945127283.luau",
+		"game": "Race Horses",
+		"description": "Auto-loads in Race Horses.",
+		"placeId": 79475945127283,
+		"universeId": 10387635049
+	},
+	{
+		"name": "RE Heads Please!",
+		"file": "games/re-heads-please-113099333239841.luau",
+		"game": "RE Heads Please!",
+		"description": "Auto-loads in RE Heads Please!.",
+		"placeId": 113099333239841,
+		"universeId": 10524813259
+	},
+	{
+		"name": "Rebirth Frenzy",
+		"file": "games/rebirth-frenzy-122598478666085.luau",
+		"game": "Rebirth Frenzy",
+		"description": "Auto-loads in Rebirth Frenzy.",
+		"placeId": 122598478666085,
+		"universeId": 10601072483
+	},
+	{
+		"name": "REELED Shoot Fish!",
+		"file": "games/reeled-shoot-fish-137783946150684.luau",
+		"game": "REELED Shoot Fish!",
+		"description": "Auto-loads in REELED Shoot Fish!.",
+		"placeId": 137783946150684,
+		"universeId": 9511524806
+	},
+	{
+		"name": "Rescue Animals!",
+		"file": "games/rescue-animals-108454764166583.luau",
+		"game": "Rescue Animals!",
+		"description": "Auto-loads in Rescue Animals!.",
+		"placeId": 108454764166583,
+		"universeId": 10602745470
+	},
+	{
+		"name": "Ride A Pet",
+		"file": "games/ride-a-pet-124216119978534.luau",
+		"game": "Ride A Pet",
+		"description": "Auto-loads in Ride A Pet.",
+		"placeId": 124216119978534,
+		"universeId": 10035204815
+	},
+	{
+		"name": "RNG vs Fruit",
+		"file": "games/rng-vs-fruit-109123260298300.luau",
+		"game": "RNG vs Fruit",
+		"description": "Auto-loads in RNG vs Fruit.",
+		"placeId": 109123260298300,
+		"universeId": 10481060526
+	},
+	{
+		"name": "Roll a Fisherman",
+		"file": "games/roll-a-fisherman-90920025162454.luau",
+		"game": "Roll a Fisherman",
+		"description": "Auto-loads in Roll a Fisherman.",
+		"placeId": 90920025162454,
+		"universeId": 10636331438
+	},
+	{
+		"name": "Roll A Gnome",
+		"file": "games/roll-a-gnome-117539213094671.luau",
+		"game": "Roll A Gnome",
+		"description": "Auto-loads in Roll A Gnome.",
+		"placeId": 117539213094671,
+		"universeId": 10514280922
+	},
+	{
+		"name": "Roll a Sorcerer",
+		"file": "games/roll-a-sorcerer-77876346348868.luau",
+		"game": "Roll a Sorcerer",
+		"description": "Auto-loads in Roll a Sorcerer.",
+		"placeId": 77876346348868,
+		"universeId": 10302826854
+	},
+	{
+		"name": "Roll a Spirit",
+		"file": "games/roll-a-spirit-122719589673344.luau",
+		"game": "Roll a Spirit",
+		"description": "Auto-loads in Roll a Spirit.",
+		"placeId": 122719589673344,
+		"universeId": 10420596794
+	},
+	{
+		"name": "Roll an Anime",
+		"file": "games/roll-an-anime-93999763241813.luau",
+		"game": "Roll an Anime",
+		"description": "Auto-loads in Roll an Anime.",
+		"placeId": 93999763241813,
+		"universeId": 9974910633
+	},
+	{
+		"name": "Roll an Anime (alt)",
+		"file": "games/roll-an-anime-93999763241813-rollanimedice.luau",
+		"game": "Roll an Anime",
+		"description": "Auto-loads in Roll an Anime. Alternate version; the default is used for auto-routing.",
+		"placeId": 93999763241813,
+		"alt": true,
+		"universeId": 9974910633
+	},
+	{
+		"name": "Roll an ARMY",
+		"file": "games/roll-an-army-81043694560974.luau",
+		"game": "Roll an ARMY",
+		"description": "Auto-loads in Roll an ARMY.",
+		"placeId": 81043694560974,
+		"universeId": 10471490409
+	},
+	{
+		"name": "Roll An Army!",
+		"file": "games/roll-an-army-72216345408467.luau",
+		"game": "Roll An Army!",
+		"description": "Auto-loads in Roll An Army!.",
+		"placeId": 72216345408467,
+		"universeId": 10504837200
+	},
+	{
+		"name": "Roll Anime & Fight",
+		"file": "games/roll-anime-fight-115690665465501.luau",
+		"game": "Roll Anime & Fight",
+		"description": "Auto-loads in Roll Anime & Fight.",
+		"placeId": 115690665465501,
+		"universeId": 10765782955
+	},
+	{
+		"name": "Roll Anime to Fight!",
+		"file": "games/roll-anime-to-fight-107653945083776.luau",
+		"game": "Roll Anime to Fight!",
+		"description": "Auto-loads in Roll Anime to Fight!.",
+		"placeId": 107653945083776,
+		"universeId": 10298144467
+	},
+	{
+		"name": "Roll for Anime!",
+		"file": "games/roll-for-anime-107706720875645.luau",
+		"game": "Roll for Anime!",
+		"description": "Auto-loads in Roll for Anime!.",
+		"placeId": 107706720875645,
+		"universeId": 10509735395
+	},
+	{
+		"name": "Roll For Avatar Items",
+		"file": "games/roll-for-avatar-items-122854503601959.luau",
+		"game": "Roll For Avatar Items",
+		"description": "Auto-loads in Roll For Avatar Items.",
+		"placeId": 122854503601959,
+		"universeId": 10429339100
+	},
+	{
+		"name": "Roll for Chiikawa !",
+		"file": "games/roll-for-chiikawa-79237098587493.luau",
+		"game": "Roll for Chiikawa !",
+		"description": "Auto-loads in Roll for Chiikawa !.",
+		"placeId": 79237098587493,
+		"universeId": 10290675105
+	},
+	{
+		"name": "Roll to Defend",
+		"file": "games/roll-to-defend-129559579789369.luau",
+		"game": "Roll to Defend",
+		"description": "Auto-loads in Roll to Defend.",
+		"placeId": 129559579789369,
+		"universeId": 10168931576
+	},
+	{
+		"name": "Roll to Survive",
+		"file": "games/roll-to-survive-132508978828159.luau",
+		"game": "Roll to Survive",
+		"description": "Auto-loads in Roll to Survive.",
+		"placeId": 132508978828159,
+		"universeId": 10253141913
+	},
+	{
+		"name": "Roll Your Army!",
+		"file": "games/roll-your-army-83660368690441.luau",
+		"game": "Roll Your Army!",
+		"description": "Auto-loads in Roll Your Army!.",
+		"placeId": 83660368690441,
+		"universeId": 10251613257
+	},
+	{
+		"name": "Roller for Animals!",
+		"file": "games/roller-for-animals-88910662712492.luau",
+		"game": "Roller for Animals!",
+		"description": "Auto-loads in Roller for Animals!.",
+		"placeId": 88910662712492,
+		"universeId": 10765332568
+	},
+	{
+		"name": "RUNAWAYS",
+		"file": "games/runaways-118418618261207.luau",
+		"game": "RUNAWAYS",
+		"description": "Auto-loads in RUNAWAYS.",
+		"placeId": 118418618261207,
+		"universeId": 7585140258
+	},
+	{
+		"name": "Saber Simulator",
+		"file": "games/saber-simulator-3823781113.luau",
+		"game": "Saber Simulator",
+		"description": "Auto-loads in Saber Simulator.",
+		"placeId": 3823781113,
+		"universeId": 1312971993
+	},
+	{
+		"name": "Sail For Eggs",
+		"file": "games/sail-for-eggs-121443295737695.luau",
+		"game": "Sail For Eggs",
+		"description": "Auto-loads in Sail For Eggs.",
+		"placeId": 121443295737695,
+		"universeId": 10765629453
+	},
+	{
+		"name": "Save Animals!",
+		"file": "games/save-animals-123822115505881.luau",
+		"game": "Save Animals!",
+		"description": "Auto-loads in Save Animals!.",
+		"placeId": 123822115505881,
+		"universeId": 10417062810
+	},
+	{
+		"name": "Save Your Cat",
+		"file": "games/save-your-cat-119427438574114.luau",
+		"game": "Save Your Cat",
+		"description": "Auto-loads in Save Your Cat.",
+		"placeId": 119427438574114,
+		"universeId": 10290366643
+	},
+	{
+		"name": "Scale Slimy Fish",
+		"file": "games/scale-slimy-fish-82208825713916.luau",
+		"game": "Scale Slimy Fish",
+		"description": "Auto-loads in Scale Slimy Fish.",
+		"placeId": 82208825713916,
+		"universeId": 10299611114
+	},
+	{
+		"name": "Sell Ores",
+		"file": "games/sell-ores-122572082932179.luau",
+		"game": "Sell Ores",
+		"description": "Auto-loads in Sell Ores.",
+		"placeId": 122572082932179,
+		"universeId": 10336278580
+	},
+	{
+		"name": "Shuffle an Egg",
+		"file": "games/shuffle-an-egg-79226825467411.luau",
+		"game": "Shuffle an Egg",
+		"description": "Auto-loads in Shuffle an Egg.",
+		"placeId": 79226825467411,
+		"universeId": 10765279487
+	},
+	{
+		"name": "Slap to Survive",
+		"file": "games/slap-to-survive-112796336189704.luau",
+		"game": "Slap to Survive",
+		"description": "Auto-loads in Slap to Survive.",
+		"placeId": 112796336189704,
+		"universeId": 10272236945
+	},
+	{
+		"name": "Slime Card Collection",
+		"file": "games/slime-card-collection-98951612738714.luau",
+		"game": "Slime Card Collection",
+		"description": "Auto-loads in Slime Card Collection.",
+		"placeId": 98951612738714,
+		"universeId": 10198825880
+	},
+	{
+		"name": "Snatch a Seed",
+		"file": "games/snatch-a-seed-121180020176396.luau",
+		"game": "Snatch a Seed",
+		"description": "Auto-loads in Snatch a Seed.",
+		"placeId": 121180020176396,
+		"universeId": 8125244608
+	},
+	{
+		"name": "Snowcone Stand",
+		"file": "games/snowcone-stand-76113971506717.luau",
+		"game": "Snowcone Stand",
+		"description": "Auto-loads in Snowcone Stand.",
+		"placeId": 76113971506717,
+		"universeId": 10257007695
+	},
+	{
+		"name": "Soccer Manager",
+		"file": "games/soccer-manager-83988958116126.luau",
+		"game": "Soccer Manager",
+		"description": "Auto-loads in Soccer Manager.",
+		"placeId": 83988958116126,
+		"universeId": 10464790276
+	},
+	{
+		"name": "Spin a Car",
+		"file": "games/spin-a-car-136758055891411.luau",
+		"game": "Spin a Car",
+		"description": "Auto-loads in Spin a Car.",
+		"placeId": 136758055891411,
+		"universeId": 10287448900
+	},
+	{
+		"name": "Spin a Fem!",
+		"file": "games/spin-a-fem-91203203156283.luau",
+		"game": "Spin a Fem!",
+		"description": "Auto-loads in Spin a Fem!.",
+		"placeId": 91203203156283,
+		"universeId": 9911988958
+	},
+	{
+		"name": "Spin a Superhero!",
+		"file": "games/spin-a-superhero-130602523975656.luau",
+		"game": "Spin a Superhero!",
+		"description": "Auto-loads in Spin a Superhero!.",
+		"placeId": 130602523975656,
+		"universeId": 10495281614
+	},
+	{
+		"name": "Star Catchers",
+		"file": "games/star-catchers-70654975563721.luau",
+		"game": "Star Catchers",
+		"description": "Auto-loads in Star Catchers.",
+		"placeId": 70654975563721,
+		"universeId": 10167650065
+	},
+	{
+		"name": "Steal a Baby Egg",
+		"file": "games/steal-a-baby-egg-112530679555916.luau",
+		"game": "Steal a Baby Egg",
+		"description": "Auto-loads in Steal a Baby Egg.",
+		"placeId": 112530679555916,
+		"universeId": 10759286189
+	},
+	{
+		"name": "Steal a Giant Egg",
+		"file": "games/steal-a-giant-egg-136448020793455.luau",
+		"game": "Steal a Giant Egg",
+		"description": "Auto-loads in Steal a Giant Egg.",
+		"placeId": 136448020793455,
+		"universeId": 10764907628
+	},
+	{
+		"name": "Steal A Lucky Egg",
+		"file": "games/steal-a-lucky-egg-123698673940079.luau",
+		"game": "Steal A Lucky Egg",
+		"description": "Auto-loads in Steal A Lucky Egg.",
+		"placeId": 123698673940079,
+		"universeId": 10496981141
+	},
+	{
+		"name": "Steal a Mystery Egg",
+		"file": "games/steal-a-mystery-egg-137789242313999.luau",
+		"game": "Steal a Mystery Egg",
+		"description": "Auto-loads in Steal a Mystery Egg.",
+		"placeId": 137789242313999,
+		"universeId": 10037505819
+	},
+	{
+		"name": "Steal A Seed For Bees",
+		"file": "games/steal-a-seed-for-bees-87026033799342.luau",
+		"game": "Steal A Seed For Bees",
+		"description": "Auto-loads in Steal A Seed For Bees.",
+		"placeId": 87026033799342,
+		"universeId": 10764735984
+	},
+	{
+		"name": "Steal A Seed!",
+		"file": "games/steal-a-seed-122216176958450.luau",
+		"game": "Steal A Seed!",
+		"description": "Auto-loads in Steal A Seed!.",
+		"placeId": 122216176958450,
+		"universeId": 10764328008
+	},
+	{
+		"name": "Steal A Tree!",
+		"file": "games/steal-a-tree-132958491990446.luau",
+		"game": "Steal A Tree!",
+		"description": "Auto-loads in Steal A Tree!.",
+		"placeId": 132958491990446,
+		"universeId": 10756830277
+	},
+	{
+		"name": "Steal A Verity!",
+		"file": "games/steal-a-verity-107164765081465.luau",
+		"game": "Steal A Verity!",
+		"description": "Auto-loads in Steal A Verity!.",
+		"placeId": 107164765081465,
+		"universeId": 10550257968
+	},
+	{
+		"name": "Steal an Anime Egg!",
+		"file": "games/steal-an-anime-egg-76377501906469.luau",
+		"game": "Steal an Anime Egg!",
+		"description": "Auto-loads in Steal an Anime Egg!.",
+		"placeId": 76377501906469,
+		"universeId": 10747748563
+	},
+	{
+		"name": "Steal An Egg",
+		"file": "games/steal-an-egg-107778070777162.luau",
+		"game": "Steal An Egg",
+		"description": "Auto-loads in Steal An Egg.",
+		"placeId": 107778070777162,
+		"universeId": 10563114921
+	},
+	{
+		"name": "Steal an Egg for Squishy Dumplings!",
+		"file": "games/steal-an-egg-for-squishy-dumplings-134679507313109.luau",
+		"game": "Steal an Egg for Squishy Dumplings!",
+		"description": "Auto-loads in Steal an Egg for Squishy Dumplings!.",
+		"placeId": 134679507313109,
+		"universeId": 10758397570
+	},
+	{
+		"name": "Steal an Employee",
+		"file": "games/steal-an-employee-140623702130018.luau",
+		"game": "Steal an Employee",
+		"description": "Auto-loads in Steal an Employee.",
+		"placeId": 140623702130018,
+		"universeId": 10758160648
+	},
+	{
+		"name": "Steal Anime Eggs",
+		"file": "games/steal-anime-eggs-96727061242653.luau",
+		"game": "Steal Anime Eggs",
+		"description": "Auto-loads in Steal Anime Eggs.",
+		"placeId": 96727061242653,
+		"universeId": 10759478428
+	},
+	{
+		"name": "Steal Anime Eggs & FIGHT!",
+		"file": "games/steal-anime-eggs-fight-137671992254032.luau",
+		"game": "Steal Anime Eggs & FIGHT!",
+		"description": "Auto-loads in Steal Anime Eggs & FIGHT!.",
+		"placeId": 137671992254032,
+		"universeId": 10763691543
+	},
+	{
+		"name": "Steal Brainrot Eggs",
+		"file": "games/steal-brainrot-eggs-104469958681645.luau",
+		"game": "Steal Brainrot Eggs",
+		"description": "Auto-loads in Steal Brainrot Eggs.",
+		"placeId": 104469958681645,
+		"universeId": 10765158636
+	},
+	{
+		"name": "Steal Fish Eggs",
+		"file": "games/steal-fish-eggs-99183404085821.luau",
+		"game": "Steal Fish Eggs",
+		"description": "Auto-loads in Steal Fish Eggs.",
+		"placeId": 99183404085821,
+		"universeId": 10718240577
+	},
+	{
+		"name": "Steal From The Rich!",
+		"file": "games/steal-from-the-rich-120475074479690.luau",
+		"game": "Steal From The Rich!",
+		"description": "Auto-loads in Steal From The Rich!.",
+		"placeId": 120475074479690,
+		"universeId": 10753751277
+	},
+	{
+		"name": "Steal The Museum",
+		"file": "games/steal-the-museum-88237852656234.luau",
+		"game": "Steal The Museum",
+		"description": "Auto-loads in Steal The Museum.",
+		"placeId": 88237852656234,
+		"universeId": 10764463725
+	},
+	{
+		"name": "Stop The Bugs",
+		"file": "games/stop-the-bugs-117747672521418.luau",
+		"game": "Stop The Bugs",
+		"description": "Auto-loads in Stop The Bugs.",
+		"placeId": 117747672521418,
+		"universeId": 9968573102
+	},
+	{
+		"name": "Stream A Cheese Pull!",
+		"file": "games/stream-a-cheese-pull-124293095895786.luau",
+		"game": "Stream A Cheese Pull!",
+		"description": "Auto-loads in Stream A Cheese Pull!.",
+		"placeId": 124293095895786,
+		"universeId": 10628907188
+	},
+	{
+		"name": "Surf And Rescue",
+		"file": "games/surf-and-rescue-120252007682677.luau",
+		"game": "Surf And Rescue",
+		"description": "Auto-loads in Surf And Rescue.",
+		"placeId": 120252007682677,
+		"universeId": 10761375767
+	},
+	{
+		"name": "Surf for Animals!",
+		"file": "games/surf-for-animals-96612869170793.luau",
+		"game": "Surf for Animals!",
+		"description": "Auto-loads in Surf for Animals!.",
+		"placeId": 96612869170793,
+		"universeId": 10765491538
+	},
+	{
+		"name": "Survive Anime Arena",
+		"file": "games/survive-anime-arena-134900842931883.luau",
+		"game": "Survive Anime Arena",
+		"description": "Auto-loads in Survive Anime Arena.",
+		"placeId": 134900842931883,
+		"universeId": 10617896300
+	},
+	{
+		"name": "Survive Lava for Animals",
+		"file": "games/survive-lava-for-animals-127082754898219.luau",
+		"game": "Survive Lava for Animals",
+		"description": "Auto-loads in Survive Lava for Animals.",
+		"placeId": 127082754898219,
+		"universeId": 10765481558
+	},
+	{
+		"name": "Survive Zombie Arena",
+		"file": "games/survive-zombie-arena-114204398207377.luau",
+		"game": "Survive Zombie Arena",
+		"description": "Auto-loads in Survive Zombie Arena.",
+		"placeId": 114204398207377,
+		"universeId": 9348272796
+	},
+	{
+		"name": "Swim For Eggs!",
+		"file": "games/swim-for-eggs-113956654824187.luau",
+		"game": "Swim For Eggs!",
+		"description": "Auto-loads in Swim For Eggs!.",
+		"placeId": 113956654824187,
+		"universeId": 10765312940
+	},
+	{
+		"name": "Swing For Eggs",
+		"file": "games/swing-for-eggs-109203247742910.luau",
+		"game": "Swing For Eggs",
+		"description": "Auto-loads in Swing For Eggs.",
+		"placeId": 109203247742910,
+		"universeId": 10763764817
+	},
+	{
+		"name": "Sword RNG X",
+		"file": "games/sword-rng-x-88723502997575.luau",
+		"game": "Sword RNG X",
+		"description": "Auto-loads in Sword RNG X.",
+		"placeId": 88723502997575,
+		"universeId": 10389762549
+	},
+	{
+		"name": "Tap 4 Money",
+		"file": "games/tap-4-money-125410772032969.luau",
+		"game": "Tap 4 Money",
+		"description": "Auto-loads in Tap 4 Money.",
+		"placeId": 125410772032969,
+		"universeId": 9416689400
+	},
+	{
+		"name": "Tap Buttons!",
+		"file": "games/tap-buttons-77404766588393.luau",
+		"game": "Tap Buttons!",
+		"description": "Auto-loads in Tap Buttons!.",
+		"placeId": 77404766588393,
+		"universeId": 10418560161
+	},
+	{
+		"name": "The Veil",
+		"file": "games/the-veil-125503525638054.luau",
+		"game": "The Veil",
+		"description": "Auto-loads in The Veil.",
+		"placeId": 125503525638054,
+		"universeId": 7970033072
+	},
+	{
+		"name": "Throw a Coin",
+		"file": "games/throw-a-coin-115681808123944.luau",
+		"game": "Throw a Coin",
+		"description": "Auto-loads in Throw a Coin.",
+		"placeId": 115681808123944,
+		"universeId": 10131390815
+	},
+	{
+		"name": "Throw an Anime Coin!",
+		"file": "games/throw-an-anime-coin-105198923939638.luau",
+		"game": "Throw an Anime Coin!",
+		"description": "Auto-loads in Throw an Anime Coin!.",
+		"placeId": 105198923939638,
+		"universeId": 10582966691
+	},
+	{
+		"name": "Toss a Dice",
+		"file": "games/toss-a-dice-89614588403906.luau",
+		"game": "Toss a Dice",
+		"description": "Auto-loads in Toss a Dice.",
+		"placeId": 89614588403906,
+		"universeId": 10571346925
+	},
+	{
+		"name": "Tower VS Slimes",
+		"file": "games/tower-vs-slimes-78417665924734.luau",
+		"game": "Tower VS Slimes",
+		"description": "Auto-loads in Tower VS Slimes.",
+		"placeId": 78417665924734,
+		"universeId": 10176343444
+	},
+	{
+		"name": "Tree RNG",
+		"file": "games/tree-rng-85048226835181.luau",
+		"game": "Tree RNG",
+		"description": "Auto-loads in Tree RNG.",
+		"placeId": 85048226835181,
+		"universeId": 9938429322
+	},
+	{
+		"name": "Tropical Resort Tycoon 2",
+		"file": "games/tropical-resort-tycoon-2-12338455185.luau",
+		"game": "Tropical Resort Tycoon 2",
+		"description": "Auto-loads in Tropical Resort Tycoon 2.",
+		"placeId": 12338455185,
+		"universeId": 4343544885
+	},
+	{
+		"name": "Ultimate Tower Defense",
+		"file": "games/ultimate-tower-defense-5902977746.luau",
+		"game": "Ultimate Tower Defense",
+		"description": "Auto-loads in Ultimate Tower Defense.",
+		"placeId": 5902977746,
+		"universeId": 2114144926
+	},
+	{
+		"name": "Unbox ASMR!",
+		"file": "games/unbox-asmr-112233638491976.luau",
+		"game": "Unbox ASMR!",
+		"description": "Auto-loads in Unbox ASMR!.",
+		"placeId": 112233638491976,
+		"universeId": 10454554751
+	},
+	{
+		"name": "Unfreeze an Animal",
+		"file": "games/unfreeze-an-animal-88773823105878.luau",
+		"game": "Unfreeze an Animal",
+		"description": "Auto-loads in Unfreeze an Animal.",
+		"placeId": 88773823105878,
+		"universeId": 10680863064
+	},
+	{
+		"name": "Untitled Melee RNG",
+		"file": "games/untitled-melee-rng-99248392277037.luau",
+		"game": "Untitled Melee RNG",
+		"description": "Auto-loads in Untitled Melee RNG.",
+		"placeId": 99248392277037,
+		"universeId": 9643480573
+	},
+	{
+		"name": "Where Seasons Pass",
+		"file": "games/where-seasons-pass-133288411471369.luau",
+		"game": "Where Seasons Pass",
+		"description": "Auto-loads in Where Seasons Pass.",
+		"placeId": 133288411471369,
+		"universeId": 10405123254
+	},
+	{
+		"name": "Your Lumber Farm!",
+		"file": "games/your-lumber-farm-84400387456675.luau",
+		"game": "Your Lumber Farm!",
+		"description": "Auto-loads in Your Lumber Farm!.",
+		"placeId": 84400387456675,
+		"universeId": 10354450304
+	},
+	{
+		"name": "Zombies",
+		"file": "games/zombies-80111254680893.luau",
+		"game": "Zombies",
+		"description": "Auto-loads in Zombies.",
+		"placeId": 80111254680893,
+		"universeId": 10067177814
+	},
+	{
+		"name": "Zone Defense RNG",
+		"file": "games/zone-defense-rng-71607575632633.luau",
+		"game": "Zone Defense RNG",
+		"description": "Auto-loads in Zone Defense RNG.",
+		"placeId": 71607575632633,
+		"universeId": 10077468510
+	},
+	{
+		"name": "Rivals UE",
+		"file": "games/rivals-17625359962.luau",
+		"game": "Rivals",
+		"description": "Unnamed Enhancements for Rivals. Auto-loads in this game.",
+		"placeId": 17625359962,
+		"universeId": 6035872082
+	},
+	{
+		"name": "Sea Hub",
+		"file": "games/sea-hub-blox-fruits-2753915549.luau",
+		"game": "Blox Fruits",
+		"description": "Sea Hub for Blox Fruits (all three seas). Auto-loads in this game.",
+		"placeId": 2753915549,
+		"universeId": 994732206
+	},
+	{
+		"name": "Chilli Hub",
+		"file": "games/chilli-hub-steal-a-brainrot-109983668079237.luau",
+		"game": "Steal a Brainrot",
+		"description": "Chilli Hub for Steal a Brainrot. Auto-loads in this game.",
+		"placeId": 109983668079237,
+		"universeId": 7709344486
 	}
 ]
