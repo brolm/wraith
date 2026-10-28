@@ -246,7 +246,7 @@ do
   x("HaxterPianoPlayerCleanup")
   x("HaxterSprayCleanup")
 end
-HaxterRemoteDataModuleUrls = {Icons = "https://gist.githubusercontent.com/HaxterFelix/8c9322ca76e746e64cbceea92c9c2df0/raw/ZomZom.lua", SprayDrawer = "https://gist.githubusercontent.com/HaxterFelix/f2e66fd0e49fce93295adb05e124282c/raw/Zombies.lua", LegacyAnimationStates = "https://gist.githubusercontent.com/HaxterFelix/1c55397eefd2f3e1d5be9f9c7c82ac49/raw/Lezginika%20Spectator.lua", BundleAnimations = "https://gist.githubusercontent.com/HaxterFelix/27c26928c7ba4e680b4c2e22a56159f2/raw/Let's%20Get%20It%20Started.lua"}
+HaxterRemoteDataModuleUrls = {Icons = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/Icons.lua", SprayDrawer = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/SprayDrawer.lua", LegacyAnimationStates = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/LegacyAnimationStates.lua", BundleAnimations = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/BundleAnimations.lua"}
 HaxterRemoteDataModuleCache = HaxterRemoteDataModuleCache or {}
 function HaxterLoadRemoteDataModule(o)
   local x = HaxterRemoteDataModuleUrls[o]
@@ -48514,7 +48514,7 @@ if not(Reanimate) then
   Reanimate = X({}, H)
 end
 Visuals = window:CreateTab("Visuals", "Visuals", "")
-local O = "https://gist.githubusercontent.com/HaxterFelix/3f391faa665d15df4db78dc5d0e5191d/raw/Legal%20Reasons.lua"
+local O = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/Visuals.lua"
 Y.HaxterLoadVisualsCallbacksRaw = function()
   local E = loadstring or load
   if type(E) ~= "function" then
@@ -90641,7 +90641,7 @@ do
   HaxterRemoteCatalogResults = HaxterRemoteCatalogEnvironment.HaxterRemoteCatalogResults
   HaxterRemoteCatalogEnvironment.HaxterRemoteCatalogLoading = type(HaxterRemoteCatalogEnvironment.HaxterRemoteCatalogLoading) == "table" and HaxterRemoteCatalogEnvironment.HaxterRemoteCatalogLoading or {}
   HaxterRemoteCatalogLoading = HaxterRemoteCatalogEnvironment.HaxterRemoteCatalogLoading
-  HaxterProtectedRemoteCatalogSpecs = {AudioSources = {Key = "AudioSources", Url = "https://gist.githubusercontent.com/HaxterFelix/a438c3905d26cd6e87ceeea96371fc79/raw/Zutter.lua"}, AudioLogsSources = {Key = "AudioLogsSources", Url = "https://gist.githubusercontent.com/HaxterFelix/2d9af6564c282441324fc1fb02921cc9/raw/ZOO%20Trend.lua"}, EmoteSources = {Key = "EmoteSources", Url = "https://gist.githubusercontent.com/HaxterFelix/bd523229bf620c8fe5f28eb6e220d060/raw/Zrde.lua"}, AnimationPacks = {Key = "AnimationPacks", Url = "https://gist.githubusercontent.com/HaxterFelix/066452b29fb6209164921f30d2cc57a3/raw/SODAPOP!.lua?catalog=20261001-all-bundles"}, BeachGoatMorph = {Key = "BeachGoatMorph", Url = "https://gist.githubusercontent.com/HaxterFelix/7f8b4cb9bb9902e95bb91785a17ce143/raw/Zom-Beam.lua"}}
+  HaxterProtectedRemoteCatalogSpecs = {AudioSources = {Key = "AudioSources", Url = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/AudioSources.lua"}, AudioLogsSources = {Key = "AudioLogsSources", Url = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/AudioLogsSources.lua"}, EmoteSources = {Key = "EmoteSources", Url = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/EmoteSources.lua"}, AnimationPacks = {Key = "AnimationPacks", Url = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/AnimationPacks.lua"}, BeachGoatMorph = {Key = "BeachGoatMorph", Url = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/HaxterFelix/BeachGoatMorph.lua"}}
   if HaxterRemoteCatalogEnvironment.HaxterAnimationPacksCatalogUrl ~= HaxterProtectedRemoteCatalogSpecs.AnimationPacks.Url then
     HaxterRemoteCatalogResults.AnimationPacks = nil
     HaxterCatalogAnimationPacks = nil
@@ -136290,7 +136290,7 @@ function HaxterInitializeLegacyAnimationStates()
   haxterNamedAnimationStateLists = {}
   function HaxterBuildAnimationStateList(V, l)
     local i = {}
-    for Z in string.gmatch(V, "[^\13\10]+") do
+    for Z in string.gmatch(tostring(V or ""), "[^\13\10]+") do
       local V, T, M = Z:match("^([^\9]+)\9([^\9]+)\9?(.*)$")
       if l then
         i[#i + 1] = {Name = V, ID1 = T, ID2 = M}

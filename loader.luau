@@ -19,6 +19,7 @@
 
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
+local GuiService = game:GetService("GuiService")
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 
@@ -83,6 +84,14 @@ local FONTS = {
 local QUICK = TweenInfo.new(0.16, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
 local SMOOTH = TweenInfo.new(0.4, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
 local FULL = UDim2.fromScale(1, 1)
+
+-- Open springs up from slightly small and low; close sinks back down and fades.
+local OPEN = TweenInfo.new(0.45, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+-- The glass only shows its content once it is half opaque, so the content fade waits for that.
+local OPEN_FADE = TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0.07)
+local CLOSE = TweenInfo.new(0.24, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+local HIDDEN_SCALE = 0.92
+local HIDDEN_OFFSET = UDim2.fromOffset(0, 18)
 
 type Route = {
 	name: string?,
@@ -363,6 +372,14 @@ local holder = create("Frame", {
 	Parent = gui,
 })
 local fit = create("UIScale", { Parent = holder })
+-- The open/close transitions move and scale this stage, so they never fight dragging or fit.
+local stage = create("Frame", {
+	Position = HIDDEN_OFFSET,
+	Size = FULL,
+	BackgroundTransparency = 1,
+	Parent = holder,
+})
+local pop = create("UIScale", { Scale = HIDDEN_SCALE, Parent = stage })
 
 type Window = { Content: Frame, SetVisible: (any, boolean) -> () }
 
@@ -370,30 +387,47 @@ type Window = { Content: Frame, SetVisible: (any, boolean) -> () }
 local function makeWindow(): Window
 	local ok, result = pcall(function()
 		local Glass = loadstring(fetch("lib/glass.luau"))()
-		return Glass.new({ Parent = holder, Size = FULL, CornerRadius = RADIUS, Theme = "Wraith" })
+		return Glass.new({ Parent = stage, Size = FULL, CornerRadius = RADIUS, Theme = "Wraith" })
 	end)
 	if ok then
 		return result
 	end
 	warn("[Wraith] Glass unavailable, using a plain window: " .. tostring(result))
+	local outline = stroke(0.88)
 	local frame = create("Frame", {
 		Size = FULL,
 		BackgroundColor3 = Color3.fromRGB(16, 15, 24),
-		BackgroundTransparency = 0.03,
-		Parent = holder,
-	}, { corner(RADIUS), stroke(0.88) })
+		BackgroundTransparency = 1,
+		Visible = false,
+		Parent = stage,
+	}, { corner(RADIUS), outline })
+	local token = 0
 	return {
 		Content = create("Frame", { Size = FULL, BackgroundTransparency = 1, Parent = frame }),
 		SetVisible = function(_, visible: boolean)
-			frame.Visible = visible
+			-- Fade like the glass does, then drop out of the way so it stops catching clicks.
+			token += 1
+			local current = token
+			frame.Visible = true
+			tween(frame, { BackgroundTransparency = if visible then 0.03 else 1 }, SMOOTH)
+			tween(outline, { Transparency = if visible then 0.88 else 1 }, SMOOTH)
+			if not visible then
+				task.delay(SMOOTH.Time, function()
+					if token == current then
+						frame.Visible = false
+					end
+				end)
+			end
 		end,
 	}
 end
 
 local window = makeWindow()
-local content = create("Frame", {
+-- A CanvasGroup so everything inside fades as one during the transitions.
+local content = create("CanvasGroup", {
 	Size = FULL,
 	BackgroundTransparency = 1,
+	GroupTransparency = 1,
 	ClipsDescendants = true,
 	Parent = window.Content,
 }, { corner(RADIUS) })
@@ -918,13 +952,15 @@ local function runScript(card: Card)
 
 	setStatus("Loaded " .. entry.name, "success")
 	setRunState(card, "done")
+	-- It downloaded and compiled, so the browser's job is done. Close before running: a big script can
+	-- stall the frame for seconds, which would freeze the animation halfway, and some never return at all.
+	if closeLoader then
+		closeLoader()
+		task.wait(CLOSE.Time)
+	end
 	local ran, runErr = pcall(chunk)
 	if not ran then
 		warn("[Wraith] " .. entry.name .. " errored: " .. tostring(runErr))
-		setStatus(entry.name .. " errored: " .. tostring(runErr), "error")
-		setRunState(card, "failed")
-	elseif closeLoader then
-		task.delay(0.6, closeLoader)
 	end
 end
 
@@ -994,9 +1030,35 @@ local connections = {}
 local shown = true
 local zoomed = false
 
+local function reducedMotion(): boolean
+	local ok, enabled = pcall(function()
+		return GuiService.ReducedMotionEnabled
+	end)
+	return ok and enabled == true
+end
+
+-- Springs the window up into place, or sinks and fades it away. With reduced motion it only fades.
 local function setShown(visible: boolean)
 	shown = visible
-	window:SetVisible(visible)
+	local still = reducedMotion()
+	if visible then
+		window:SetVisible(true)
+		tween(pop, { Scale = 1 }, if still then OPEN_FADE else OPEN)
+		tween(stage, { Position = UDim2.new() }, if still then OPEN_FADE else OPEN)
+		tween(content, { GroupTransparency = 0 }, OPEN_FADE)
+	else
+		if not still then
+			tween(pop, { Scale = HIDDEN_SCALE }, CLOSE)
+			tween(stage, { Position = HIDDEN_OFFSET }, CLOSE)
+		end
+		tween(content, { GroupTransparency = 1 }, CLOSE)
+		-- The glass hides its content at half opacity, so let ours finish fading before it starts.
+		task.delay(CLOSE.Time * 0.8, function()
+			if not shown then
+				window:SetVisible(false)
+			end
+		end)
+	end
 end
 
 -- Sizes the window for the current screen: shrinks it to fit, picks 1-3 columns and compacts the toolbar.
@@ -1113,7 +1175,8 @@ end)
 
 function closeLoader()
 	setShown(false)
-	task.delay(0.35, function()
+	-- Leave time for the glass to finish fading after the content has gone.
+	task.delay(CLOSE.Time + 0.25, function()
 		gui:Destroy()
 	end)
 end
@@ -1141,4 +1204,5 @@ retryButton.MouseButton1Click:Connect(refresh)
 
 gui.Parent = parent
 layout()
+setShown(true)
 refresh()
