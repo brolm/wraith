@@ -29,8 +29,26 @@ local budgets = setmetatable({}, {
 local schedulerFrame = 0
 local heartbeatConnection
 
+-- Every way of stopping says why, once. Some are otherwise silent (the watchdog's error can land in the
+-- script's own pcalls), which left nothing in the console but the "execution stopped" fallout.
+local function reportStop(reason)
+    if control.reported then
+        return
+    end
+
+    control.reported = true
+
+    warn('[Unnamed Enhancements] stopped: ' .. tostring(reason))
+end
+
 local function __step(id)
     if control.stopped then
+        -- Park the thread for good rather than erroring, or every loop and every render-step callback
+        -- the script bound throws "execution stopped" again each frame. Threads that can't yield still error.
+        if coroutine.isyieldable() then
+            coroutine.yield()
+        end
+
         error('execution stopped', 0)
     end
 
@@ -65,6 +83,8 @@ local function __step(id)
         control.error = 'Execution made no progress: loop ' .. tostring(id)
         control.status = 'error'
         control.stopped = true
+
+        reportStop(control.error)
 
         if heartbeatConnection then
             heartbeatConnection:Disconnect()
@@ -118,8 +138,7 @@ local function runApplication()
     end, traceback)
 
     if not ok then
-        -- Without this the real cause is swallowed and all that shows is the "execution stopped" spam.
-        warn('[Unnamed Enhancements] failed to start: ' .. tostring(result))
+        reportStop('it failed to start: ' .. tostring(result))
 
         control.error = result
         control.status = 'error'
@@ -157,23 +176,51 @@ local function runApplication()
 
     local applicationLibrary = rawget(sharedEnv, 'Library')
 
-    if type(applicationLibrary) == 'table' and applicationLibrary ~= previousLibrary and typeof(applicationLibrary.ScreenGui) == 'Instance' then
-        applicationLibrary.ScreenGui.Destroying:Connect(function()
-            control.status = 'unloaded'
-            control.stopped = true
+    local function liveScreenGui(library)
+        if type(library) == 'table' and library ~= previousLibrary and typeof(library.ScreenGui) == 'Instance' then
+            return library.ScreenGui
+        end
 
-            if heartbeatConnection then
-                heartbeatConnection:Disconnect()
-            end
+        return nil
+    end
 
-            sharedEnv.UE_LOADED = previousLoaded
+    -- Stop everything once the UI is gone for good. Losing one ScreenGui isn't always that: if the library
+    -- has a different, still-parented one by the next resumption cycle, it was replaced, so watch that instead.
+    local function watchUi(screenGui)
+        screenGui.Destroying:Connect(function()
+            task.defer(function()
+                local current = liveScreenGui(rawget(sharedEnv, 'Library'))
 
-            if rawget(sharedEnv, 'Library') == applicationLibrary then
-                sharedEnv.Library = previousLibrary
-                sharedEnv.Options = previousOptions
-                sharedEnv.Toggles = previousToggles
-            end
+                if current and current ~= screenGui and current.Parent ~= nil then
+                    watchUi(current)
+
+                    return
+                end
+
+                control.status = 'unloaded'
+                control.stopped = true
+
+                reportStop('its UI was closed or destroyed')
+
+                if heartbeatConnection then
+                    heartbeatConnection:Disconnect()
+                end
+
+                sharedEnv.UE_LOADED = previousLoaded
+
+                if rawget(sharedEnv, 'Library') == applicationLibrary then
+                    sharedEnv.Library = previousLibrary
+                    sharedEnv.Options = previousOptions
+                    sharedEnv.Toggles = previousToggles
+                end
+            end)
         end)
+    end
+
+    local screenGui = liveScreenGui(applicationLibrary)
+
+    if screenGui then
+        watchUi(screenGui)
     end
 
     return control
