@@ -75,7 +75,12 @@ local function __step(id)
     if state.ticks > 0 and state.ticks % 262144 == 0 and coroutine.isyieldable() then
         task.wait()
 
+        -- Yielding is progress, so start a fresh budget. Otherwise a long job that only yields here
+        -- (building the UI on a slow executor) keeps its old ticks and start time across frames and
+        -- gets killed as hung, taking every other loop down with "execution stopped".
         state.frame = schedulerFrame
+        state.started = os.clock()
+        state.ticks = 0
     end
 end
 
@@ -113,6 +118,9 @@ local function runApplication()
     end, traceback)
 
     if not ok then
+        -- Without this the real cause is swallowed and all that shows is the "execution stopped" spam.
+        warn('[Unnamed Enhancements] failed to start: ' .. tostring(result))
+
         control.error = result
         control.status = 'error'
         control.stopped = true
