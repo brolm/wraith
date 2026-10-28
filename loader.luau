@@ -10,12 +10,12 @@
 -- Hubs: a hub is ONE entry that serves a different script per game. Point it at a routes file:
 --   { "name": "Some Hub", "hub": "hubs/some-hub.json", "description": "..." }
 -- where hubs/some-hub.json is { "routes": [ { "name": "...", "file": "games/x.luau", "placeId": 1, "universeId": 2 } ] }.
--- Running the hub (or auto-routing) picks the route for the game you are in. Route files are relative to scripts/.
+-- Running the hub picks the route for the game you are in. Route files are relative to scripts/.
 --
--- Auto-routing: a plain entry with "placeId" (and optionally "universeId"), or any hub route, is run
--- automatically when you execute the loader in that game. Matching is by place first, then universe,
--- so sub-places work too. Routes marked "alt": true are never auto-run (the hub still uses them
--- only if nothing else matches). Set getgenv().WraithAutoRoute = false to turn it off.
+-- Nothing runs on its own: a script only starts when you press its Run button. A plain entry with
+-- "placeId" (and optionally "universeId"), or any hub route, marks the script for that game, and the
+-- status bar points it out. Matching is by place first, then universe, so sub-places work too.
+-- Routes marked "alt": true are never pointed out (the hub still uses them only if nothing else matches).
 
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
@@ -85,13 +85,12 @@ local QUICK = TweenInfo.new(0.16, Enum.EasingStyle.Quint, Enum.EasingDirection.O
 local SMOOTH = TweenInfo.new(0.4, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
 local FULL = UDim2.fromScale(1, 1)
 
--- Open springs up from slightly small and low; close sinks back down and fades.
+-- Open grows out from the window's centre with a slight overshoot; close shrinks back into it and fades.
 local OPEN = TweenInfo.new(0.45, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
 -- The glass only shows its content once it is half opaque, so the content fade waits for that.
 local OPEN_FADE = TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0.07)
 local CLOSE = TweenInfo.new(0.24, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
 local HIDDEN_SCALE = 0.92
-local HIDDEN_OFFSET = UDim2.fromOffset(0, 18)
 
 type Route = {
 	name: string?,
@@ -372,9 +371,11 @@ local holder = create("Frame", {
 	Parent = gui,
 })
 local fit = create("UIScale", { Parent = holder })
--- The open/close transitions move and scale this stage, so they never fight dragging or fit.
+-- The open/close transitions scale this stage, so they never fight dragging or fit. UIScale works
+-- from the AnchorPoint, so it's centred to keep the window growing and shrinking about its middle.
 local stage = create("Frame", {
-	Position = HIDDEN_OFFSET,
+	AnchorPoint = Vector2.new(0.5, 0.5),
+	Position = UDim2.fromScale(0.5, 0.5),
 	Size = FULL,
 	BackgroundTransparency = 1,
 	Parent = holder,
@@ -775,7 +776,6 @@ local cards: { Card } = {}
 local loaded = false
 local refreshing = false
 local running = false
-local autoRouted = false
 local closeLoader: (() -> ())? -- set once the window exists
 
 local function setStatus(message: string, tone: string?)
@@ -999,27 +999,19 @@ local function refresh()
 	applyFilter()
 	setStatus("Up to date · " .. pluralize(#entries), "success")
 
-	local env = if type(getgenv) == "function" then getgenv() else _G
-	if not autoRouted and env.WraithAutoRoute ~= false then
-		local target = routeFor(entries)
-		if target then
-			autoRouted = true
-			for _, card in ipairs(cards) do
-				if card.entry == target then
-					runScript(card)
-					break
-				end
+	-- Never run anything unasked: just point at the script made for this game, if there is one.
+	local target = routeFor(entries)
+	if target then
+		setStatus(target.name .. " has a script for this game - press Run to start it", "success")
+	else
+		local hubs = 0
+		for _, entry in ipairs(entries) do
+			if entry.routes then
+				hubs += 1
 			end
-		else
-			local hubs = 0
-			for _, entry in ipairs(entries) do
-				if entry.routes then
-					hubs += 1
-				end
-			end
-			if hubs > 0 then
-				setStatus("No hub has a script for this game yet - pick one below")
-			end
+		end
+		if hubs > 0 then
+			setStatus("No hub has a script for this game yet - pick one below")
 		end
 	end
 end
@@ -1037,19 +1029,21 @@ local function reducedMotion(): boolean
 	return ok and enabled == true
 end
 
--- Springs the window up into place, or sinks and fades it away. With reduced motion it only fades.
+-- Grows the window out of its centre, or shrinks it back in and fades it away. With reduced motion it only fades.
 local function setShown(visible: boolean)
 	shown = visible
 	local still = reducedMotion()
 	if visible then
 		window:SetVisible(true)
-		tween(pop, { Scale = 1 }, if still then OPEN_FADE else OPEN)
-		tween(stage, { Position = UDim2.new() }, if still then OPEN_FADE else OPEN)
+		if still then
+			pop.Scale = 1
+		else
+			tween(pop, { Scale = 1 }, OPEN)
+		end
 		tween(content, { GroupTransparency = 0 }, OPEN_FADE)
 	else
 		if not still then
 			tween(pop, { Scale = HIDDEN_SCALE }, CLOSE)
-			tween(stage, { Position = HIDDEN_OFFSET }, CLOSE)
 		end
 		tween(content, { GroupTransparency = 1 }, CLOSE)
 		-- The glass hides its content at half opacity, so let ours finish fading before it starts.
