@@ -38,11 +38,23 @@ local function reportStop(reason)
 
     control.reported = true
 
-    warn('[Unnamed Enhancements] stopped: ' .. tostring(reason))
+    local message = '[Unnamed Enhancements] stopped: ' .. tostring(reason)
+
+    warn(message)
+
+    -- Also keep it on disk: the console scrolls away under the errors, and a kick takes it with it.
+    if type(writefile) == 'function' then
+        pcall(writefile, 'UnnamedEnhancements-last-stop.txt', os.date('!%Y-%m-%d %H:%M:%S UTC\n') .. message)
+    end
 end
 
 local function __step(id)
     if control.stopped then
+        -- Hooks the script installed keep running inside the game's own threads. Throwing or parking there
+        -- breaks Rivals' scripts, so let those run through; only the script's own threads are stopped.
+        if type(checkcaller) == 'function' and not checkcaller() then
+            return
+        end
         -- Park the thread for good rather than erroring, or every loop and every render-step callback
         -- the script bound throws "execution stopped" again each frame. Threads that can't yield still error.
         if coroutine.isyieldable() then
