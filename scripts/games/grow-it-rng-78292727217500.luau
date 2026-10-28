@@ -1,4 +1,4 @@
-local repo = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+local repo = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 
 if getgenv()._GrowItRNG_Unload then

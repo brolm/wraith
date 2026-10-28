@@ -2,7 +2,7 @@
 -- Wraith Hub: a keyless script browser. Lists everything in scripts/index.json and runs the one you pick.
 --
 -- Run with:
---   loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"))()
+--   loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/loader.luau"))()
 --
 -- To add a script, put it in scripts/ and add an entry to scripts/index.json:
 --   { "name": "...", "file": "my-script.luau", "game": "...", "description": "..." }
@@ -22,7 +22,7 @@ local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 
-local REPO_URL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/"
+local REPO_URL = "https://raw.githubusercontent.com/brolm/wraith/main/"
 local GUI_NAME = "WraithHub"
 local TOGGLE_KEY = Enum.KeyCode.RightControl
 

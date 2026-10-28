@@ -822,9 +822,9 @@ UpgradesConfig = require(lR.Shared.Modules.Config.UpgradesConfig)
 WorkersConfig = require(lR.Shared.Modules.Config.WorkersConfig)
 RebirthConfig = require(lR.Shared.Modules.Config.RebirthConfig)
 ZonesConfig = require(lR.Shared.Modules.Config.ZonesConfig)
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-kG = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+kG = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 pcall(fn162)
 SetNotifySide = nil
 SetNotifySide = Library.SetNotifySide

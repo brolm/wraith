@@ -579,9 +579,9 @@ repeat
         end
     else
         if ((not gl or gl or (Omni or not Omni)) and (Omni or not Omni or (gl or not Omni)) and (not Omni and not Omni and (Omni and gl) and (Omni and not Omni and (not gl or gl))) or (not gl and not Omni and (not Omni and Omni) or (Omni and not Omni or (gl or Omni))) and (not Omni or not Omni or Omni and not Omni or (not Omni or Omni or (not Omni or gl)))) and not ((not gl or gl or (Omni or not Omni)) and (Omni or not Omni or (gl or not Omni)) and (not Omni and not Omni and (Omni and gl) and (Omni and not Omni and (not gl or gl))) or (not gl and not Omni and (not Omni and Omni) or (Omni and not Omni or (gl or Omni))) and (not Omni or not Omni or Omni and not Omni or (not Omni or Omni or (not Omni or gl)))) then
-            gl = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau", game))()
+            gl = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau", game))()
         else
-            Fluent = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau", true))()
+            Fluent = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau", true))()
         end
         gk = (gk + 11) % 24
     end

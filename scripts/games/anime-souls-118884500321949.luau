@@ -374,9 +374,9 @@ local io_1, io_6
 local ir_1, ir_3
 local iq_1
 Library, VirtualUser, ReplicatedStorage, LocalPlayer, h_, hV, hP, hK, hJ, hG, il, ii, ie, h9, ir_1, io_1, hM, ij, ic, h0 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 local ip = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")

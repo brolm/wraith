@@ -766,9 +766,9 @@ local jm = require(ReplicatedStorage.Modules.MutationConfigurations)
 local jn = require(ReplicatedStorage.Modules.ToolsConfiguration)
 local jo = require(ReplicatedStorage.Modules.FloorConfigurations)
 if ((Toggles or not iz) and (iw or not Toggles) or (Toggles or not i_ or not i_ and iw) or (not Toggles and not jm and (not iw or iw) or (jm or not jm) and (not jm and not i_))) and ((Toggles and i_ or (i_ or not iz)) and (iw and not jm or (iw or Toggles)) and ((not i_ and i_ or not i_ and not jm) and (iw and not Toggles and (iw or not Toggles)))) or not (((Toggles or not iz) and (iw or not Toggles) or (Toggles or not i_ or not i_ and iw) or (not Toggles and not jm and (not iw or iw) or (jm or not jm) and (not jm and not i_))) and ((Toggles and i_ or (i_ or not iz)) and (iw and not jm or (iw or Toggles)) and ((not i_ and i_ or not i_ and not jm) and (iw and not Toggles and (iw or not Toggles))))) then
-    ji_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+    ji_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    iT = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+    iT = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 ip = loadstring(game:HttpGet(ji_1 .. "Library.lua"))()
 local jq_2 = loadstring(game:HttpGet(ji_1 .. "addons/ThemeManager.lua"))()

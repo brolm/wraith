@@ -1567,9 +1567,9 @@ local function wY_2()
     JG = "https://rscripts.net/@Ouroboros"
     JW = "https://ouroboros-hub-rbx.web.app/"
     JP = "https://discord.gg/synapsex"
-    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
-    ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+    ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     Toggles = Library.Toggles
     Options = Library.Options
     v_(wu, Library)

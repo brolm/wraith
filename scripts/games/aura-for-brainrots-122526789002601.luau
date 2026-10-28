@@ -1240,9 +1240,9 @@ l4, l2, Library, SaveManager, Toggles, Options, l5, l0, lX, ng, nf, nb, m7, m1, 
 uz_10 = { "+1", "+5", "+10" }
 l4 = { ["+1"] = 1, ["+5"] = 5, ["+10"] = 10 }
 l2 = { 1, 5, 10 }
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 m0 = fn944

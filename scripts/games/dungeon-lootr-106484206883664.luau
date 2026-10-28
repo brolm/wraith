@@ -4546,7 +4546,7 @@ fns.aO8_33 = {
     DISCORD_INVITE = "https://discord.gg/ehKVq7pf7v",
     RSCRIPTS_LINK = "https://rscripts.net/@Ouroboros",
     WEBSITE_LINK = "https://ouroboros-hub-rbx.web.app/",
-    LOADER_URL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau",
+    LOADER_URL = "https://raw.githubusercontent.com/brolm/wraith/main/loader.luau",
     SKILL_MAP = { ["Skill 1"] = 1, ["Skill 2"] = 2, ["Skill 3"] = 3, ["Skill 4"] = 4, Ultimate = "E" },
     SELL_RARITY_VALUES = { "Common", "Uncommon", "Rare", "Epic", "Legendary", "Mythic", "Celestial" },
     LOBBY_DIFFICULTY_VALUES = { "Easy", "Normal", "Hard", "Nightmare", "Endless" },
@@ -4606,7 +4606,7 @@ Attack = aO8_109:WaitForChild("Attack")
 Skill = aO8_109:WaitForChild("Skill")
 Parry = aO8_109:WaitForChild("Parry")
 pcall(fns.fn2738)
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 adX = function()
     local function ag9(W)
         local ag7 = not W or not W:IsA("ScreenGui")
@@ -4661,8 +4661,8 @@ pcall(function()
     end
 end)
 task.spawn(fns.worker)
-aO8_92 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+aO8_92 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 if getgenv then
     getgenv().__OuroborosDungeonLootrLib = Library
 end

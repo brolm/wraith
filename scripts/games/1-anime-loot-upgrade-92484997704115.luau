@@ -676,9 +676,9 @@ local kX_1
 local kJ_1
 local Window, kG_2
 Library, SaveManager, Toggles, Options, UserInputService, VirtualUser, HttpService, jY, jT, jS, jO, jN, jK, jI, jE, jA, jx, kw, kq, kl, kj, kf, WeaponConfig, AutoTrainConfig, j6, kg, Window, jP, Label, kx, kJ_1, j2, jU, jL, jB, ka, jZ = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 local Players = game:GetService("Players")

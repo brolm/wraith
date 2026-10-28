@@ -1,5 +1,5 @@
 -- Rayfield Gen2 v1.2.0
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/sirius/gen2.lua"))()
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/sirius/gen2.lua"))()
 --
 -- Copyright (c) 2026 Corridon Capital
 -- This Source Code Form is subject to the terms of the Mozilla Public

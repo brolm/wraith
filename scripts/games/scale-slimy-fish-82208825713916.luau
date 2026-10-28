@@ -1493,7 +1493,7 @@ function fns.Ko_99()
     task.wait(0.5)
 end
 fns.Ko_99()
-ym = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/sirius/gen2.lua"))()
+ym = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/sirius/gen2.lua"))()
 yd = false
 local Ko_67 = require(game.ReplicatedFirst.AllSideCode.UtilsSystem)
 ConfigInstance = require(game.ReplicatedFirst.AllSideCode.ToolBasic.ConfigInstance)

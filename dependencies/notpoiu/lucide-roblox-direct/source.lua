@@ -128,7 +128,7 @@ local function PruneCache(currentFolder: string)
 end
 
 --// Constants \\--
-local ASSET_BASE_URL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/notpoiu/lucide-roblox-direct/"
+local ASSET_BASE_URL = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/notpoiu/lucide-roblox-direct/"
 local ASSET_FOLDER = "0d0438b2b95b5b535f5727460999f674aeab313d8a5114052ed96deb2f8b7acd"
 
 --// Sprites \\--

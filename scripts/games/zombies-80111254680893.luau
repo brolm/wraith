@@ -1354,10 +1354,10 @@ Blink = require(ReplicatedStorage:WaitForChild("Packages"):WaitForChild("Blink")
 local xF_22 = "Zombie[Beta]"
 pl = "https://discord.gg/ehKVq7pf7v"
 pf = "https://rscripts.net/@Ouroboros"
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
 pcall(fn896)
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 oD = fn595

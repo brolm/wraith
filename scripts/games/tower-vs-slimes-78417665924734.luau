@@ -212,9 +212,9 @@ local RunService = game:GetService("RunService")
 VirtualUser = game:GetService("VirtualUser")
 LocalPlayer = Players.LocalPlayer
 if ((gl or not f9) and (gw_1 and false) or LocalPlayer and not CrateShop and (CrateShop and not LocalPlayer) or (not f9 or not LocalPlayer or (not f9 or LocalPlayer) or (not gw_1 and not gw_1 or gw_1 and LocalPlayer))) and ((LocalPlayer and gw_1 and (false or not gw_1) or (f9 or f9 or (not gw_1 or not CrateShop))) and ((LocalPlayer or gl) and (not gw_1 or gw_1) and (LocalPlayer or gl or (not f9 or not f9)))) and not (((gl or not f9) and (gw_1 and false) or LocalPlayer and not CrateShop and (CrateShop and not LocalPlayer) or (not f9 or not LocalPlayer or (not f9 or LocalPlayer) or (not gw_1 and not gw_1 or gw_1 and LocalPlayer))) and ((LocalPlayer and gw_1 and (false or not gw_1) or (f9 or f9 or (not gw_1 or not CrateShop))) and ((LocalPlayer or gl) and (not gw_1 or gw_1) and (LocalPlayer or gl or (not f9 or not f9))))) then
-    f9 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+    f9 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
 else
-    gt_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+    gt_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
 end
 f2 = loadstring(game:HttpGet(gt_1 .. "Library.lua"))()
 local gx = loadstring(game:HttpGet(gt_1 .. "addons/ThemeManager.lua"))()

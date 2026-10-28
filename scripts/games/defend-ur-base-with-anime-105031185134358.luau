@@ -515,13 +515,13 @@ local function pN_2()
 end
 local pR = fn801
 pN_2()
-Library = pR({ "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua" })
+Library = pR({ "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua" })
 if not Library then
     error("Ouroboros Hub: failed to load the Obsidian library.")
 end
 pC, oP, pO_1, pt, pT = nil, nil, nil, nil, nil
-local ThemeManager = pR({ "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua" })
-local SaveManager = pR({ "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua" })
+local ThemeManager = pR({ "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua" })
+local SaveManager = pR({ "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua" })
 pC = "https://discord.gg/f3dJhDgyTq"
 local pY = "rbxassetid://91400086538074"
 pt = fn253

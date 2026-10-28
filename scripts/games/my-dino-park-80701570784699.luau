@@ -651,11 +651,11 @@ h0 = function(bK, bL, bM)
     end
     return nil
 end
-local h6 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
-if ((hW or Options) and (h6 and not hC) and (h6 and not hF or hW and hF) or (h6 and hF or hC and not hC) and ((hW or hF) and (hF and Options))) and (not Options and hF and "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/" or (h6 and Options or (false or Options)) or ((SaveManager or Options) and (h6 and hC) or not Options and hW and (h6 and not hC))) or not (((hW or Options) and (h6 and not hC) and (h6 and not hF or hW and hF) or (h6 and hF or hC and not hC) and ((hW or hF) and (hF and Options))) and (not Options and hF and "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/" or (h6 and Options or (false or Options)) or ((SaveManager or Options) and (h6 and hC) or not Options and hW and (h6 and not hC)))) then
-    ic_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+local h6 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+if ((hW or Options) and (h6 and not hC) and (h6 and not hF or hW and hF) or (h6 and hF or hC and not hC) and ((hW or hF) and (hF and Options))) and (not Options and hF and "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/" or (h6 and Options or (false or Options)) or ((SaveManager or Options) and (h6 and hC) or not Options and hW and (h6 and not hC))) or not (((hW or Options) and (h6 and not hC) and (h6 and not hF or hW and hF) or (h6 and hF or hC and not hC) and ((hW or hF) and (hF and Options))) and (not Options and hF and "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/" or (h6 and Options or (false or Options)) or ((SaveManager or Options) and (h6 and hC) or not Options and hW and (h6 and not hC)))) then
+    ic_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 else
     loadstring(game:HttpGet(SaveManager .. "addons/ThemeManager.lua"))()
     ic_1 = loadstring(game:HttpGet(SaveManager .. "addons/SaveManager.lua"))()

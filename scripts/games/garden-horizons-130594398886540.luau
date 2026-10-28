@@ -432,11 +432,11 @@ kE = "ForgottenIsle"
 local l5_2 = "Garden Horizons"
 lF = "https://discord.gg/ehKVq7pf7v"
 lC = "https://rscripts.net/@Ouroboros"
-local lT = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+local lT = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if (not lp or lp) and (k0 and not lp) and (not k0 and not PlantSeed or (not lp or not k0)) or (not PlantSeed or k0 or lp and not k0) and ((k0 or k0) and (lp or PlantSeed)) or not ((not lp or lp) and (k0 and not lp) and (not k0 and not PlantSeed or (not lp or not k0)) or (not PlantSeed or k0 or lp and not k0) and ((k0 or k0) and (lp or PlantSeed))) then
     pcall(fn407)
-    ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
 else
     pcall(fn407)
     lT = loadstring(game:HttpGet(ThemeManager .. "addons/ThemeManager.lua"))()

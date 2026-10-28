@@ -6036,9 +6036,9 @@ aJS_110 = function()
     local Iv = "https://rscripts.net/@Ouroboros"
     local Iu = "https://discord.gg/synapsex"
     local Is = "Clicker Simulator"
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
-    local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+    local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     local Toggles = Library.Toggles
     local Options = Library.Options
     abu(aaF, Library)
@@ -7343,7 +7343,7 @@ aJS_110 = function()
                 end
             end))
         end)
-        aIb = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"
+        aIb = "https://raw.githubusercontent.com/brolm/wraith/main/loader.luau"
         local aIm_2 = typeof(queue_on_teleport) == "function" and queue_on_teleport
         local aIn = aIm_2
         if not aIn then

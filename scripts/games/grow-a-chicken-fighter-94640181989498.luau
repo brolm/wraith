@@ -1661,9 +1661,9 @@ repeat
                     "ogvkwp"
                 }
                 if xI_31[(xI_14 * 37 + 109) % 11 + 1] <= xI_31[(xI_14 * 37 + 109) % 11 + 1] then
-                    xI_3 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    xI_3 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    pk = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    pk = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 xI_14 = (xI_14 + 143) % 288
             end

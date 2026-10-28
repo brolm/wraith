@@ -1285,9 +1285,9 @@ repeat
             if vA_15 <= 2 then
                 if vA_15 <= 1 then
                     if vA_16 * 89190711 + 7 + 5 <= vA_16 * 89190711 + 7 + 5 + 4 then
-                        vA_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        vA_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
-                        vA_2 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        vA_2 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     vA_16 = (vA_16 + 11) % 56
                 else

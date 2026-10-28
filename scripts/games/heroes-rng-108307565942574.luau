@@ -1422,9 +1422,9 @@ local function lN_2()
     task.wait(0.5)
 end
 lN_2()
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-lT = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+lT = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 Shared = require(lE.shared.Shared)
 Heroes = Shared.Heroes
 Upgrades = Shared.Upgrades

@@ -4,7 +4,7 @@
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 
-local Glass = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/lib/glass.luau"))()
+local Glass = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/lib/glass.luau"))()
 
 local TIER_TEXT = {
 	Acrylic = "Real blur (graphics 8+)",

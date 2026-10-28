@@ -1176,10 +1176,10 @@ repeat
         elseif gO <= 3 then
             if gL_2 * 87431455 + 7 + 7 >= gL_2 * 87431455 + 7 + 7 + 2 then
                 gj()
-                gI = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
+                gI = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
             else
                 gI()
-                gj = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
+                gj = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
             end
             gL_2 = (gL_2 + 1) % 28
         else

@@ -28,7 +28,7 @@ local Toggles = {}
 local Options = {}
 local Tooltips = {}
 
-local BaseURL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/uhfork/Obsidian/"
+local BaseURL = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/uhfork/Obsidian/"
 local CustomImageManager = {}
 local CustomImageManagerAssets = {
     TransparencyTexture = {
@@ -2909,7 +2909,7 @@ end
 
 local OnlineFetchIcons, OnlineIcons = pcall(function()
     return (loadstring(
-        game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/mstudio45/lucide-roblox-direct/source.lua")
+        game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/mstudio45/lucide-roblox-direct/source.lua")
     ) :: () -> IconModule)()
 end)
 if OnlineFetchIcons and OnlineIcons then

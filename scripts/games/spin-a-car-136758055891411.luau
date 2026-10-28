@@ -191,9 +191,9 @@ if c8 then
     until (c9 * 3 + 0) % 8 == 2
 end
 c_, LocalPlayer, c1, PlayerState, PlotUtil, RebirthUtil, UpgradeTreeUtil, UpgradeTreeData, Modifiers, _remotes, UserId, cV, Window, dp_1, AutoRollToggle, AutoEquipCarToggle, AutoEquipModifierToggle, AutoRebirthToggle, AutoBuyToggle, dd_1, cX, c3, cO, cS = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-c_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+c_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 local Players = game:GetService("Players")
 local da = game:GetService("ReplicatedStorage")
 LocalPlayer = Players.LocalPlayer

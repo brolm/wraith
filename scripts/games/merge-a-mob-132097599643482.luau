@@ -580,9 +580,9 @@ repeat
                 local kk = gJ
                 local gV_8 = gU_9[kk % 12 + 1]
                 if gV_8:len() <= gV_8:reverse():rep(kk % 3 + 2):len() then
-                    gG_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    gG_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    gy = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    gy = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 gJ = (gJ + 3) % 112
             else

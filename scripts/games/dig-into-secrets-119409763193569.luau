@@ -766,8 +766,8 @@ TrainClient = require(Client:WaitForChild("Common"):WaitForChild("TrainClient"))
 UIManager = require(Client:WaitForChild("UI"):WaitForChild("Module"):WaitForChild("UIManager"))
 mO = {}
 open = UIManager.open
-local m__5 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
-mA = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+local m__5 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
+mA = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if getgenv then
     getgenv().__OuroborosDigIntoSecretsLib = mA
 end

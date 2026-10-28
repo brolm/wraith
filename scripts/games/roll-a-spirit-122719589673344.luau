@@ -905,9 +905,9 @@ repeat
         if kv <= 2 then
             if kv <= 1 then
                 if (km_6 * 2 + 8) * 7 % 3 == ((km_6 * 2 + 8) * 7 + 6) % 3 then
-                    kl = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    kl = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    jO = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    jO = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 km_6 = (km_6 + 16) % 20
             else

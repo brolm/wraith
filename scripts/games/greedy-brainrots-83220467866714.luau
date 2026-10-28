@@ -1465,10 +1465,10 @@ for i, v in ipairs(Balancing.Trader.WeatherCards) do
     pI[zW_34] = i
 end
 pj, o9, Toggles, o1, qq, qR, qA, ql, p4, pJ, pf, qP, p9, p0, pE, pb, qH, qp, pO, pm, qM, p6, qv, qN, pR, pz, pe, qw, o2, p1, pK, pc, qh, pV, pG, qL, qj, pi, qQ, qs, py, qz, qe, pS, qF, pa, qT, pp, qC, pl, qu, po, o8, pQ, o4 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-pj = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+pj = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if not pO and not pO and (not qM and not qM) or qM and not qM and (pO and not pO) or not (not pO and not pO and (not qM and not qM) or qM and not qM and (pO and not pO)) then
-    zW_54 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    o9 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    zW_54 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    o9 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     Toggles = pj.Toggles
     o1 = pj.Options
     qR = fns.fn557

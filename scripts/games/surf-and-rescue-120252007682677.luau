@@ -2720,10 +2720,10 @@ xy.SetAutoUpgradeTank = fns.fn321
 xy.SetAutoSell = fn1290
 xy.SetEsp = fns.fn204
 xy.Track(fns.fn340)
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if (ys or Library) and (xn or not Kw_32) and (xn and not ys or not Kw_12 and Kw_12) or not ((ys or Library) and (xn or not Kw_32) and (xn and not ys or not Kw_12 and Kw_12)) then
-    xo = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    xo = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 else
     loadstring(game:HttpGet(SaveManager .. "addons/ThemeManager.lua"))()
     xo = loadstring(game:HttpGet(SaveManager .. "addons/SaveManager.lua"))()

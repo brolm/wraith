@@ -35,9 +35,9 @@ local function fetch(url)
     return httpGet(game, url)
 end
 
-local Library = loadstring(fetch("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
-local SaveManager = loadstring(fetch("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"))()
-local InterfaceManager = loadstring(fetch("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"))()
+local Library = loadstring(fetch("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
+local SaveManager = loadstring(fetch("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"))()
+local InterfaceManager = loadstring(fetch("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"))()
 
 local GameStateRemotes = ReplicatedStorage:FindFirstChild("GameStateRemotes")
 local WaveRemotes = ReplicatedStorage:FindFirstChild("WaveRemotes")

@@ -6507,7 +6507,7 @@ local TeleportCheck = false
 Players.LocalPlayer.OnTeleport:Connect(function(State)
 	if KeepInfYield and (not TeleportCheck) and queueteleport then
 		TeleportCheck = true
-		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/EdgeIY/infiniteyield/source'))()")
+		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/brolm/wraith/main/dependencies/EdgeIY/infiniteyield/source'))()")
 	end
 end)
 
@@ -10567,7 +10567,7 @@ end)
 
 addcmd("moondex", {"mdex"}, function(args, speaker)
     notify("Loading", "Hold on a sec")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/infyiff/backup/dex.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/infyiff/backup/dex.lua"))()
 end)
 
 addcmd("remotespy", {"rspy", "cobalt", "cspy"}, function(args, speaker)
@@ -13282,7 +13282,7 @@ end)
 
 task.spawn(function()
 	local success, latestVersionInfo = pcall(function() 
-		local versionJson = game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/EdgeIY/infiniteyield/version")
+		local versionJson = game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/EdgeIY/infiniteyield/version")
 		return HttpService:JSONDecode(versionJson)
 	end)
 

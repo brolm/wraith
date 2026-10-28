@@ -828,17 +828,17 @@ CombatConfig = require(Shared:WaitForChild("CombatConfig"))
 ir = { "SpawnType", "CashMultiplier", "AttackRange" }
 if ir and DailyRewardsConfig or h8 and not CombatConfig or 23 or ((not DailyRewardsConfig or h8) and (h8 and not ir) or h8 and ir and (not ir and not CombatConfig)) or not (ir and DailyRewardsConfig or h8 and not CombatConfig or 23 or ((not DailyRewardsConfig or h8) and (h8 and not ir) or h8 and ir and (not ir and not CombatConfig))) then
     ik = { SpawnType = "Spawn Type", CashMultiplier = "Cash Multiplier", AttackRange = "Sword Range" }
-    ib = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+    ib = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
     pcall(fn181)
-    jd_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    iW = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    jd_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    iW = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 else
     iW = { AttackRange = "Sword Range", CashMultiplier = "Cash Multiplier", SpawnType = "Spawn Type" }
-    jd_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+    jd_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
     pcall(fn181)
-    ik = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    ib = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    ik = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    ib = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 end
 SetNotifySide = nil
 if (SetNotifySide or (SetNotifySide or 10)) and false and ((SetNotifySide or not SetNotifySide) and 10 or (not SetNotifySide and SetNotifySide or false)) or ((SetNotifySide or SetNotifySide) and false or (not SetNotifySide and SetNotifySide)) or not ((SetNotifySide or (SetNotifySide or 10)) and false and ((SetNotifySide or not SetNotifySide) and 10 or (not SetNotifySide and SetNotifySide or false)) or ((SetNotifySide or SetNotifySide) and false or (not SetNotifySide and SetNotifySide))) then

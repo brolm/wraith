@@ -501,13 +501,13 @@ gQ, gJ, Library, SaveManager, Toggles, Options, g2_1, gb, gu, ge, f0, gL, f4, gA
 gQ = {}
 gJ = {}
 pcall(fn109)
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if ("#e8a34d" or (false or not gj) or (not gk or false) and (fZ or not g2_1)) and (not gN and fZ and (not g2_1 or g2_1) and (not gk and false or "#e8a34d")) and not (("#e8a34d" or (false or not gj) or (not gk or false) and (fZ or not g2_1)) and (not gN and fZ and (not g2_1 or g2_1) and (not gk and false or "#e8a34d"))) then
     loadstring(game:HttpGet(SaveManager .. "addons/ThemeManager.lua"))()
     g5_1 = loadstring(game:HttpGet(SaveManager .. "addons/SaveManager.lua"))()
 else
-    g5_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    g5_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 end
 Toggles = Library.Toggles
 Options = Library.Options

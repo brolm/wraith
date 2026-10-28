@@ -746,9 +746,9 @@ repeat
                         "rlngveaxh"
                     }
                     if eZ_2[(eS * 2 + 3) % 9 + 1] <= eZ_2[(eS * 2 + 3) % 9 + 1] then
-                        eW = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+                        eW = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
                     else
-                        ep = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+                        ep = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
                     end
                     eS = (eS + 47) % 144
                 end

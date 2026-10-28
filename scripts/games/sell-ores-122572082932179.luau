@@ -915,9 +915,9 @@ repeat
             if wF_5 <= 5 then
                 local xs = bit32.rrotate(bit32.bxor(bit32.lrotate(wF_13, 8), string.byte(tostring(wF_24))), 5)
                 if bit32.bxor(bit32.lrotate(bit32.bxor(xs, 1737029486), 10), 601733534) == bit32.lrotate(xs, 10) then
-                    wF_27 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    wF_27 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    oO = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    oO = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 wF_13 = (wF_13 + 77) % 128
             else

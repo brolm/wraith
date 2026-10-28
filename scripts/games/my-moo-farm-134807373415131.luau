@@ -30,7 +30,7 @@ local InventoryUI = require(ClientFolder:WaitForChild("InventoryUI"))
 local SelectionState = require(ClientFolder:WaitForChild("SelectionState"))
 local MyLandState = require(ClientFolder:WaitForChild("MyLandState"))
 
-local repo = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+local repo = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 
 pcall(function()

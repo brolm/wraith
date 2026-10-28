@@ -12418,7 +12418,7 @@ end
 
 
 (function()
-local U0 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/tienkhanh1/spicy/ChilliLibraryEngine"
+local U0 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/tienkhanh1/spicy/ChilliLibraryEngine"
 local B0 = {
     [1] = 0x43534833,
     [2] = Protected, [3] = Runtime,

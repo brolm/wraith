@@ -502,10 +502,10 @@ local Gameplay = Configurations:WaitForChild("Gameplay")
 UpgradesConfiguration = require(Gameplay:WaitForChild("UpgradesConfiguration"))
 WorkerConfiguration = require(Gameplay:WaitForChild("WorkerConfiguration"))
 RebirthConfiguration = require(Gameplay:WaitForChild("RebirthConfiguration"))
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
 pcall(fn160)
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 fw = "https://discord.gg/ehKVq7pf7v"

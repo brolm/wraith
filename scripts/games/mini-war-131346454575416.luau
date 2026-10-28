@@ -1444,9 +1444,9 @@ repeat
             else
                 local BI = bit32.rrotate(bit32.bxor(bit32.lrotate(Ae_29, 18), string.byte(tostring(ConvertCurrency))), 11)
                 if bit32.bxor(bit32.lrotate(bit32.bxor(BI, 2936687302), 30), 2881655473) ~= bit32.lrotate(BI, 30) then
-                    q8 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    q8 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    Ae_43 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    Ae_43 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 Ae_29 = (Ae_29 + 121) % 144
             end

@@ -543,7 +543,7 @@ table.sort(gj)
 gr_3, f7, Toggles, Options, gk, gp_3, fN, gn, ga, fV, gc, fR, gi, fW, fO, fL, gh, fY, f3, ge, fK, go, gg, f2, gf, fX, fD, gs_2 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 if ((not fD and false or not fN and fN) and (not gp_3 and not fD or (fD or fN)) or gp_3 and 54 and (not fN and fD) and (fD and (gp_3 or not fN))) and not ((not fD and false or not fN and fN) and (not gp_3 and not fD or (fD or fN)) or gp_3 and 54 and (not fN and fD) and (fD and (gp_3 or not fN))) then
 else
-    gr_3 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+    gr_3 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 f7 = loadstring(game:HttpGet(gr_3 .. "Library.lua"))()
 local gz_2 = loadstring(game:HttpGet(gr_3 .. "addons/ThemeManager.lua"))()

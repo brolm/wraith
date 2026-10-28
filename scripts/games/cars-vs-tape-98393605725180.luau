@@ -692,10 +692,10 @@ repeat
                 if im_1 <= 1 then
                     if (ia_2 * 3 + 7) * 9 % 4 == ((ia_2 * 3 + 7) * 9 + 4) % 4 then
                         table.sort(ie, fn513)
-                        ib_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        ib_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
                         table.sort(ib_1, fn513)
-                        ie = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        ie = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     ia_2 = (ia_2 + 45) % 128
                 else

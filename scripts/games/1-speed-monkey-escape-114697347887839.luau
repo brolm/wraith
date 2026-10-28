@@ -628,9 +628,9 @@ repeat
             if hH <= 8 then
                 if hH <= 7 then
                     if hr * 25309581 + 9 + 5 >= hr * 25309581 + 9 + 5 + 2 then
-                        gV = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        gV = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
-                        hu = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        hu = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     hr = (hr + 74) % 84
                 else

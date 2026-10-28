@@ -537,9 +537,9 @@ gD.X = ha_2 + 1
 gB = gD.X
 gy = fn644
 if (gq and false or not gr and gr or (gr or not hh_1) and (gq or false)) and ((gq or false) and (not gq) and (not gr or hh_1 or (gq or false))) and not ((gq and false or not gr and gr or (gr or not hh_1) and (gq or false)) and ((gq or false) and (not gq) and (not gr or hh_1 or (gq or false)))) then
-    g9 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+    g9 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    hb_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+    hb_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 gp = loadstring(game:HttpGet(hb_1 .. "Library.lua"))()
 local hr = loadstring(game:HttpGet(hb_1 .. "addons/ThemeManager.lua"))()

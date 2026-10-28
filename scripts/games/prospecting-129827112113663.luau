@@ -22881,7 +22881,7 @@ function fns.dwb_164_22()
     local Window, duY, duZ, du_, Button, du4, du5, du6, Options, du9
     local dve_1
     local dvd_1
-    dva = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+    dva = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
     du1 = "https://discord.gg/synapsex"
     local function dvf(bjb)
         local dnA_1, dnA_2

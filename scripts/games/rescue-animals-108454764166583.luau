@@ -1475,7 +1475,7 @@ for k, v in pT do
     pK[v] = true
 end
 Library = nil
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if getgenv then
     getgenv().__OuroborosRescueAnimalsLib = Library
 end
@@ -1512,11 +1512,11 @@ oz = function()
 end
 oz()
 task.spawn(worker)
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
 if (o_ or not pc) and (not pq or not o_) and ((not pq or ThemeManager) and (pc and ThemeManager)) and not ((o_ or not pc) and (not pq or not o_) and ((not pq or ThemeManager) and (pc and ThemeManager))) then
     loadstring(game:HttpGet(SaveManager .. "addons/SaveManager.lua"))()
 else
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 end
 Toggles = Library.Toggles
 Options = Library.Options

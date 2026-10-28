@@ -673,11 +673,11 @@ repeat
         elseif ha <= 3 then
             if bit32.bxor(bit32.lrotate(bit32.bxor(bit32.rrotate(bit32.bxor(bit32.lrotate(g4, 21), string.byte(tostring(g6))), 12), 1649588683), 2), 2303387437) == bit32.lrotate(bit32.rrotate(bit32.bxor(bit32.lrotate(g4, 21), string.byte(tostring(g6))), 12), 2) then
                 g8 = g6({
-                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau",
-                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"
+                    "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau",
+                    "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"
                 })
             else
-                g6 = g8("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau")
+                g6 = g8("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau")
             end
             g4 = (g4 + 55) % 64
         else
@@ -929,8 +929,8 @@ repeat
                 g6 = he(he)
             else
                 he = g6({
-                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
-                    "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"
+                    "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
+                    "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"
                 })
             end
             hb_6 = (hb_6 + 63) % 88
@@ -940,11 +940,11 @@ repeat
             if hf_1 <= 7 then
                 if hb_6 * 40475623 + 5 + 6 <= hb_6 * 40475623 + 5 + 6 + 1 then
                     hd = g6({
-                        "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau",
-                        "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"
+                        "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau",
+                        "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"
                     })
                 else
-                    g6 = hd("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau")
+                    g6 = hd("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau")
                 end
                 hb_6 = (hb_6 + 8) % 88
             else

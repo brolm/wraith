@@ -1,7 +1,7 @@
 -- glass.luau
 -- Glassmorphism panels for Roblox that hold up at every graphics level.
 --
---   local Glass = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/lib/glass.luau"))()
+--   local Glass = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/lib/glass.luau"))()
 --   local panel = Glass.new({ Parent = screenGui, Size = UDim2.fromOffset(360, 240) })
 --   label.Parent = panel.Content
 --   panel:SetVisible(false) -- fades out; true fades back in

@@ -341,11 +341,11 @@ else
     iK = "https://discord.gg/ehKVq7pf7v"
     iG = "https://rscripts.net/@Ouroboros"
 end
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
 pcall(fn492)
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
 if (Areas or Areas) and (not Areas or not Areas) and (i6 and not Areas or (not Areas or not i6)) or (not i6 and not Areas and (not Areas or not Areas) or i6 and not i6 and (not i6 or not Areas)) or not ((Areas or Areas) and (not Areas or not Areas) and (i6 and not Areas or (not Areas or not i6)) or (not i6 and not Areas and (not Areas or not Areas) or i6 and not i6 and (not i6 or not Areas))) then
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 else
     loadstring(game:HttpGet(SaveManager .. "addons/SaveManager.lua"))()
 end

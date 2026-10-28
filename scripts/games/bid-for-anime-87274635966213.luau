@@ -60,7 +60,7 @@ local RewardedAdSpinRequest = SpinWheelRemotes:WaitForChild("RewardedAdSpinReque
 local GAME_NAME = "Bid for Anime!"
 local DISCORD_INVITE = "https://discord.gg/ehKVq7pf7v"
 
-local repo = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+local repo = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 
 pcall(function()

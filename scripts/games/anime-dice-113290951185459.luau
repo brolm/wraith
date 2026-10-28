@@ -1851,10 +1851,10 @@ repeat
         local acE = vector.cross(abs_40, abs_20)
         local acF = vector.dot(abs_40, abs_20)
         if vector.dot(acE, acE) + acF * acF == vector.dot(abs_40, abs_40) * vector.dot(abs_20, abs_20) then
-            abs_53 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
-            E6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+            abs_53 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
+            E6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
         else
-            E6 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+            E6 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
             abs_53 = loadstring(game:HttpGet(E6 .. "Library.lua"))()
         end
         abs_48 = (abs_48 + 31) % 88
@@ -2075,13 +2075,13 @@ repeat
                     if abs_72[(abs_22 * 9 + 51) % 14 + 1] <= abs_72[(abs_22 * 9 + 51) % 14 + 1] then
                         E8 = "https://rscripts.net/@Ouroboros"
                         E2 = "https://ouroboros-hub-rbx.web.app/"
-                        EW = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"
+                        EW = "https://raw.githubusercontent.com/brolm/wraith/main/loader.luau"
                         ER = "v0.2"
                         EN = fns.fn440
                     else
                         EW = "https://rscripts.net/@Ouroboros"
                         ER = "https://ouroboros-hub-rbx.web.app/"
-                        E2 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"
+                        E2 = "https://raw.githubusercontent.com/brolm/wraith/main/loader.luau"
                         EN = "v0.2"
                         E8 = fns.fn440
                     end

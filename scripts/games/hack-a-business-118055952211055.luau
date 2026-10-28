@@ -764,14 +764,14 @@ repeat
         fe = (fe + 42) % 44
     else
         if (not fg_1 or not eQ or fh_1 and ff_1) and (fg_1 or not ff_1 or not eQ and result) and (result and fh_1 and (eQ or fb_1) and (fh_1 and ff_1 or fg_1 and not fh_1)) and (result and not ff_1 and (not fg_1 or not fh_1) and ((ff_1 or fg_1) and (fg_1 and not fb_1)) or (result and fg_1 or (not fb_1 or ff_1)) and ((fg_1 or not result) and (not fh_1 or fh_1))) and not ((not fg_1 or not eQ or fh_1 and ff_1) and (fg_1 or not ff_1 or not eQ and result) and (result and fh_1 and (eQ or fb_1) and (fh_1 and ff_1 or fg_1 and not fh_1)) and (result and not ff_1 and (not fg_1 or not fh_1) and ((ff_1 or fg_1) and (fg_1 and not fb_1)) or (result and fg_1 or (not fb_1 or ff_1)) and ((fg_1 or not result) and (not fh_1 or fh_1)))) then
-            fl_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
-            fm_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-            fa = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+            fl_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
+            fm_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+            fa = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
         else
-            fa = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
-            fm_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-            fl_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+            fa = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+            fm_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+            fl_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
         end
         fe = (fe + 20) % 44
     end

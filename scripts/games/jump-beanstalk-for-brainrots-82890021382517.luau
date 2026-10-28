@@ -1120,9 +1120,9 @@ repeat
                     mF = (vector.create((si_1 * 1 + 2) % 11 + 1, (si_1 * 2 + 3) % 13 + 1, (si_1 * 13 + 15) % 17 + 1))
                     local tj = vector.dot(mE, mF)
                     if tj * tj >= vector.dot(mE, mE) * vector.dot(mF, mF) + 1 then
-                        lP = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        lP = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
-                        si_2 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        si_2 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     si_1 = (si_1 + 125) % 156
                 end

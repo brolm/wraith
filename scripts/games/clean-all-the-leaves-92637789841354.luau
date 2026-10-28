@@ -1524,9 +1524,9 @@ for k, v in pairs(UpgradeConfig.tools) do
 end
 Library, rQ, Toggles, Options, ql, AR_32, qb, r1, rS, rK, rE, rz, AR_53, AR_40, AR_1, AR_26, qi, qd, p9, r0, AR_23, Label2, ry, AR_29, q2, qO, qZ, qC, AR_9, rj, AR_17, qM, qy, qm, AR_6, r2, rL, rn, q8, qG, qu, rN, qU, qq, rv, r_, rx, rd, q1, AR_21, rD, qK, rU, ra, rM, rY, qQ, rP, rq, qW, qe, rV, qn, q4, rw, rH, rm, qX, AR_15, qk, rC, re, qJ, qa, AR_3, qL, AR_18 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 table.sort(qI)
-AR_33 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+AR_33 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 if ((false or rQ or false and not rQ) and (rY or rQ or false and not rQ) or (not rY or false or false) and (false or not rY or false)) and ((false or (rY or AR_40)) and false or (not rQ or false or (rQ or false)) and (rQ and false or (rY or AR_33))) or not (((false or rQ or false and not rQ) and (rY or rQ or false and not rQ) or (not rY or false or false) and (false or not rY or false)) and ((false or (rY or AR_40)) and false or (not rQ or false or (rQ or false)) and (rQ and false or (rY or AR_33)))) then
-    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 else
     AR_33 = loadstring(game:HttpGet(Library .. "Library.lua"))()
 end

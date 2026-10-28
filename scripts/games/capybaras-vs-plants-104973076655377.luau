@@ -1953,9 +1953,9 @@ repeat
                         "yruvsuk"
                     }
                     if adC_17[(adC_89 * 22 + 33) % 8 + 1] < adC_17[(adC_89 * 22 + 33) % 8 + 1] then
-                        Ii = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        Ii = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
-                        adC_97 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        adC_97 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     adC_89 = (adC_89 + 127) % 176
                 end

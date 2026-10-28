@@ -1141,9 +1141,9 @@ local vW_12 = vW_3:WaitForChild("SpinResult")
 local nO = "Bid For Soccer Cards!"
 nH = "https://discord.gg/ehKVq7pf7v"
 nD = "https://rscripts.net/@Ouroboros"
-o5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+o5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 if not nW and not RequestIndex and (not nW or not RequestIndex) and (not oR and nP or (not nW or not nW)) and ((RequestIndex or oR) and (RequestIndex or RequestIndex) or not oh and not oh and (not nW and vW_18)) or not (not nW and not RequestIndex and (not nW or not RequestIndex) and (not oR and nP or (not nW or not nW)) and ((RequestIndex or oR) and (RequestIndex or RequestIndex) or not oh and not oh and (not nW and vW_18))) then
     oV = o5.Toggles
     oR = o5.Options

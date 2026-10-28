@@ -1009,9 +1009,9 @@ repeat
                 mR = (vector.create((mL * 4 + 9) % 11 + 1, (mL * 9 + 12) % 13 + 1, (mL * 14 + 7) % 17 + 1))
                 mS = (vector.create((mL * 3 + 7) % 11 + 1, (mL * 11 + 4) % 13 + 1, (mL * 6 + 5) % 17 + 1))
                 if vector.dot(vector.cross(mK, mR), mS) == vector.dot(vector.cross(mR, mS), mK) + 5 then
-                    lT = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+                    lT = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
                 else
-                    mJ = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+                    mJ = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
                 end
                 mL = (mL + 27) % 32
             end

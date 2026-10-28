@@ -2097,9 +2097,9 @@ repeat
     if Dr_4 <= 2 then
         if Dr_4 <= 1 then
             if (Dr_6 * 3 + 7) * 21 % 4 == ((Dr_6 * 3 + 7) * 21 + 8) % 4 then
-                Dr_11 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                Dr_11 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
             else
-                sB = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                sB = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
             end
             Dr_6 = (Dr_6 + 29) % 32
         else
@@ -2889,7 +2889,7 @@ Dr_9 = function()
         elseif B7 then
             return true
         else
-            B7 = pcall(Cf, 'if not game:IsLoaded() then game.Loaded:Wait() end local env = (getgenv and getgenv()) or _G if env.OuroborosAutoExecuted == game.JobId then return end env.OuroborosAutoExecuted = game.JobId task.wait(3) loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"))()')
+            B7 = pcall(Cf, 'if not game:IsLoaded() then game.Loaded:Wait() end local env = (getgenv and getgenv()) or _G if env.OuroborosAutoExecuted == game.JobId then return end env.OuroborosAutoExecuted = game.JobId task.wait(3) loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/loader.luau"))()')
             return B7
         end
     end

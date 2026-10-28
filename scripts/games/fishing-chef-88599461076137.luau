@@ -1129,12 +1129,12 @@ repeat
     zZ_22 = zZ_15[AZ % 11 + 1]
     if zZ_22:len() <= zZ_22:reverse():rep(AZ % 3 + 2):len() then
         table.sort(p0, fn233)
-        Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
-        zZ_6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-        qU = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+        Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+        zZ_6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+        qU = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     else
         table.sort(Library, fn233)
-        p0 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+        p0 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
         loadstring(game:HttpGet(p0 .. "Library.lua"))()
         qU = loadstring(game:HttpGet(p0 .. "addons/ThemeManager.lua"))()
         zZ_6 = loadstring(game:HttpGet(p0 .. "addons/SaveManager.lua"))()

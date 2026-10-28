@@ -28,7 +28,7 @@ local Toggles = {}
 local Options = {}
 local Tooltips = {}
 
-local BaseURL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/losthubv1/ffedfdfdf/"
+local BaseURL = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/losthubv1/ffedfdfdf/"
 local CustomImageManager = {}
 local CustomImageManagerAssets = {
     TransparencyTexture = {

@@ -82,9 +82,9 @@ cm = nil
 local GetState, BuyUpgrade, GetUpgradeState, Claim
 Library, Toggles, Options, RollTower, EquipBestTowers, GetUpgradeState, BuyUpgrade, GetState, Claim, ClaimAll, ch, cm, cf = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 local Remotes = ReplicatedStorage:WaitForChild("Remotes")

@@ -29,7 +29,7 @@ local Toggles = {}
 local Options = {}
 local Tooltips = {}
 
-local BaseURL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+local BaseURL = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
 local CustomImageManager = {}
 local CustomImageManagerAssets = {
     TransparencyTexture = {
@@ -1936,7 +1936,7 @@ end
 
 local OnlineFetchIcons, OnlineIcons = pcall(function()
     return (loadstring(
-        game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/notpoiu/Molto/source.lua")
+        game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/notpoiu/Molto/source.lua")
     ) :: () -> IconModule)()
 end)
 do
@@ -1946,7 +1946,7 @@ do
     else
         OnlineFetchIcons, OnlineIcons = pcall(function()
             return (loadstring(
-                game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/notpoiu/lucide-roblox-direct/source.lua")
+                game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/notpoiu/lucide-roblox-direct/source.lua")
             ) :: () -> IconModule)()
         end)
         

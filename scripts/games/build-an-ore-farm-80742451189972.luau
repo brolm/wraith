@@ -800,9 +800,9 @@ repeat
                         local yy = w5_29
                         w5_13 = w5_23[yy % 10 + 1]
                         if w5_13:len() >= w5_13:reverse():rep(yy % 3 + 2):len() then
-                            qh = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                            qh = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                         else
-                            w5_16 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                            w5_16 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                         end
                         w5_29 = (w5_29 + 43) % 108
                     else

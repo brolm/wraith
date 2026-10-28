@@ -863,14 +863,14 @@ PanConfig = require(se_1:WaitForChild("Modules"):WaitForChild("Shops"):WaitForCh
 PanningConfig = require(se_1:WaitForChild("Modules"):WaitForChild("Panning"):WaitForChild("PanningConfig"))
 UpgradeConfig = require(se_1:WaitForChild("Modules"):WaitForChild("Upgrades"):WaitForChild("UpgradeConfig"))
 AutoPanLuck = PanningConfig.AutoPanLuck
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 pcall(fn168)
 if setthreadidentity then
     setthreadidentity(8)
 end
 SaveManager, Toggles, Options, lO, lK, lH, lE, lz, lu, lq = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 lO = "https://discord.gg/ehKVq7pf7v"

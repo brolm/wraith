@@ -500,9 +500,9 @@ repeat
                     mg = (vector.create((l2 * 2 + 3) % 11 + 1, (l2 * 2 + 5) % 13 + 1, (l2 * 8 + 15) % 17 + 1))
                     local rt = vector.dot(mf_4, mg)
                     if rt * rt <= vector.dot(mf_4, mf_4) * vector.dot(mg, mg) then
-                        l_ = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        l_ = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     else
-                        lW = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                        lW = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                     end
                     l2 = (l2 + 49) % 88
                 end

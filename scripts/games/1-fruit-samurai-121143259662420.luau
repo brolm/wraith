@@ -1953,9 +1953,9 @@ repeat
                     if x4_9 <= 19 then
                         local yS = bit32.rrotate(bit32.bxor(bit32.lrotate(x4_26, 27), string.byte(tostring(x4_12))), 24)
                         if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(yS, 3243254351), 955223725), (bit32.bxor(bit32.band(yS, 1051712944), 3233739261))), 955223725), 3233739261) == yS then
-                            x4_41 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                            x4_41 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                         else
-                            x4_51 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                            x4_51 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                         end
                         x4_26 = (x4_26 + 121) % 280
                     else

@@ -1971,7 +1971,7 @@ repeat
                 end
                 tC_19 = k5.Idled
                 tC_19.Connect(tC_19, tC_28)
-                kV = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
+                kV = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
             end
             lM = (lM + 132) % 136
         else
@@ -2699,24 +2699,24 @@ repeat
     elseif tC_11 <= 3 then
         if tC_19 * 80666449 + 7 + 6 <= tC_19 * 80666449 + 7 + 6 + 6 then
             onAutoGoNewZone = tC_28({
-                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
-                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"
+                "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
+                "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"
             })
         else
             tC_28 = onAutoGoNewZone({
-                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
-                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"
+                "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau",
+                "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/SaveManager.luau"
             })
         end
         tC_19 = (tC_19 + 15) % 32
     else
         tC_11 = { "eda", "tccmfrnr", "nzm", "qzzsekmkb", "onfc", "pohsd", "dnpfewsak", "ggy", "uvoaurayh" }
         if tC_11[(tC_19 * 53 + 11) % 9 + 1] < tC_11[(tC_19 * 53 + 11) % 9 + 1] then
-            tC_28 = tC_1("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau")
+            tC_28 = tC_1("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau")
         else
             tC_1 = tC_28({
-                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau",
-                "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"
+                "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau",
+                "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Addons/InterfaceManager.luau"
             })
         end
         tC_19 = (tC_19 + 15) % 32

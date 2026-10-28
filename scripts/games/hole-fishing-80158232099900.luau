@@ -1520,9 +1520,9 @@ repeat
             wU_16 = (wU_16 + 11) % 112
         else
             if wU_16 * 128508907 + 4 + 4 <= wU_16 * 128508907 + 4 + 4 + 3 then
-                wU_44 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                wU_44 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
             else
-                wU_22 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                wU_22 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
             end
             wU_16 = (wU_16 + 39) % 112
         end

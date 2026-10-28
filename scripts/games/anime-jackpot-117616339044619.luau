@@ -1185,9 +1185,9 @@ ModelData = require(vS_28.ModelService.ModelData)
 DailyRewardsData = require(vS_28.DailyService.DailyRewardsData)
 Requirements = require(vS_28.RebirthServices.Requirements)
 if (not nX and not nX and (PurchaseDice and ns) or (m0 or PurchaseDice) and false) and ((not ns or false) and (not PurchaseDice or false) and ((nX or PurchaseDice) and (nX or vS_24))) and not ((not nX and not nX and (PurchaseDice and ns) or (m0 or PurchaseDice) and false) and ((not ns or false) and (not PurchaseDice or false) and ((nX or PurchaseDice) and (nX or vS_24)))) then
-    nX = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+    nX = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 else
-    vS_43 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+    vS_43 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 end
 nr = loadstring(game:HttpGet(vS_43 .. "Library.lua"))()
 pcall(fns.fn572)

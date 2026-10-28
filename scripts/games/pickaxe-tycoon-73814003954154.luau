@@ -630,11 +630,11 @@ local function ib()
 end
 ib()
 local ie = fn545
-local ig = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/uhfork/Obsidian/"
+local ig = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/uhfork/Obsidian/"
 if (LocalPlayer or not Players or not Players and Players) and (Players or LocalPlayer or LocalPlayer and not Players) and (not LocalPlayer and LocalPlayer and (not Players and Players) or (not Players or not LocalPlayer or (Players or not LocalPlayer))) and not ((LocalPlayer or not Players or not Players and Players) and (Players or LocalPlayer or LocalPlayer and not Players) and (not LocalPlayer and LocalPlayer and (not Players and Players) or (not Players or not LocalPlayer or (Players or not LocalPlayer)))) then
     ig = Library({ ie .. "Library.lua" })
 else
-    Library = ie({ "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/uhfork/Obsidian/Library.lua" })
+    Library = ie({ "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/uhfork/Obsidian/Library.lua" })
 end
 if not Library then
     return

@@ -1018,9 +1018,9 @@ repeat
                 iO = (iO + 187) % 248
             else
                 if ((iY or iY) and (RunService and iY) or (not iZ and iZ or not iZ and not iY) or (not iY and not iZ or RunService and not iZ or (not iY and iZ or iZ and not RunService))) and ((not iZ or not iY or (iY or not RunService) or iY and RunService and (not iZ or not iZ)) and (not iZ and RunService and (RunService and iY) or (iZ or iY or (iY or not RunService)))) and not (((iY or iY) and (RunService and iY) or (not iZ and iZ or not iZ and not iY) or (not iY and not iZ or RunService and not iZ or (not iY and iZ or iZ and not RunService))) and ((not iZ or not iY or (iY or not RunService) or iY and RunService and (not iZ or not iZ)) and (not iZ and RunService and (RunService and iY) or (iZ or iY or (iY or not RunService))))) then
-                    iq = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    iq = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    iM_1 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    iM_1 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 iO = (iO + 32) % 248
             end

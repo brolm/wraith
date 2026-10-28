@@ -2065,9 +2065,9 @@ repeat
                 end
             elseif aCe_78 <= 14 then
                 if (aCe_31 * 3 + 1) * 9 % 4 == ((aCe_31 * 3 + 1) * 9 + 0) % 4 then
-                    aCe_94 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    aCe_94 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    Uu = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    Uu = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 aCe_31 = (aCe_31 + 85) % 152
             else

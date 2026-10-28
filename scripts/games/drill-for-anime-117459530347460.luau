@@ -1126,10 +1126,10 @@ for i, v in ipairs(xf_35) do
     table.insert(xf_41, v.Name)
 end
 oa, SaveManager, Toggles, Options, oo, nY, nU, nN, nJ, nG, nC, nR, nA, o6, oQ, od, nX, nw, oR, ox, of, nT, pa, oB, oi, n4, nO, nH, o3, oz, oc, nM, oP, oI, ot, oh, nQ, o9, oJ, n6, o0, oM, ow, oe, nB, nx, oC, oj, n0, nI, o4, op, o8, ol, nD, nF, oF, n3, oW, ny, oS, oY, om, nv, n7, nS, n8, o2, oG = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-oa = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+oa = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if not n7 and nI and (nI or nX) and ((not nI or nX) and (nX or o6)) or not (not n7 and nI and (nI or nX) and ((not nI or nX) and (nX or o6))) then
-    xf_9 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    xf_9 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     Toggles = oa.Toggles
 else
     loadstring(game:HttpGet(SaveManager .. "addons/ThemeManager.lua"))()

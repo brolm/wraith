@@ -861,9 +861,9 @@ repeat
                 nF = (vector.create((tE_7 * 3 + 1) % 11 + 1, (tE_7 * 4 + 11) % 13 + 1, (tE_7 * 15 + 11) % 17 + 1))
                 nG = (vector.create((tE_7 * 1 + 1) % 5 + 1, (tE_7 * 5 + 5) % 7 + 1, (tE_7 * 3 + 7) % 9 + 1))
                 if math.abs((vector.angle(nE, nF, nG))) - math.abs((vector.angle(nF, nE, nG))) == 0 then
-                    nr = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    nr = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    nx = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    nx = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 tE_7 = (tE_7 + 101) % 208
             else

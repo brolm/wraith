@@ -716,13 +716,13 @@ local function kW()
 end
 local TeleportGroup
 kW()
-kH = fn191({ "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua" })
+kH = fn191({ "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua" })
 if not kH then
     return
 end
 ThemeManager, ke, KnitClient, Util, Config, FishItem, jR, kT, kP, kK, kF, kA, ks, kj, kb, j4, j0, jW, jS, kR, kg, kz, kr, ki, ka, j3, j_, kt, kl, kd, j7, j1, jY, jT, jQ, kS, kO, kJ, kL, setThrowing, jX, Window, TeleportGroup, k4_1, MenuGroup, k2_1, j5, kM, ko, kU, kk, jP, j9, km, jV = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-ThemeManager = fn191({ "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua" })
-local SaveManager = fn191({ "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua" })
+ThemeManager = fn191({ "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua" })
+local SaveManager = fn191({ "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua" })
 local Options = kH.Options
 ke = "https://discord.gg/ehKVq7pf7v"
 KnitClient = require(ReplicatedStorage.src.Modules.KnitClient)

@@ -1635,9 +1635,9 @@ repeat
                 my_3 = (my_3 + 23) % 24
             else
                 if (not mz and Options or lv and false) and (not lv and Options or mA and not Options) and (mz or not lv or false and not mz or Options and Options and (lz and not lv)) or not ((not mz and Options or lv and false) and (not lv and Options or mA and not Options) and (mz or not lv or false and not mz or Options and Options and (lz and not lv))) then
-                    mz = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+                    mz = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
                 else
-                    mE = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/"
+                    mE = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/"
                 end
                 my_3 = (my_3 + 11) % 24
             end

@@ -1177,9 +1177,9 @@ repeat
                     "yohymh"
                 }
                 if oh[(vu_7 * 29 + 97) % 12 + 1] < oh[(vu_7 * 29 + 97) % 12 + 1] then
-                    nu = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    nu = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    vu_5 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    vu_5 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 vu_7 = (vu_7 + 34) % 104
             end

@@ -2052,9 +2052,9 @@ repeat
             else
                 local wy = bit32.rrotate(bit32.bxor(bit32.lrotate(vL_1, 8), string.byte(tostring(om))), 31)
                 if bit32.bxor(bit32.lrotate(bit32.bxor(wy, 1130420219), 18), 1609371011) ~= bit32.lrotate(wy, 18) then
-                    nc = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    nc = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    vL_19 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    vL_19 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 vL_1 = (vL_1 + 103) % 368
             end

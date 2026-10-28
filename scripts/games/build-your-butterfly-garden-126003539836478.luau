@@ -909,10 +909,10 @@ Shop = workspace:WaitForChild("Shop")
 local wv_6 = "BUILD your Butterfly Garden"
 oC = "https://discord.gg/ehKVq7pf7v"
 ow = "https://rscripts.net/@Ouroboros"
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/Library.lua"))()
 pcall(fn572)
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/deividcomsono/Obsidian/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 if ((not ox or not SellItemEvent or (SellItemEvent or not ox)) and (SellItemEvent and not ox or ox and not ox) or (not ox and SellItemEvent or (not SellItemEvent or not SellItemEvent)) and (not SellItemEvent and not ox and (SellItemEvent and SellItemEvent))) and not ((not ox or not SellItemEvent or (SellItemEvent or not ox)) and (SellItemEvent and not ox or ox and not ox) or (not ox and SellItemEvent or (not SellItemEvent or not SellItemEvent)) and (not SellItemEvent and not ox and (SellItemEvent and SellItemEvent))) then

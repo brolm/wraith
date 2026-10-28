@@ -1566,13 +1566,13 @@ tc.SetKeepBest = fn260
 tc.GetStatus = fn573
 tc.GetCatchStatus = fn924
 tc.Track(fn1214)
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if ((sF and not sL and (ti or ti) or (sU or not sU) and (not s8 or not sL)) and ((not Library or sU) and (sL or sF) and (not sL or sF or (not s8 or Library))) or (sF or not sF or not sL and sU) and (sF and not sL and (Library or Library)) and (s8 or not s8 or (s8 or not sF) or ti and sU and (sF and not ti))) and not ((sF and not sL and (ti or ti) or (sU or not sU) and (not s8 or not sL)) and ((not Library or sU) and (sL or sF) and (not sL or sF or (not s8 or Library))) or (sF or not sF or not sL and sU) and (sF and not sL and (Library or Library)) and (s8 or not s8 or (s8 or not sF) or ti and sU and (sF and not ti))) then
     loadstring(game:HttpGet(SaveManager .. "addons/ThemeManager.lua"))()
     sh = loadstring(game:HttpGet(SaveManager .. "addons/SaveManager.lua"))()
 else
-    sh = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    sh = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 end
 Toggles, Options = Library.Toggles, Library.Options
 tv(tc, Library)

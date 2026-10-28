@@ -2243,11 +2243,11 @@ vm = 0
 ve = 0
 family = nil
 u0 = 0
-H9_57 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+H9_57 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 if (ve and ve and (uA or not vI) and (uA or vI or not vI and ve) or (not H9_29 or not uA or (vI or not ve)) and ((not ve or not H9_29) and (not ve or vI))) and ((ve and uA or (H9_29 or not H9_29)) and (not ve and not vI and (not uA and ve)) or uA and not H9_29 and (uA or not ve) and (not H9_29 or not vI or (vI or not vI))) and not ((ve and ve and (uA or not vI) and (uA or vI or not vI and ve) or (not H9_29 or not uA or (vI or not ve)) and ((not ve or not H9_29) and (not ve or vI))) and ((ve and uA or (H9_29 or not H9_29)) and (not ve and not vI and (not uA and ve)) or uA and not H9_29 and (uA or not ve) and (not H9_29 or not vI or (vI or not vI)))) then
     H9_57 = loadstring(game:HttpGet(Library .. "Library.lua"))()
 else
-    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 end
 uK = function()
     local function w2(bc)

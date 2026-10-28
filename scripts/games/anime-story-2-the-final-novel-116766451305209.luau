@@ -808,7 +808,7 @@ repeat
             if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(bit32.rrotate(bit32.bxor(bit32.lrotate(e9, 22), string.byte(tostring(eX))), 12), 1452171951), 3775164673), (bit32.bxor(bit32.band(bit32.rrotate(bit32.bxor(bit32.lrotate(e9, 22), string.byte(tostring(eX))), 12), 2842795344), 82517161))), 3775164673), 82517161) ~= bit32.rrotate(bit32.bxor(bit32.lrotate(e9, 22), string.byte(tostring(eX))), 12) then
                 ey = loadstring(game:HttpGet(loadstring))()
             else
-                eA = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
+                eA = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
             end
             e9 = (e9 + 33) % 80
         else

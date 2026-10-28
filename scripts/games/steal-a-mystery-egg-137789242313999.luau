@@ -2246,14 +2246,14 @@ ts.SetFly = fns.fn538
 ts.SetFlySpeed = fns.fn213
 ts.Track(fns.fn395)
 LocalPlayer.CharacterAdded:Connect(fns.onCharacterAdded)
-u1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+u1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 if ((tu or not t_) and (not t_ and not tu) or (TrailConfigurations or false) and (FP_6 or false)) and not ((tu or not t_) and (not t_ and not tu) or (TrailConfigurations or false) and (FP_6 or false)) then
     uM = loadstring(game:HttpGet(Options .. "addons/ThemeManager.lua"))()
     u1 = loadstring(game:HttpGet(Options .. "addons/SaveManager.lua"))()
     uW = Toggles.Toggles
 else
-    uW = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-    uM = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+    uW = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+    uM = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
     Toggles, Options = u1.Toggles, u1.Options
 end
 FP_12(ts, u1)

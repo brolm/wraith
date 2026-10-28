@@ -29,7 +29,7 @@ local Toggles = {}
 local Options = {}
 local Tooltips = {}
 
-local BaseURL = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+local BaseURL = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 local CustomImageManager = {}
 local CustomImageManagerAssets = {
     TransparencyTexture = {
@@ -1438,7 +1438,7 @@ type IconModule = {
 
 local FetchIcons, Icons = pcall(function()
     return (loadstring(
-        game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/notpoiu/lucide-roblox-direct/source.lua")
+        game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/notpoiu/lucide-roblox-direct/source.lua")
     ) :: () -> IconModule)()
 end)
 

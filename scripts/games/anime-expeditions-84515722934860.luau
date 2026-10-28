@@ -3270,7 +3270,7 @@ end
 aEB, bCU_39, aEk, aEb, fns.bCU_22, aD_ = nil, nil, nil, nil, nil, nil
 _G.gethui = aFD
 local aEL = "Anime Expeditions"
-aEB = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/loader.luau"
+aEB = "https://raw.githubusercontent.com/brolm/wraith/main/loader.luau"
 bCU_39 = "https://discord.gg/ehKVq7pf7v"
 aEk = "https://rscripts.net/@Ouroboros"
 aEb = {
@@ -10231,9 +10231,9 @@ end
 bCU_101()
 bCU_92()
 fns.bCU_21.LoadWavePositions()
-aDV = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
-bCU_108 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-bCU_101 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+aDV = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+bCU_108 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+bCU_101 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 Options = aDV.Options
 Toggles = aDV.Toggles
 aDV.ShowToggleFrameInKeybinds = false

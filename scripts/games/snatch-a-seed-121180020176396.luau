@@ -1243,14 +1243,14 @@ DataService = require(Bq_26:WaitForChild("Modules"):WaitForChild("DataService"))
 Item_Module = require(Bq_26:WaitForChild("Item_Module"))
 Mutations = require(Bq_26:WaitForChild("Modules"):WaitForChild("Mutations"))
 Client = require(Bq_26:WaitForChild("Blink"):WaitForChild("Blink"):WaitForChild("Client"))
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 pcall(fns.fn134)
 if setthreadidentity then
     setthreadidentity(8)
 end
 SaveManager, Toggles, Options, qR, qL, qE, qz, qv, qp, qj, sf, r8, rl = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Bq_26 = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+Bq_26 = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 qR = "https://discord.gg/ehKVq7pf7v"

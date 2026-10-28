@@ -1166,7 +1166,7 @@ local function setupInterface()
 	local DISCORD_INVITE = "https://discord.gg/synapsex"
 	local RSCRIPTS_LINK = "https://rscripts.net/@Ouroboros"
 	local WEBSITE_LINK = "https://ouroboros-hub-rbx.web.app/"
-	local repo = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+	local repo = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
 	local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 	local ThemeManager = loadstring(game:HttpGet(repo .. "addons/ThemeManager.lua"))()
 	local SaveManager = loadstring(game:HttpGet(repo .. "addons/SaveManager.lua"))()

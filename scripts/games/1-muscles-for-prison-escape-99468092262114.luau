@@ -872,9 +872,9 @@ repeat
                 local tB = mF
                 local mR_7 = mQ_9[tB % 12 + 1]
                 if mR_7:len() >= mR_7:reverse():rep(tB % 3 + 2):len() then
-                    lU = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    lU = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 else
-                    mJ = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                    mJ = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
                 end
                 mF = (mF + 73) % 152
             end

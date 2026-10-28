@@ -1201,7 +1201,7 @@ repeat
                     end
                 end
             end)
-            gI = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
+            gI = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/ActualMasterOogway/Fluent-Renewed/Fluent.luau"))()
         else
             task.spawn(worker2)
             task.spawn(worker)

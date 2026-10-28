@@ -300,7 +300,7 @@ for k, v in i2 do
     jY[v] = true
 end
 Library, ThemeManager, SaveManager, Toggles, Options, jP, jK, jI, jB, js, jD, i5, ji, jz, jn, jb, jN, jq, je, jQ, jo, jO, jy, jh, jv, i_, jw, i1, i4, jE, ja = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/Library.lua"))()
 jz = function()
     local function kp(U)
         local kk = not U or not U:IsA("ScreenGui")
@@ -333,8 +333,8 @@ jz = function()
 end
 jz()
 task.spawn(worker)
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
-SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/ThemeManager.lua"))()
+SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/addons/SaveManager.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 jP = "#7fd47f"
@@ -391,7 +391,7 @@ jv = function()
     jO(jd, "Rebirth")
 end
 i5 = 0
-if jz and jE and "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/" and ((Library or jE) and false) or (false or not Library) and (false and Library) and ((Library or false) and false) or not (jz and jE and "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/" and ((Library or jE) and false) or (false or not Library) and (false and Library) and ((Library or false) and false)) then
+if jz and jE and "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/" and ((Library or jE) and false) or (false or not Library) and (false and Library) and ((Library or false) and false) or not (jz and jE and "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/" and ((Library or jE) and false) or (false or not Library) and (false and Library) and ((Library or false) and false)) then
     i_ = fn130
     jw = function()
         local lk, ll, Value, ln

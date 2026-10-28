@@ -1527,9 +1527,9 @@ repeat
             wp_41 = (vector.create((wp_6 * 6 + 8) % 11 + 1, (wp_6 * 6 + 12) % 13 + 1, (wp_6 * 14 + 13) % 17 + 1))
             local w9 = vector.dot(wp_3, wp_41)
             if w9 * w9 <= vector.dot(wp_3, wp_3) * vector.dot(wp_41, wp_41) then
-                wp_12 = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                wp_12 = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
             else
-                pd = "https://raw.githubusercontent.com/whodunitwww/wraith-hub/main/dependencies/InfinityControlR/ObsidianUltra/"
+                pd = "https://raw.githubusercontent.com/brolm/wraith/main/dependencies/InfinityControlR/ObsidianUltra/"
             end
             wp_6 = (wp_6 + 29) % 240
         end
